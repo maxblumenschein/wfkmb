@@ -40,9 +40,9 @@ Je nach Aufnahmemethode und Aufnahmespektrum werden unterschiedliche oder eine K
 
 **Target-UV, UV Innovations**: Für Aufnahmen mit Licht im ultravioletten Spektrum (<400 nm) kann dieses Target verwendet werden. Unter UV-Licht fluoreszieren einzelne Felder in Graustufen sowie in den Farben Rot, Grün und Blau, sodass die Intensität und Farbigkeit von fluoriszierendem Material dokumentiert werden kann.
 
-**Chrome Kugel**: Anhand einer glänzend reflektierenden Kugel kann die Aufnahmegeometrie (z.B. relative Position von Kamera und Licht zur Kugel) rekonstruiert werden.
+**Chrome Kugel**: Anhand einer glänzend reflektierenden Kugel kann die Aufnahmegeometrie (z.B. relative Position von Kamera und Licht zur Kugel) rekonstruiert werden. Diese Kugeln werden unter anderem für der Erstellung von _Reflectance Transformation Imaging_ (RTI) benötigt.
 
-weitere Referenzmaterialien
+**weitere Referenzmaterialien**: Je nach Untersuchungsobjekt und jeweiliger Fragestellung ist es sinnvoll über die üblichen Targets hinaus, Referenzmaterialen wie unterschiedliche Zeichenmittel oder Pigmente zum Vergleich mitaufzunehmen.
 
 # 2D
 
