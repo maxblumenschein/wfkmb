@@ -24,7 +24,7 @@ In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerke
 
 Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag – wie die Fotografie – ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet.
 
-Aus diesem Grund ist die genaue Arbeit nach transparent festgelegten Standards entscheidend, um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich und nutzbar zu machen. In diesem Dokument werden grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert. Bereits bestehende Standards im Bereich der Dokumentation von Kulturgütern wie _FADGI_ und _Metamorfoze_ sowie _ISO 19264_ werden als Grundlage benutzt und für die praktikable Anwendung im Kunstmuseum Basel adaptiert und erweitert.
+Aus diesem Grund ist die genaue Arbeit nach transparent festgelegten Standards entscheidend, um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich und nutzbar zu machen. In diesem Dokument werden grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
@@ -41,6 +41,8 @@ Wegen der technischen Konstruktion der einzelnen verwendeten Geräte sowie der V
 **Verhältnismässigkeit**
 
 
+Grundsätzlich sind die technischen und inhaltlichen Vorgaben des Museumsübergreifenden [Medienstandards](https://medienstandard.kumu.swiss/) einzuhalten. Insbesondere die Kodierung der Aufnahmemethodik sowie die Angabe von eindeutigen Identifikationsnummern kontextualisieren eine digitale Datei, sodass diese verständlich und nutzbar bleibt. Darüber hinaus wurden für den Bereich der Wissenschaftlichen Fotografie weitergehende technische Parameter und standardisierte Verfahren definiert, um konsistente Dokumentationsaufnahmen zu erstellen.
+
 # Reproduktionsaufnahmen
 
 Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes _Target_.[^1] Anhand des verwendeten Targets lässt sich die Reproduktionsgenauigkeit der Aufnahme quantitativ messen und im Abgleich mit dem Museumseigenen Standard qualitativ bewerten.
@@ -49,8 +51,9 @@ Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wied
 
 ## Technische Vorgaben
 
-* **Farbraum**: eciRGBv2
 * **Dateiformat**: TIFF, `.tif`
+* **Dateiname**: nach Medienstandard
+* **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16bit
 * **Weissabgleich Toleranz**: ΔC* ≤2
 * **Belichtung Toleranz**: ΔL* ≤2
@@ -79,7 +82,7 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüll
 
 ### Aufnahmegeometrie
 
-* Coplanare Ausrichtung des Objekts 
+* Coplanare Ausrichtung des Objekts
 * 30–45° Auftrittswinkel des Lichts
 * Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwendet[^5]
 * Abgedunkelter Aufnahmeraum. Möglichst schwarze(r) Wände/Decke/Boden[^6]
@@ -126,8 +129,9 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ## Technische Vorgaben
 
-* **Farbraum**: eciRGBv2
 * **Dateiformat**: TIFF, `.tif`
+* **Dateiname**: nach Medienstandard
+* **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16bit
 * **Weissabgleich Toleranz**: ΔC* ≤2
 * **Belichtung Toleranz**: ΔL* ≤2
@@ -155,13 +159,15 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ### Technische Vorgaben
 
-**Farbraum**: Gray Gamma 2.2
-**Bit-Tiefe**: 16bit
-**Weissabgleich Toleranz**:entfällt
-**Belichtung Toleranz**: ΔL* ≤2
-**Homogenität Beleuchtung**: entfällt[^4]
-**Tonwertgenauigkeit** (CIE76): ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
-**Auflösung** (Minimum): entfällt
+* **Dateiformat**: TIFF, `.tif`
+* **Dateiname**: nach Medienstandard
+* **Farbraum**: Gray Gamma 2.2
+* **Bit-Tiefe**: 16bit
+* **Weissabgleich Toleranz**:entfällt
+* **Belichtung Toleranz**: ΔL* ≤2
+* **Homogenität Beleuchtung**: entfällt[^4]
+* **Tonwertgenauigkeit** (CIE76): ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Auflösung** (Minimum): entfällt
 
 ## Ultraviolettes Spektrum
 
@@ -172,13 +178,15 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ### Technische Vorgaben
 
-**Farbraum**: Gray Gamma 2.2
-**Bit-Tiefe**: 16bit
-**Weissabgleich Toleranz**:entfällt
-**Belichtung Toleranz**: entfällt
-**Homogenität Beleuchtung**: entfällt
-**Tonwertgenauigkeit** (CIE76): entfällt
-**Auflösung** (Minimum): entfällt
+* **Dateiformat**: TIFF, `.tif`
+* **Dateiname**: nach Medienstandard
+* **Farbraum**: Gray Gamma 2.2
+* **Bit-Tiefe**: 16bit
+* **Weissabgleich Toleranz**:entfällt
+* **Belichtung Toleranz**: entfällt
+* **Homogenität Beleuchtung**: entfällt
+* **Tonwertgenauigkeit** (CIE76): entfällt
+* **Auflösung** (Minimum): entfällt
 
 ## Durchlicht
 
