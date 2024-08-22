@@ -24,7 +24,7 @@ In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerke
 
 Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag – wie die Fotografie – ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet.
 
-Aus diesem Grund ist die genaue Arbeit nach transparent festgelegten Standards entscheidend, um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich und nutzbar zu machen. In diesem Dokument werden grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
+Um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich und langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
