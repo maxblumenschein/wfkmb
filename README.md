@@ -45,7 +45,7 @@ Grundsätzlich sind die technischen und inhaltlichen Vorgaben des Museumsübergr
 
 # Reproduktionsaufnahmen
 
-Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes _Target_.[^1] Anhand des verwendeten Targets lässt sich die Reproduktionsgenauigkeit der Aufnahme quantitativ messen und im Abgleich mit dem Museumseigenen Standard qualitativ bewerten.
+Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes _Target_.[^1] Anhand des verwendeten Targets lässt sich die Reproduktionsgenauigkeit der Aufnahme quantitativ messen und im Abgleich mit den Museumseigenen Toleranzen qualitativ bewerten.
 
 [^1]: Je nach Aufnahmemethode und Aufnahmespektrum werden unterschiedliche oder eine Kombination von mehreren Targets benötigt.
 
@@ -65,63 +65,90 @@ Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wied
 
 ### Metadaten
 
-Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^4] Mit * markierte Felder sind verpflichtend anzugeben. Mehrfachangaben sind mit Komma zu trennen.
+Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^4] Mit * markierte Felder sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                                   | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | ------------------------------------------------------------------------------------------ | -------------- |
-| Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                                                           | _Photo Credit_ |
-| Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                                  |                |
-| Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                               |                |
-| E-Mail Adresse                                       | Email adress(es)    | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                                                       | –              |
-| Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                        | –              |
-| Inhaltliche Beschreibung                             | Description         | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024     | _Beschreibung_ |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 1800mm, f8, bw33mm, 18ms, 1300W, 900–1700nm no filter (EHM); digital composite of 6 images | _Anmerkungen_  |
-| Stichworte                                           | Keywords            | `dc:subject`                | Digital Composite; Multishot/Pixel-Shift                                                   |                |
+| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                    | Picturepark    |
+| ---------------------------------------------------- | ------------------- | --------------------------- | ----------------------------------------------------------- | -------------- |
+| Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                            | _Photo Credit_ |
+| Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |                |
+| Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |                |
+| E-Mail Adresse                                       | Email adress(es)    | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                        | –              |
+| Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         | –              |
+| Titel                                                | Title               | `dc:title`                  | Blumenstillleben                                            | _Titel_        |
+| Inhaltliche Beschreibung                             | Description         | `dc:description`            | Linker Flügel des Altarbildes                               | _Beschreibung_ |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  | _Anmerkungen_  |
+| Stichworte                                           | Keywords            | `dc:subject`                | Soft-Illumination; Digital Composite; Multishot/Pixel-Shift |                |
 
-[^4]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
+[^10]: 
+[^11]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
 
-### Aufnahmegeometrie
+## Aufnahmegeometrie
 
-* Coplanare Ausrichtung des Objekts
-* 30–45° Auftrittswinkel des Lichts
-* Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwendet[^5]
+* Neutraler Lichtaufbau. Üblicherweise symmetrisch zur optischen Achse. 30–45° Auftrittswinkel.
+* Target in gleicher Ebene wie das Objekt (ohne Beschattung) mit aufnehmen.
 * Abgedunkelter Aufnahmeraum. Möglichst schwarze(r) Wände/Decke/Boden[^6]
-* Target in gleicher Ebene wie das Objekt (ohne Beschattung), circa 1–2 cm Abstand
 
-[^5]: Bei glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
 [^6]: Bei stark reflektierenden Objekten sollte hinter dem Aufnahmesensor eine schwarze Fläche platziert werden, um Reflexionen und Streulicht zu vermeiden.
 
 ## Ästhetische Vorgaben
 
 ### Gemälde
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
+**Aufnahmegeometrie**: Coplanare Ausrichtung von Objekt und Kamera. 30–45° Auftrittswinkel des Lichts.
+
+**Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.[^5]
 
 **Hintergrund**: Schwarz, matt (z.B. Molton)
 
+**Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
+
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
+
+[^5]: Bei glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
+
 ### Werke auf Papier
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind.
+**Aufnahmegeometrie**: Coplanare Ausrichtung von Objekt und Kamera. 30–45° Auftrittswinkel des Lichts.
+
+**Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.[^5]
 
 **Hintergrund**: Grau, matt, transluzent (Acryl, 3mm opal satin)[^7]
+
+**Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc. 
+
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind.
 
 [^7]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH)
 
 ### Skulpturen
 
+**Aufnahmegeometrie**: Leicht erhöhte Kameraperspektive.[^9] Das Target zur Bestimmung einer neutralen Einstellung sollte so nah wie möglich in die Hauptebene des Objekts gebracht werden.[^11]
+
+**Licht**: Weiches Hauptlicht von vorne links. Fülllicht von vorne rechts.[^10] 
+
+**Hintergrund**: Bei hellen Objekten: Schwarz, matt (z.B. Molton). Bei dunklen Objekten: Weiss/Grau, matt. 
+
+**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Rücksprache mit den zuständigen Kurator\:innen.
+
 **Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
 
-**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen.
-
-**Hintergrund**: Bei hellen Objekten: Schwarz, matt (z.B. Molton). Bei dunklen Objekten: Weiss/Grau, matt.
+[^9]: Bei sehr grossen Skulpturen kann die Kamera coplanar zur Vorderseite ausgerichtet werden. 
+[^10]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums entnommen werden. 
+[^11]: Aufgrund der räumlichen Tiefe dreidimensionaler Objekte kann keine Neutralität über den gesamten Bildraum erzielt werden.
 
 ### Installationen
 
 Siehe [Installationsaufnahmen](#Installations--und-Gebäudeaufnahmen).
 
-## Prozesse
+## Prozesse & Zuständigkeiten
 
+**Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
+**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
+**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^13]
+**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^14] 
 
+[^13]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
+[^14]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
 
 # Installations- und Gebäudeaufnahmen
 
@@ -139,19 +166,37 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ### Metadaten
 
+| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
+| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                                                       | _Photo Credit_ |
+| Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                              |                |
+| Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                           |                |
+| E-Mail Adresse                                       | Email adress(es)    | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                                                   | –              |
+| Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                    | –              |
+| Titel                                                | Title               | `dc:title`                  | Installationsansicht                                                                   | _Titel_        |
+| Inhaltliche Beschreibung                             | Description         | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024 | _Beschreibung_ |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      | _Anmerkungen_  |
+| Stichworte                                           | Keywords            | `dc:subject`                | Digital Composite; Multishot/HDR                                                       |                |
 
 
 ## Ästhetische Vorgaben
 
+**Licht**: Ausstellungslicht verwenden. Ausstellungsräume mit natürlichem Lichteinfall sind üblicherweise bei Tageslicht aufzunehmen. Bei Mischlicht mit unterschiedlichen Farbtemperaturen und Intensitäten ist das intensivste Licht als Grundlage für Weissabgleich und Belichtung zu verwenden.
+**Ansichten**: Raumabfolge muss anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal abgebildet sein. 
 
-
-## Prozesse
+## Prozesse & Zuständigkeiten
 
 ### Sonderausstellungen
 
+**Zeitrahmen**: Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
+**Pressebilder**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor gesamter Fertigstellung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen. 
+**Making Of**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Marketing/Development erstellt. 
+
+[^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld grössere Zeiträume festzulegen. 
+
 ### Sammlungspräsentationen
 
-
+**Ausstellung**
 
 # Forensische Aufnahmen
 
@@ -165,7 +210,7 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 * **Bit-Tiefe**: 16bit
 * **Weissabgleich Toleranz**:entfällt
 * **Belichtung Toleranz**: ΔL* ≤2
-* **Homogenität Beleuchtung**: entfällt[^4]
+* **Homogenität Beleuchtung**: entfällt
 * **Tonwertgenauigkeit** (CIE76): ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
 * **Auflösung** (Minimum): entfällt
 
@@ -205,3 +250,4 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 **Chrome Kugel**: Anhand einer glänzend reflektierenden Kugel kann die Aufnahmegeometrie (z.B. relative Position von Kamera und Licht zur Kugel) rekonstruiert werden. Diese Kugeln werden unter anderem für der Erstellung von _Reflectance Transformation Imaging_ (RTI) benötigt.
 
 **Weitere Referenzmaterialien**: Je nach Untersuchungsobjekt und jeweiliger Fragestellung ist es sinnvoll über die üblichen Targets hinaus, Referenzmaterialen wie unterschiedliche Zeichenmittel oder Pigmente zum Vergleich mitaufzunehmen.
+
