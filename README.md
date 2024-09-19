@@ -158,7 +158,7 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (ColorChecker Target) auf Augenhöhe sollte 70 L* (ΔL* ≤8) entsprechen.
 
-**Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein. Stürzende Linien sind 
+**Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein. Stürzende Linien sind zu vermeiden.
 
 ## Prozesse & Zuständigkeiten
 
