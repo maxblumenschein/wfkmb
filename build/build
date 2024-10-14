@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Get the directory of the script
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Change to the script's directory
+cd "$SCRIPT_DIR"
+
+# LINEAR -> Execute the Pandoc command
+pandoc "../README.md" \
+-o "../wiss-foto-kmb.pdf" \
+--template="../../mdtoanything/latex templates/info.latex" \
+--pdf-engine="lualatex" \
+--citeproc \
+--standalone \
+--resource-path="."
