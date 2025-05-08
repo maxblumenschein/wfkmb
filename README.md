@@ -13,27 +13,25 @@ toc: true
 ---
 # Einleitung
 
-Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokumentation der ältesten Kunstsammlung der Welt verpflichted. Ihre Aufgabe ist die Objekte der Sammlung in ihrer materiellen Originalität festzuhalten und im Sinne der Erhaltung und Vermittlung für die Öffentlichkeit zugänglich zu machen.
+Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokumentation der ältesten öffentlichen Kunstsammlung der Welt verpflichted. Ihre Aufgabe ist die Objekte der Sammlung in ihrer materiellen Originalität festzuhalten und im Sinne der Erhaltung und Vermittlung für die Öffentlichkeit zugänglich zu machen.
 
 In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren bildforensische Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
 
-Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet.
-
-Um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
+Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
 **Transparenz:** Dokumentationsaufnahmen sollten so produziert werden, dass die abgebildete Sache in ihrer visuellen Beschaffenheit nachvollziehbar wird. Dazu gehört, dass auch die Aufnahmesituation (u.a. Kameraposition, Lichtaufbau, etc.) ersichtlich ist. Entweder ist diese aus der Aufnahme selbst (z.B. sichtbare Lichtquelle), oder durch einen dokumentierten Standard ersichtlich (z.B. Streiflich von links). Technische Metadaten erweitern den Informationsgehalt einer Bilddatei um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen (z.B. Aufnahmedatum, Ersteller\:in) sowie beschreibende Informationen, wenn Aufnahmen vom Standard abweichen (z.B. besondere Bildbearbeitung).
 
-**Reproduzierbarkeit:** Anhand der transparenten Aufnahmesituation sowie den festgelegten Standards lässt sich eine Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich eine mögliche Veränderung eines Objekts quantifizierbar machen und nachvollziehen.[^disclaimer] Metadaten erweitern den Informationsgehalt einer Bilddatei, um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen, wie das Aufnahmedatum oder das Kameramodell, die der Datei meist schon im Moment der Erstellung eingeschrieben werden. Daneben können Metadaten nach der Aufnahme um beschreibende Informationen ergänzt werden, die beispielsweise die Aufnahmebedingungen oder die digitiale Nachbearbeitung angeben.
+**Reproduzierbarkeit:** Anhand der transparenten Aufnahmesituation sowie den festgelegten Standards lässt sich eine Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich eine mögliche Veränderung eines Objekts quantifizierbar machen und nachvollziehen.[^disclaimer]
 
 [^disclaimer]: Wegen der technischen Konstruktion der verwendeten Geräte sowie der Vielzahl von manuellen wie automatischen Bearbeitsschritte vom Moment einer Aufnahme bis zur fertigen digitalen Datei kann keine absolute Genauigkeit und Reproduzierbarkeit garantiert werden. Aus diesem Grund wurden für die technischen Anforderungen der üblichen Aufnahmemethoden entsprechende Toleranzen definiert.
 
-**Verhältnismässigkeit:** Bei jeder Dokumentation gilt es ein effektives Verhältnis zwischen Ziel, Aufwand und Nutzen zu treffen. Objekte sollten nicht unendlich hochauflösend aufgenommen werden, sondern so, dass die Aufnahme im Verhältnis zur angedachten und abschätzbaren zukünftigen Nutzung steht.[^costs]  Gleichzeitig bedeutet der Moment der Aufnahme auch ein Potential für den Erhalt eines Objekts, da jede weitere Aufnahme das Objekt durch das Handhaben fast unweigerlich – wenn auch minimal – verändern würde. Jeder Aufnahme sollten deshalb genaue Überlegungen, um das Objekt und Ressourcen nicht unnötig zu belasten.
+**Verhältnismässigkeit:** Bei jeder Dokumentation gilt es ein effektives Verhältnis zwischen Ziel, Aufwand und Nutzen zu treffen. Objekte sollten nicht unendlich hochauflösend aufgenommen werden, sondern so, dass die Aufnahme im Verhältnis zur angedachten und abschätzbaren zukünftigen Nutzung steht.[^costs]  Gleichzeitig bedeutet der Moment der Aufnahme auch ein Potential für den Erhalt eines Objekts, da jede weitere Aufnahme das Objekt durch das Handhaben fast unweigerlich – wenn auch minimal – verändern würde. Jeder Aufnahme sollten deshalb genaue Überlegungen vorausgehen, um das Objekt und Ressourcen nicht unnötig zu belasten.
 
 [^costs]: Besonders die kaum abzuschätzenden laufenden Kosten der Aufbewahrung der digitalen Dateien sollten bei der Wahl des Aufnahmemediums und der Qualitätsstufe berücksichtigt werden.
 
-**Dokumentation / Standardisierung:** Grundsätzlich sind die technischen und inhaltlichen Vorgaben des Museumsübergreifenden [Medienstandards](https://medienstandard.kumu.swiss/) einzuhalten. Die Kodierung der Aufnahmemethodik sowie die Angabe von eindeutigen Identifikationsnummern im Dateinamen kontextualisieren eine digitale Datei, sodass diese verständlich und nutzbar bleibt. Abweichungen vom Medienstandard sowie den hier definierten spezifischen Standards sind zu dokumentieren.
+**Dokumentation / Standardisierung:** Grundsätzlich sind die technischen und inhaltlichen Vorgaben des Museumsübergreifenden [Medienstandards](https://medienstandard.kumu.swiss/) einzuhalten. Anhand der Kodierung der Aufnahmemethodik und der Angabe von eindeutigen Identifikationsnummern im Dateinamen sowie der Verwendung eines standardisierten Vokabulars von Metadaten, lässt sich eine digitale Datei durch Dritte nachvollziehen. Abweichungen vom Medienstandard sowie den hier definierten spezifischen Standards sind entsprechend zu dokumentieren.
 
 # Standards
 
@@ -43,7 +41,7 @@ Im Folgendenden werden Standards und bewährte Methoden für verschiedene Aufnah
 
 Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes _Target_.
 
-Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen werden, sodass die Reproduktionsgenauigkeit der Aufnahme quantitativ gemessen und im Abgleich mit den Museumseigenen Toleranzen qualitativ bewertet werden kann.[^target]
+Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen werden, sodass die Reproduktionsgenauigkeit der Aufnahme quantitativ gemessen und im Abgleich mit den Museumseigenen Toleranzen sowie Standards Dritter qualitativ bewertet werden kann.[^target]
 
 [^target]: Je nach Aufnahmemethode und Aufnahmespektrum werden unterschiedliche oder eine Kombination von mehreren Targets benötigt.
 
@@ -69,7 +67,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
 
-[^3]: Bei glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
+[^3]: Bei stark glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
 
 ### Werke auf Papier
 
@@ -77,13 +75,15 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.
 
-**Hintergrund**: Grau, matt, transluzent (Acryl, 3mm opal satin)[^4]
+**Hintergrund**: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind.
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschite gehören, werden nicht beschnitten.
 
 **Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc.
 
-[^4]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH)
+[^4]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).
+
+[^colorspace]: 1931 2° Observer, D50 Illuminant, eciRGB v2.
 
 ### Skulpturen
 
@@ -98,8 +98,8 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 **Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Rücksprache mit den zuständigen Kurator\:innen.
 
 [^5]: Bei sehr grossen Skulpturen kann die Kamera coplanar zur Vorderseite ausgerichtet werden.
-[^7]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums entnommen werden.
 [^6]: Aufgrund der räumlichen Tiefe dreidimensionaler Objekte kann keine Neutralität über den gesamten Bildraum erzielt werden.
+[^7]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums _RIJKSMUSEUM MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS_ entnommen werden.
 
 ### Installationen
 
@@ -148,7 +148,7 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüll
 | Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         |                |
 | Titel                                                | Title               | `dc:title`                  | Blumenstillleben                                            | _Titel_        |
 | Inhaltliche Beschreibung                             | Description         | `dc:description`            | Linker Flügel des Altarbildes                               | _Beschreibung_ |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  | _Anmerkungen_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  | _Technische Angaben zur Aufnahme_  |
 | Stichworte                                           | Keywords            | `dc:subject`                | Soft-Illumination; Digital Composite; Multishot/Pixel-Shift |                |
 
 [^11]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
@@ -169,6 +169,12 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ### Prozesse & Zuständigkeiten
 
+#### Sammlungspräsentationen
+
+**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
+
+**Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
+
 #### Sonderausstellungen
 
 **Zeitrahmen**: Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
@@ -178,12 +184,6 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 **«Making Of»**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Digitale Kommunikation erstellt.
 
 [^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
-
-#### Sammlungspräsentationen
-
-**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
-
-**Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
 
 ### Technische Vorgaben
 
@@ -207,14 +207,12 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 | Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                    |                |
 | Titel                                                | Title               | `dc:title`                  | Installationsansicht                                                                   | _Titel_        |
 | Inhaltliche Beschreibung                             | Description         | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024 | _Beschreibung_ |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      | _Anmerkungen_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      | _Technische Angaben zur Aufnahme_  |
 | Stichworte                                           | Keywords            | `dc:subject`                | Digital Composite; Multishot/HDR                                                       |                |
 
 ## Forensische Aufnahmen
 
-Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten und teilweise überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie möglichst umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und reproduzierbar machen.
-
-Nach Möglichkeit sollten von einem Objekt in einem Zug Aufnahmen über verschiedene Wellenlängen und Lichtarten hinweg gemacht werden, um ein Objekt möglichst komplett zu dokumentieren und dessen Transport und Handling so gering wie möglich zu halten. Objekt und Kamera sollten dazu möglichst nicht zu einander bewegt werden. Dadurch können die Aufnahmen im Nachgang pixelgenau übereinander gelegt, bearbeitet und zur weiteren Analyse gezielt miteinander verrechnet werden. Dies ermöglicht eine tiefere Diagnostik der Werke beispielsweise bei der Sichtbarmachung von Wasserzeichen oder Griffelspuren, die aufgrund der spezifischen Eigenschaften der Werke (Kaschierung, Retuschen, etc.) unentdeckt bleiben würden.^[[Siehe Digitale Bildanalyse.](#digitale-bildanalyse)]
+Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten und teilweise überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
 
 ### Visuelles Spektrum
 
@@ -224,7 +222,7 @@ Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionauf
 
 **Aufnahmegeometrie:** Licht von links, möglichst flacher Auftrittswinkel (1°–10°, je nach Objektoberfläche). Nach Möglichkeit sollte zusätzlich eine Aufnahme mit Licht im 90° Winkel zur ersten Aufnahme gemacht werden (von oben/unten)
 
-**Licht:** möglichst hartes, parrales Licht (Punktquelle, oder Fresnellinse).
+**Licht:** möglichst hartes, paralleles Licht (Punktquelle, oder Fresnellinse).
 
 #### Durchlicht
 
@@ -265,7 +263,7 @@ In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. ein
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
 | ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           | _Anmerkungen_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           | _Technische Angaben zur Aufnahme_  |
 
 ### Ultraviolettes Spektrum
 
@@ -295,7 +293,26 @@ In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sow
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
 | ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES), Digital Composite (Panorama), Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Anmerkungen_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES), Digital Composite (Panorama), Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Technische Angaben zur Aufnahme_  |
+
+### Multispektralaufnahmen
+
+Als Multispektralaufnahmen werden Bildsätze eines Objekts in mehreren Wellenlängenbereichen bezeichnet. Es wird zwischen dem Emissionsspektrum des Lichts und dem Aufnahmespektrum der Kamera unterschieden. Anhand der üblichen fotografisch zu erfassenden Spektren (UV, VIS, IR) ergeben sich so verschiedene Möglichkeiten zur Kombination, z.B. UV induzierte Luminiszenz im visuellen Spektrum (UV-Emmision -> VIS-Aufnahme), oder Infrarotreflektographie (IR-Emmission -> IR-Aufnahme).
+
+Indem Kamera und Objekt während der Aufnahmen nicht relativ zueinander verschoben werden, können die Aufnahmen im Nachgang pixelgenau übereinander gelegt, bearbeitet und zur weiteren Analyse gezielt miteinander verrechnet werden. Dies ermöglicht eine tiefere Diagnostik der Werke, beispielsweise bei der Sichtbarmachung von Wasserzeichen oder Griffelspuren, die aufgrund der spezifischen Eigenschaften der Werke (Kaschierung, Retuschen, etc.) unentdeckt bleiben würden, oder bei der Unterscheidung verschiedener Farb- und Zeichenmittel, aufgrund ihrer spektralen Charateristik.^[[Siehe Digitale Bildanalyse.](#digitale-bildanalyse)]
+
+Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter am [CHARISMA Projekt](https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual) und den dort dokumentierten Verfahren.
+
+#### Technische Vorgaben
+
+| Beschreibung                                         | Beleuchtungsquelle             | Filter Beleuchtungsquelle             | Aufnahmemedium                           | Filter Aufnahmemedium                |
+| ---------------------------------------------------- | ------------------------------ | ------------------------------------- | ---------------------------------------- | ------------------------------------ |
+| sichtbares Licht (in Reflexion)                      | Halogen / LED / Blitz            | ---                                           | ---                                      | Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)    |
+| Infrarotreflektographie                              | Halogen / LED / Blitz            | ---                                           | modifizierter Aufnahmesensor             | Schott RG830                         |
+| Ultravioletreflekophaie                              | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             | Schott UG11 & Schott BG39            |
+| VIS-induzierte Infrarot-Lumineszenz                  | Halogen / LED / Blitz            | Schott BG39                                   | modifizierter Aufnahmesensor             | Schott RG830 & Schott RG1000         |
+| UV-induzierte Infrarot-Lumineszenz                   | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             | Schott RG830 & Schott RG1000         |
+| UV-induzierte sichtbare Lumineszenz                  | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             |Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)     |
 
 ## Targets
 
@@ -374,4 +391,4 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
 | ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw51_0033228_20231101_001" von "kk11_0033228_20231101_001" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren"; Deckkraft 68%; Skalieren 1; Versatz 128 (EHM) | _Anmerkungen_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren"; Deckkraft 68%; Skalieren 1; Versatz 128 (EHM) | _Technische Angaben zur Aufnahme_  |
