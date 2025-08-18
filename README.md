@@ -126,7 +126,7 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
-* **Farbraum**: eciRGBv2
+* **Farbraum**: eciRGBv2 (RGB), Gray Gamma 2.2 (Graustufen)
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
 * **Weissabgleich Toleranz**: ΔC* ≤2
