@@ -8,8 +8,10 @@ project: WFKMB - Grundlagen und Prozesse
 
 lang: de
 
-documentclass: report
 toc: true
+css: "./resources/pandoc.css"
+
+documentclass: report
 ---
 # Einleitung
 
@@ -17,19 +19,19 @@ Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokum
 
 In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren bildforensische Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
 
-Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation/Information konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegenden Standards zur Nutzung am Kunstmuseum Basel definiert.
+Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
-**Transparenz:** Dokumentationsaufnahmen sollten so produziert werden, dass die abgebildete Sache in ihrer visuellen Beschaffenheit nachvollziehbar wird. Dazu gehört, dass auch die Aufnahmesituation (u.a. Kameraposition, Lichtaufbau, etc.) ersichtlich ist. Entweder ist diese aus der Aufnahme selbst (z.B. sichtbare Lichtquelle), oder durch einen dokumentierten Standard ersichtlich (z.B. Streiflich von links). Technische Metadaten erweitern den Informationsgehalt einer Bilddatei um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen (z.B. Aufnahmedatum, Ersteller\:in) sowie beschreibende Informationen, wenn Aufnahmen vom Standard abweichen (z.B. besondere Bildbearbeitung).
+**Transparenz:** Dokumentationsaufnahmen sollten so produziert werden, dass die abgebildete Sache in ihrer visuellen Beschaffenheit nachvollziehbar wird. Dazu gehört, dass auch die Aufnahmesituation (u.a. Kameraposition, Lichtaufbau, etc.) ersichtlich ist. Entweder ist diese aus der Aufnahme selbst (z.B. sichtbare Lichtquelle), oder durch einen dokumentierten Standard ersichtlich (z.B. Streiflicht von links). Technische Metadaten erweitern den Informationsgehalt einer Bilddatei um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen (z.B. Aufnahmedatum, Ersteller\:in) sowie beschreibende Informationen, wenn Aufnahmen vom Standard abweichen (z.B. besondere Bildbearbeitung).
 
-**Reproduzierbarkeit:** Anhand der transparenten Aufnahmesituation sowie den festgelegten Standards lässt sich eine Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich eine mögliche Veränderung eines Objekts quantifizierbar machen und nachvollziehen.[^disclaimer]
+**Reproduzierbarkeit:** Anhand der transparenten Aufnahmesituation sowie den festgelegten Standards lässt sich eine Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich eine mögliche Veränderung eines Objekts nachvollziehen und quantifizierbar machen.[^disclaimer]
 
 [^disclaimer]: Wegen der technischen Konstruktion der verwendeten Geräte sowie der Vielzahl von manuellen wie automatischen Bearbeitsschritte vom Moment einer Aufnahme bis zur fertigen digitalen Datei kann keine absolute Genauigkeit und Reproduzierbarkeit garantiert werden. Aus diesem Grund wurden für die technischen Anforderungen der üblichen Aufnahmemethoden entsprechende Toleranzen definiert.
 
 **Verhältnismässigkeit:** Bei jeder Dokumentation gilt es ein effektives Verhältnis zwischen Ziel, Aufwand und Nutzen zu treffen. Objekte sollten nicht unendlich hochauflösend aufgenommen werden, sondern so, dass die Aufnahme im Verhältnis zur angedachten und abschätzbaren zukünftigen Nutzung steht.[^costs]  Gleichzeitig bedeutet der Moment der Aufnahme auch ein Potential für den Erhalt eines Objekts, da jede weitere Aufnahme das Objekt durch das Handhaben fast unweigerlich – wenn auch minimal – verändern würde. Jeder Aufnahme sollten deshalb genaue Überlegungen vorausgehen, um das Objekt und Ressourcen nicht unnötig zu belasten.
 
-[^costs]: Besonders die kaum abzuschätzenden laufenden Kosten der Aufbewahrung der digitalen Dateien sollten bei der Wahl des Aufnahmemediums und der Qualitätsstufe berücksichtigt werden.
+[^costs]: Besonders die laufenden Kosten der Aufbewahrung der digitalen Dateien sollten bei der Wahl des Aufnahmemediums und der Qualitätsstufe berücksichtigt werden.
 
 **Dokumentation / Standardisierung:** Grundsätzlich sind die technischen und inhaltlichen Vorgaben des Museumsübergreifenden [Medienstandards](https://medienstandard.kumu.swiss/) einzuhalten. Anhand der Kodierung der Aufnahmemethodik und der Angabe von eindeutigen Identifikationsnummern im Dateinamen sowie der Verwendung eines standardisierten Vokabulars von Metadaten, lässt sich eine digitale Datei durch Dritte nachvollziehen. Abweichungen vom Medienstandard sowie den hier definierten spezifischen Standards sind entsprechend zu dokumentieren.
 
@@ -45,7 +47,20 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 [^target]: Je nach Aufnahmemethode und Aufnahmespektrum werden unterschiedliche oder eine Kombination von mehreren Targets benötigt.
 
-### Aufnahmegeometrie
+#### Prozesse & Zuständigkeiten
+
+**Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
+
+**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
+
+**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
+
+**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^9]
+
+[^8]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
+[^9]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
+
+#### Allgemeine Aufnahmegeometrie
 
 **Neutraler Aufbau:** Für eine neutrale Abbildung ist das Licht üblicherweise symmetrisch zur optischen Achse auszurichten.
 
@@ -77,7 +92,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschite gehören, werden nicht beschnitten.
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
 **Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc.
 
@@ -95,28 +110,15 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
 
-**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Rücksprache mit den zuständigen Kurator\:innen.
+**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten und Objekten Rücksprache mit den zuständigen Kurator\:innen.
 
-[^5]: Bei sehr grossen Skulpturen kann die Kamera coplanar zur Vorderseite ausgerichtet werden.
+[^5]: Bei sehr grossen Skulpturen kann die Kamera koplanar zur Vorderseite ausgerichtet werden.
 [^6]: Aufgrund der räumlichen Tiefe dreidimensionaler Objekte kann keine Neutralität über den gesamten Bildraum erzielt werden.
 [^7]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums _RIJKSMUSEUM MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS_ entnommen werden.
 
 ### Installationen
 
-Siehe [Installationsaufnahmen](#Installations--und-Gebäudeaufnahmen).
-
-### Prozesse & Zuständigkeiten
-
-**Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
-
-**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
-
-**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
-
-**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^9]
-
-[^8]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
-[^9]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
+Siehe [Installationsaufnahmen](#installations--und-gebäudeaufnahmen).
 
 ### Technische Vorgaben
 
@@ -125,7 +127,7 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: eciRGBv2
-* **Bit-Tiefe**: 16bit
+* **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
 * **Weissabgleich Toleranz**: ΔC* ≤2
 * **Belichtung Toleranz**: ΔL* ≤2
@@ -157,6 +159,16 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüll
 
 Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im Ausstellungsraum bzw. am Ort ihrer Präsentation, z.B. Sonderausstellungen oder Sammlungspräsentationen. Gebäudeaufnahmen werden hiervon unterschieden, wenn keine Kunstwerke abgebildet sind oder diese nicht zentrales Motiv sind, z.B. Baudokumentation oder Gebäude Aussenaufnahme.
 
+#### Prozesse & Zuständigkeiten
+
+**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
+
+**Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
+
+**«Pressebilder»**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
+
+**«Making Of»**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Digitale Kommunikation erstellt.
+
 ### Ästhetische Vorgaben
 
 **Aufnahmegeometrie**: Kamera in 150 cm Höhe (ca. Augenhöhe). «Stürzende Linien» sind zu vermeiden.
@@ -167,30 +179,12 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein. Stürzende Linien sind zu vermeiden.
 
-### Prozesse & Zuständigkeiten
-
-#### Sammlungspräsentationen
-
-**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
-
-**Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
-
-#### Sonderausstellungen
-
-**Zeitrahmen**: Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
-
-**Pressebilder**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
-
-**«Making Of»**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Digitale Kommunikation erstellt.
-
-[^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
-
 ### Technische Vorgaben
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: eciRGBv2
-* **Bit-Tiefe**: 16bit
+* **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Film Standard, Adobe Neutral
 * **Weissabgleich Toleranz**: ΔC* ≤4 (Feld B4, ColorChecker Target)
 * **Belichtung Toleranz**: ΔL* ≤8 (Feld B4, ColorChecker Target)
@@ -212,11 +206,11 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 ## Forensische Aufnahmen
 
-Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten und teilweise überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
+Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
 
 ### Visuelles Spektrum
 
-Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionaufnahmen](#reproduktionsaufnahmen). Darüber hinaus sind folgende Standards zu beachten:
+Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionsaufnahmen](#reproduktionsaufnahmen). Darüber hinaus sind folgende Standards zu beachten:
 
 #### Streiflicht
 
@@ -232,28 +226,18 @@ Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionauf
 
 #### Technische Vorgaben
 
-Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte gewünscht ist (z.B. Durchlicht), sind die Toleranzen für Weissabgleich, Belichtung, Homogenität und Farbgenauigkeit als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
-
-* **Dateiformat**: TIFF, `.tif`
-* **Dateiname**: nach Medienstandard
-* **Farbraum**: eciRGBv2
-* **Bit-Tiefe**: 16bit
-* **Tonwertkurve**: Linear, Linear-Scientific
-* **Weissabgleich Toleranz**^[wenn möglich]: ΔC* ≤2 (Feld B4, ColorChecker Target)
-* **Belichtung Toleranz**^[wenn möglich]: ΔL* ≤2 (Reihe 4, ColorChecker Target)
-* **Homogenität Beleuchtung**^[wenn möglich]: ΔL* ≤3
-* **Farbgenauigkeit** (CIE76)^[wenn möglich][^10]: ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
+Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte gewünscht ist (z.B. Durchlicht), sind die Toleranzen für [Reproduktionsaufnahmen](#reproduktionsaufnahmen) als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
 
 ### Infrarotes Spektrum
 
-Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
-
 #### Technische Vorgaben
+
+Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim Abweichen sollte zusätzlich eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: Gray Gamma 2.2
-* **Bit-Tiefe**: 16bit
+* **Bit-Tiefe**: 16 Bit
 * **Belichtung Toleranz**^[wenn möglich]: ΔL* ≤2 (PTFE)
 * **Tonwertgenauigkeit** (CIE76)^[wenn möglich]: ΔE* ≤ 4 (PTFE) (Durchschnitt), ΔE* ≤ 10 (Maximal)
 
@@ -269,10 +253,12 @@ In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. ein
 
 #### Technische Vorgaben
 
+Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim Abweichen sollte zusätzlich eine standardisierte Aufnahme gemacht werden.
+
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: eciRGBv2
-* **Bit-Tiefe**: 16bit
+* **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
 * **Weissabgleich Toleranz**: ΔC* ≤2 (LOW A1, Target-UV)
 * **Belichtung Toleranz**: ΔL* ≤4 (LOW A1, Target-UV)
@@ -285,7 +271,7 @@ In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. ein
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: Gray Gamma 2.2
-* **Bit-Tiefe**: 16bit
+* **Bit-Tiefe**: 16 Bit
 
 #### Metadaten
 
@@ -293,7 +279,7 @@ In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sow
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
 | ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES), Digital Composite (Panorama), Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Technische Angaben zur Aufnahme_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Technische Angaben zur Aufnahme_  |
 
 ### Multispektralaufnahmen
 
@@ -391,4 +377,4 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
 | ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren"; Deckkraft 68%; Skalieren 1; Versatz 128 (EHM) | _Technische Angaben zur Aufnahme_  |
+| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) | _Technische Angaben zur Aufnahme_  |

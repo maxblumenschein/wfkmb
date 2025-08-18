@@ -13,4 +13,11 @@ pandoc "../README.md" \
 --pdf-engine="lualatex" \
 --citeproc \
 --standalone \
---resource-path="."
+--resource-path="."\
+
+# HTML -> Execute the Pandoc command
+pandoc "../README.md" \
+-o "../wiss-foto-kmb.html" \
+--citeproc \
+--standalone \
+--resource-path="."\
