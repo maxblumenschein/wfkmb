@@ -9,7 +9,7 @@ cd "$SCRIPT_DIR"
 # LINEAR -> Execute the Pandoc command
 pandoc "../README.md" \
 -o "../wiss-foto-kmb.pdf" \
---template="../../mdtoanything/latex templates/info.latex" \
+--template="../../mdtoanything/latex templates/linear.latex" \
 --pdf-engine="lualatex" \
 --citeproc \
 --standalone \
@@ -21,3 +21,4 @@ pandoc "../README.md" \
 --citeproc \
 --standalone \
 --resource-path="."\
+--

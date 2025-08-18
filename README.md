@@ -142,7 +142,7 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^11] Mit * markierte Felder sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                    | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | ----------------------------------------------------------- | -------------- |
+| --- | - | -- | --- | --- |
 | Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                            | _Photo Credit_ |
 | Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |                |
 | Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |                |
@@ -164,6 +164,8 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 **Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
 
 **Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
+
+[^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
 
 **«Pressebilder»**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
 
@@ -193,7 +195,7 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 #### Metadaten
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| --- | - | -- | --- | --- |
 | Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                                                       | _Photo Credit_ |
 | Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                              |                |
 | Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                           |                |
@@ -246,7 +248,7 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Un
 In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. einzutragen.
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| --- | - | -- | --- | --- |
 | Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           | _Technische Angaben zur Aufnahme_  |
 
 ### Ultraviolettes Spektrum
@@ -278,7 +280,7 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. se
 In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen.
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| --- | - | -- | --- | --- |
 | Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Technische Angaben zur Aufnahme_  |
 
 ### Multispektralaufnahmen
@@ -292,7 +294,7 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 #### Technische Vorgaben
 
 | Beschreibung                                         | Beleuchtungsquelle             | Filter Beleuchtungsquelle             | Aufnahmemedium                           | Filter Aufnahmemedium                |
-| ---------------------------------------------------- | ------------------------------ | ------------------------------------- | ---------------------------------------- | ------------------------------------ |
+| --- | --- | --- | --- | --- |
 | sichtbares Licht (in Reflexion)                      | Halogen / LED / Blitz            | ---                                           | ---                                      | Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)    |
 | Infrarotreflektographie                              | Halogen / LED / Blitz            | ---                                           | modifizierter Aufnahmesensor             | Schott RG830                         |
 | Ultravioletreflekophaie                              | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             | Schott UG11 & Schott BG39            |
@@ -309,7 +311,7 @@ Theoretische L\*a\*b\*[^16] Werte der Referenzfelder. Nach Möglichkeit sind eig
 [^16]: ISO 13655:2009 Messspezifikation M0
 
 | Feld | L*    | a*     | b*     |
-| :--- | :---- | :----- | :----- |
+| :--- | :--- | :--- | :--- |
 | A1   | 37,54 | 14,37  | 14,92  |
 | A2   | 62,73 | 35,83  | 56,5   |
 | A3   | 28,37 | 15,42  | -49,8  |
@@ -340,7 +342,7 @@ Theoretische L\*a\*b\*[^16] Werte der Referenzfelder. Nach Möglichkeit sind eig
 Theoretische L\* Werte der Referenzfelder. Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld | L*  |
-| :--- | :-- |
+| :--- | :--- |
 | A1   | 17  |
 | B1   | 49  |
 | C1   | 73  |
@@ -352,7 +354,7 @@ Theoretische L\* Werte der Referenzfelder. Nach Möglichkeit sind eigens gemesse
 Theoretische L\* Werte der Referenzfelder der Reihe _LOW_. Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld   | L*  |
-| :----- | :-- |
+| :--- | :--- |
 | LOW A1 | 50  |
 | LOW B1 | 43  |
 | LOW C1 | 37  |
@@ -376,5 +378,5 @@ Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberech
 Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass diese nachvollziehbar und reproduzierbar sind.
 
 | Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| --- | - | -- | --- | --- |
 | Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) | _Technische Angaben zur Aufnahme_  |
