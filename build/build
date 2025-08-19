@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
 # LINEAR -> Execute the Pandoc command
-pandoc "../README.md" \
+pandoc "../wiss-foto-kmb.md" \
 -o "../wiss-foto-kmb.pdf" \
 --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
 --template="../resources/info-manual.latex" \
@@ -17,7 +17,7 @@ pandoc "../README.md" \
 --resource-path="../resources"\
 
 # HTML -> Execute the Pandoc command
-pandoc "../README.md" \
+pandoc "../wiss-foto-kmb.md" \
 -o "../wiss-foto-kmb.html" \
 --citeproc \
 --standalone \
