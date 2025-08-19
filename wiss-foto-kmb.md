@@ -100,36 +100,29 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Fotoauftrag**: Gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt sind über die MuseumPlus Vorlage _Fotoauftrag_ anzugeben.
 
-**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
+**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen. Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld spezifische Zeitrahmen festzulegen.
 
-**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^9]
-
-[^8]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
-[^9]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
+**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen. Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.).
 
 #### Allgemeine Aufnahmegeometrie
 
 **Neutraler Aufbau:** Für eine neutrale Abbildung ist das Licht üblicherweise symmetrisch zur optischen Achse auszurichten.
 
-**Abgedunkelter Aufnahmeraum:** Der Aufnahmeort sollte möglichst dunkle Wände/Decken/Böden aufweisen, um Streulicht und Reflexionen zu reduzieren.[^2]
+**Abgedunkelter Aufnahmeraum:** Der Aufnahmeort sollte möglichst dunkle Wände/Decken/Böden aufweisen, um Streulicht und Reflexionen zu reduzieren. Bei stark reflektierenden Objekten sollte hinter dem Aufnahmesensor eine schwarze Fläche platziert werden, um Reflexionen und Streulicht zu vermeiden.
 
 **Target:** Targets sind soweit möglich in gleicher Ebene wie das Objekt zu platzieren, ohne diese zu beschatten.
-
-[^2]: Bei stark reflektierenden Objekten sollte hinter dem Aufnahmesensor eine schwarze Fläche platziert werden, um Reflexionen und Streulicht zu vermeiden.
 
 ### Gemälde
 
 **Aufnahmegeometrie**: Coplanare Ausrichtung von Objekt und Kamera. 30–45° Auftrittswinkel des Lichts.
 
-**Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.[^3]
+**Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden. Bei stark glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
 
 **Hintergrund**: Schwarz, matt (z.B. Molton)
 
 **Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
 
 **Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
-
-[^3]: Bei stark glänzenden Objekten sollten Licht und Objektiv kreuzpolarisiert werden.
 
 ### Werke auf Papier
 
@@ -182,7 +175,7 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 * **Farbgenauigkeit** (CIE76)[^10]: ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
 * **Auflösung** (Minimum): >DIN A2: 150 dpi, ≥DIN A5: 300 dpi, <DIN A5: 600 dpi
 
-[^10]: Diese Parameter entsprechen der Definition der Farbverbindlichtkeit _ca - farbkalibriert_ bzw. _cb - farbkalibriert mit abgebildeter Farbreferenz_ des Medienstandard 3.0.
+[^10]: Diese Parameter entsprechen der Definition der Farbverbindlichtkeit _ca - farbkalibriert_ bzw. _cb - farbkalibriert mit abgebildeter Farbreferenz_ des [Medienstandard 3.0.1](https://medienstandard.kumu.swiss/).
 
 #### Metadaten
 
@@ -210,9 +203,7 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Umhängungen von einzelnen Werken werden auf Anfrage dokumentiert.
 
-**Zeitrahmen**: Umfangreiche Sammlungsumhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden eigenständig in der Regel innerhalb von 3 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert.[^15]
-
-[^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
+**Zeitrahmen**: Umfangreiche Sammlungsumhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden eigenständig in der Regel innerhalb von 3 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld spezifische Zeiträume festzulegen.
 
 **«Pressebilder»**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
 
@@ -263,12 +254,9 @@ Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. 
 
 **Fotoauftrag**: Gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt sind über die MuseumPlus Vorlage _Fotoauftrag_ anzugeben.
 
-**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
+**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen. Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld spezifische Zeitrahmen festzulegen.
 
-**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^9]
-
-[^8]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
-[^9]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
+**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen. Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.).
 
 ### Visuelles Spektrum
 
@@ -385,8 +373,6 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
-[^16]: ISO 13655:2009 Messspezifikation M0
-
 | Feld | L*    | a*     | b*     |
 | :---- | :---- | :---- | :---- |
 | A1   | 37,54 | 14,37  | 14,92  |
@@ -415,6 +401,8 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 | F4   | 20,64 | 0,07   | -0,46  |
 
 : Theoretische L\*a\*b\*[^16] Werte, X-Rite Colorchecker Classic Mini.
+
+[^16]: ISO 13655:2009 Messspezifikation M0
 
 [**PTFE, artImaging**]{#ptfe-target}: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
 
@@ -452,7 +440,9 @@ Nach der systematischen Dokumentation eines Objekts können die Bilder der versc
 
 Für die mathematischen Operationen werden die Farbwerte eines Pixels normalisiert: $\text{Schwarz} = 0 \le x \le 1 = \text{Weiss}$
 
-Die Verrechnung der einzelnen Aufnahmen kann dabei helfen spezifische Aspekte eines dokumentierten Objekts herauszufiltern. So führt eine Subtraktion der Auflicht- von einer Streflicht-Aufnahme im Ergebnis zu einer weitgehenden Ausblendung der Zeichnung oder des Drucks, wobei die Oberflächentopographie eines Objekts sichtbar bleibt.^[Durch einen digitalen Hochpassfilter kann die Darstellung noch zusätzlich auf sehr feine Details reduziert werden.] Konzeptuell gesprochen reduziert eine Bildsubtraktion also jene Bildinformation, die in beiden Aufnahmen enthalten ist.
+Die Verrechnung der einzelnen Aufnahmen kann dabei helfen spezifische Aspekte eines dokumentierten Objekts herauszufiltern. So führt eine Subtraktion der Auflicht- von einer Streflicht-Aufnahme im Ergebnis zu einer weitgehenden Ausblendung der Zeichnung oder des Drucks, wobei die Oberflächentopographie eines Objekts sichtbar bleibt.[^highpass] Konzeptuell gesprochen reduziert eine Bildsubtraktion also jene Bildinformation, die in beiden Aufnahmen enthalten ist.
+
+[^highpass]: Durch einen digitalen Hochpassfilter kann die Darstellung noch zusätzlich auf sehr feine Details reduziert werden.
 
 Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberechnung optimieren: Da im Durchlicht alle Schichten eines Objekts übereinandergelagert zu sehen sind, führt die Subtraktion der Auflicht-Aufnahmen der Vorder- und Rückseite zu einer Darstellung, die nunmehr nur die ‹mittleren› Lagen des Objekts zeigt.
 
