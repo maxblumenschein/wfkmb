@@ -308,7 +308,7 @@ In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. ein
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | ---- | ----- | ----- |
-| Technische Angaben                                   | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           |
+| Technische Angaben*                                  | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           |
 
 ### Ultraviolettes Spektrum
 
@@ -340,7 +340,7 @@ In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sow
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | ---- | ----- | ----- |
-| Technische Angaben                                   | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) |
+| Technische Angaben*                                  | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) |
 
 ### Multispektralaufnahmen
 
@@ -437,7 +437,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 
 **Chrome Kugel**: Anhand einer glänzend reflektierenden Kugel kann die Aufnahmegeometrie (z.B. relative Position von Kamera und Licht zur Kugel) rekonstruiert werden. Diese Kugeln werden unter anderem für der Erstellung von _Reflectance Transformation Imaging_ (RTI) benötigt.
 
-**Weitere Referenzmaterialien**: Je nach Untersuchungsobjekt und jeweiliger Fragestellung ist es sinnvoll über die üblichen Targets hinaus, Referenzmaterialen wie unterschiedliche Zeichenmittel oder Pigmente zum Vergleich mitaufzunehmen.
+**Weitere Referenzmaterialien**: Je nach Untersuchungsobjekt und jeweiliger Fragestellung ist es sinnvoll über die üblichen Targets hinaus Referenzmaterialen wie unterschiedliche Zeichenmittel oder Pigmente zum Vergleich mitaufzunehmen.
 
 ## Digitale Bildanalyse
 
@@ -455,4 +455,4 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | ---- | ----- | ----- |
-| Technische Angaben                                   | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
+| Technische Angaben*                                  | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
