@@ -289,6 +289,8 @@ Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionsau
 
 **Aufnahmegeometrie:** Licht trifft in gleicher Achse wie die Normale der Aufnahmeebene auf das Objekt (90°). Reflexion und Glanz des Objekts werden hervorgehoben.
 
+**Licht:** Hartes Licht in optischer Achse.
+
 #### Technische Vorgaben
 
 Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte gewünscht ist (z.B. Durchlicht), sind die Toleranzen für [Reproduktionsaufnahmen](#reproduktionsaufnahmen) als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
