@@ -27,11 +27,91 @@
 <body>
 <header id="title-block-header">
 <h1 class="title">Wissenschaftliche Fotografie am Kunstmuseum Basel</h1>
-<p class="date">ENTWURF []</p>
+<p class="author"><div class="line-block">Max Ehrengruber<br />
+Wissenschaftliche Fotografie<br />
+<br />
+Kunstmuseum Basel<br />
+St. Alban-Graben 8 CH-4010 Basel<br />
+max.ehrengruber@bs.ch</div></p>
+<p class="date">Version 0.1 [Entwurf 19. August, 2025]</p>
 </header>
 <nav id="TOC" role="doc-toc">
 
 </nav>
+<!-- only in html -->
+<div class="manual-toc">
+<ul>
+<li>
+<a href="#einleitung">Einleitung</a>
+</li>
+<li>
+<a href="#grundsätzliche-prinzipien">Grundsätzliche Prinzipien</a>
+</li>
+<li>
+<a href="#standards">Standards</a>
+<ul>
+<li>
+<a href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a>
+<ul>
+<li>
+<a href="#gemälde">Gemälde</a>
+</li>
+<li>
+<a href="#werke-auf-papier">Werke auf Papier</a>
+</li>
+<li>
+<a href="#skulpturen">Skulpturen</a>
+</li>
+<li>
+<a href="#installationen">Installationen</a>
+</li>
+<li>
+<a href="#technical_repro">Technische Vorgaben</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#installations--und-gebäudeaufnahmen">Installations- und
+Gebäudeaufnahme</a>
+<ul>
+<li>
+<a href="#ästhetische-vorgaben">Ästhetische Vorgaben</a>
+</li>
+<li>
+<a href="#installation_repro">Technische Vorgaben</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#forensische-aufnahmen">Forensische Aufnahmen</a>
+<ul>
+<li>
+<a href="#visuelles-spektrum">Visuelles Spektrum</a>
+</li>
+<li>
+<a href="#infrarotes-spektrum">Infrarotes Spektrum</a>
+</li>
+<li>
+<a href="#ultraviolettes-spektrum">Ultraviolettes Spektrum</a>
+</li>
+<li>
+<a href="#röntgen">Röntgen</a>
+</li>
+<li>
+<a href="#multispektralaufnahmen">Multispektralaufnahme</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#targets">Targets</a>
+</li>
+<li>
+<a href="#digitale-bildanalyse">Digitale Bildanalyse</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <h1 id="einleitung">Einleitung</h1>
 <p>Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der
 bildgebenden Dokumentation der ältesten öffentlichen Kunstsammlung der
@@ -94,8 +174,8 @@ eine digitale Datei durch Dritte nachvollziehen. Abweichungen vom
 Medienstandard sowie den hier definierten spezifischen Standards sind
 entsprechend zu dokumentieren.</p>
 <h1 id="standards">Standards</h1>
-<p>Im Folgendenden werden Standards und bewährte Methoden für
-verschiedene Aufnahmearten definiert.</p>
+<p>Im Folgenden werden Standards und bewährte Methoden für verschiedene
+Aufnahmearten definiert.</p>
 <h2 id="reproduktionsaufnahmen">Reproduktionsaufnahmen</h2>
 <p>Reproduktionsaufnahmen sollen eine abgebildete Sache optisch
 möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die
@@ -185,7 +265,7 @@ Rücksprache mit den zuständigen Kurator:innen.</p>
 <h3 id="installationen">Installationen</h3>
 <p>Siehe <a
 href="#installations--und-gebäudeaufnahmen">Installationsaufnahmen</a>.</p>
-<h3 id="technische-vorgaben">Technische Vorgaben</h3>
+<h3 id="technical_repro">Technische Vorgaben</h3>
 <p>Die Vorgaben orientieren sich am Metamorfoze Standard <a
 href="https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf"><em>Metamorfoze
 Preservation Imaging Guidelines</em></a> (2012) und wurden für den
@@ -197,8 +277,10 @@ praktischen Einsatz am Kunstmuseum Basel vereinfacht.</p>
 (Graustufen)</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Linear, Linear-Scientific</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (<a
+href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2 (<a
+href="#colorchecker-target">ColorChecker Target</a>)</li>
 <li><strong>Homogenität Beleuchtung</strong>: ΔL* ≤3</li>
 <li><strong>Farbgenauigkeit</strong> (CIE76)<a href="#fn13"
 class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>:
@@ -216,86 +298,64 @@ Digital Images</em> (2010)</a>.<a href="#fn14" class="footnote-ref"
 id="fnref14" role="doc-noteref"><sup>14</sup></a> Mit * markierte Felder
 sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu
 trennen.</p>
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 11%" />
-<col style="width: 15%" />
-<col style="width: 34%" />
-<col style="width: 8%" />
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr>
 <th>Beschreibung</th>
-<th>Element</th>
 <th>XMP-Bezeichnung</th>
 <th>Beispiel</th>
-<th>Picturepark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Ersteller:in*</td>
-<td>Creator</td>
 <td><code>dc:creator</code></td>
 <td>Max Blumenschein</td>
-<td><em>Photo Credit</em></td>
 </tr>
 <tr>
 <td>Erstellungsdatum*</td>
-<td>Date</td>
 <td><code>photoshop:DateCreated</code></td>
 <td>2024-08-15T16:29:14+02:00</td>
-<td></td>
 </tr>
 <tr>
-<td>Berufsbezeichnung, Position</td>
-<td>Creator’s Job Title</td>
+<td>Position</td>
 <td><code>photoshop:AuthorsPosition</code></td>
 <td>Wissenschaftliche Fotografin</td>
-<td></td>
 </tr>
 <tr>
-<td>E-Mail Adresse</td>
-<td>Email adress(es)</td>
+<td>E-Mail</td>
 <td><code>Iptc4xmpCore:CiEmailWork</code></td>
 <td>stanley.brouwn@bs.ch</td>
-<td></td>
 </tr>
 <tr>
 <td>Website</td>
-<td>Web URL(s)</td>
 <td><code>Iptc4xmpCore:CiUrlWork</code></td>
 <td>kunstmuseumbasel.ch</td>
-<td></td>
 </tr>
 <tr>
 <td>Titel</td>
-<td>Title</td>
 <td><code>dc:title</code></td>
 <td>Blumenstillleben</td>
-<td><em>Titel</em></td>
 </tr>
 <tr>
 <td>Inhaltliche Beschreibung</td>
-<td>Description</td>
 <td><code>dc:description</code></td>
 <td>Linker Flügel des Altarbildes</td>
-<td><em>Beschreibung</em></td>
 </tr>
 <tr>
-<td>Technische Angaben zur Erstellung der Aufnahme/Datei</td>
-<td>Instructions</td>
+<td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>Digitale Bildmontage aus 6 Einzelaufnahmen</td>
-<td><em>Technische Angaben zur Aufnahme</em></td>
 </tr>
 <tr>
 <td>Stichworte</td>
-<td>Keywords</td>
 <td><code>dc:subject</code></td>
 <td>Soft-Illumination; Digital Composite; Multishot/Pixel-Shift</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -337,107 +397,86 @@ zu verwenden. Grosse Farbtemperaturunterschiede sind durch
 Bildbearbeitung zu korrigieren.</p>
 <p><strong>Belichtung</strong>: Die Helligkeit sollte über alle
 Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor
-Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (ColorChecker
-Target) auf Augenhöhe sollte 70 L* (ΔL* ≤8) entsprechen.</p>
+Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (<a
+href="#colorchecker-target">ColorChecker Target</a>) auf Augenhöhe
+sollte 70 L* (ΔL* ≤8) entsprechen.</p>
 <p><strong>Ansichten</strong>: Die Raumabfolge und Dramarturgie sollte
 anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung
 sollte mindestens einmal und wenn möglich mehrfach abgebildet sein.
 Stürzende Linien sind zu vermeiden.</p>
-<h3 id="technische-vorgaben-1">Technische Vorgaben</h3>
+<h3 id="installation_repro">Technische Vorgaben</h3>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
 <li><strong>Farbraum</strong>: eciRGBv2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Film Standard, Adobe Neutral</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤4 (Feld B4,
-ColorChecker Target)</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤8 (Feld B4, ColorChecker
-Target)</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤4 (Feld B4, <a
+href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤8 (Feld B4, <a
+href="#colorchecker-target">ColorChecker Target</a>)</li>
 <li><strong>Bildgrösse</strong> (kurze Seite): ≥4000 Pixel</li>
 </ul>
 <h4 id="metadaten-1">Metadaten</h4>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
-<col style="width: 43%" />
-<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr>
 <th>Beschreibung</th>
-<th>Element</th>
 <th>XMP-Bezeichnung</th>
 <th>Beispiel</th>
-<th>Picturepark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Ersteller:in*</td>
-<td>Creator</td>
 <td><code>dc:creator</code></td>
 <td>Max Blumenschein</td>
-<td><em>Photo Credit</em></td>
 </tr>
 <tr>
 <td>Erstellungsdatum*</td>
-<td>Date</td>
 <td><code>photoshop:DateCreated</code></td>
 <td>2024-08-15T16:29:14+02:00</td>
-<td></td>
 </tr>
 <tr>
-<td>Berufsbezeichnung, Position</td>
-<td>Creator’s Job Title</td>
+<td>Position</td>
 <td><code>photoshop:AuthorsPosition</code></td>
 <td>Wissenschaftliche Fotografin</td>
-<td></td>
 </tr>
 <tr>
-<td>E-Mail Adresse</td>
-<td>Email adress(es)</td>
+<td>E-Mail</td>
 <td><code>Iptc4xmpCore:CiEmailWork</code></td>
 <td>stanley.brouwn@bs.ch</td>
-<td></td>
 </tr>
 <tr>
 <td>Website</td>
-<td>Web URL(s)</td>
 <td><code>Iptc4xmpCore:CiUrlWork</code></td>
 <td>kunstmuseumbasel.ch</td>
-<td></td>
 </tr>
 <tr>
 <td>Titel</td>
-<td>Title</td>
 <td><code>dc:title</code></td>
 <td>Installationsansicht</td>
-<td><em>Titel</em></td>
 </tr>
 <tr>
 <td>Inhaltliche Beschreibung</td>
-<td>Description</td>
 <td><code>dc:description</code></td>
 <td>Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG,
 Raum 5, 11.03.2024</td>
-<td><em>Beschreibung</em></td>
 </tr>
 <tr>
-<td>Technische Angaben zur Erstellung der Aufnahme/Datei</td>
-<td>Instructions</td>
+<td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>Lichtschalter wurden digital entfernt/retuschiert</td>
-<td><em>Technische Angaben zur Aufnahme</em></td>
 </tr>
 <tr>
 <td>Stichworte</td>
-<td>Keywords</td>
 <td><code>dc:subject</code></td>
 <td>Digital Composite; Multishot/HDR</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -454,6 +493,20 @@ Einstellungen je nach Fragestellung und Objekt stark variieren, sind
 diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung
 von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen
 nachvollziehbar und möglichst reproduzierbar machen.</p>
+<h4 id="prozesse-zuständigkeiten-2">Prozesse &amp; Zuständigkeiten</h4>
+<p><strong>Auftraggeber</strong>: Fotoaufträge werden von den für das
+Objekt zuständigen Kurator:innen oder Restaurator:innen angenommen.</p>
+<p><strong>Fotoauftrag</strong>: Über die MuseumPlus Vorlage
+<em>Fotoauftrag</em> werden gewünschte Ansichten und Aufnahmearten zum
+jeweiligen Objekt angegeben.</p>
+<p><strong>Zeitrahmen</strong>: Objekte werden nach Anlieferung in der
+Regel innerhalb einer Woche aufgenommen.<a href="#fn15"
+class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a></p>
+<p><strong>Transport</strong>: Objekte sind inklusive ausgefülltem
+Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von
+2 Werktagen wieder abzuholen.<a href="#fn16" class="footnote-ref"
+id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
 <h3 id="visuelles-spektrum">Visuelles Spektrum</h3>
 <p>Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine <a
 href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a>. Darüber
@@ -471,13 +524,13 @@ ersten Aufnahme gemacht werden (von oben/unten)</p>
 Licht sollte nach Möglichkeit genau vom Objekt verdeckt werden, um
 Überblendungen zu vermeiden. Exponierte Lichtflächen sollten schwarz
 abgedeckt werden.</p>
-<h4 id="technische-vorgaben-2">Technische Vorgaben</h4>
+<h4 id="technische-vorgaben">Technische Vorgaben</h4>
 <p>Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte
 gewünscht ist (z.B. Durchlicht), sind die Toleranzen für <a
 href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a> als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.</p>
 <h3 id="infrarotes-spektrum">Infrarotes Spektrum</h3>
-<h4 id="technische-vorgaben-3">Technische Vorgaben</h4>
+<h4 id="technische-vorgaben-1">Technische Vorgaben</h4>
 <p>Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht
 ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen für
 Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu
@@ -488,45 +541,41 @@ Aufnahme gemacht werden.</p>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
 <li><strong>Farbraum</strong>: Gray Gamma 2.2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
-<li><strong>Belichtung Toleranz</strong><a href="#fn15"
-class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>:
-ΔL* ≤2 (PTFE)</li>
-<li><strong>Tonwertgenauigkeit</strong> (CIE76)<a href="#fn16"
-class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>:
-ΔE* ≤ 4 (PTFE) (Durchschnitt), ΔE* ≤ 10 (Maximal)</li>
+<li><strong>Belichtung Toleranz</strong><a href="#fn17"
+class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>:
+ΔL* ≤2 (<a href="#ptfe-target">PTFE</a>)</li>
+<li><strong>Tonwertgenauigkeit</strong> (CIE76)<a href="#fn18"
+class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>:
+ΔE* ≤ 4 (<a href="#ptfe-target">PTFE</a>) (Durchschnitt), ΔE* ≤ 10
+(Maximal)</li>
 </ul>
 <h4 id="metadaten-2">Metadaten</h4>
 <p>In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit,
-Filter etc. einzutragen.</p>
+Filter etc. einzutragen. Mehrfachangaben sind mit Semicolon zu
+trennen.</p>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
-<col style="width: 43%" />
-<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr>
 <th>Beschreibung</th>
-<th>Element</th>
 <th>XMP-Bezeichnung</th>
 <th>Beispiel</th>
-<th>Picturepark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Technische Angaben zur Erstellung der Aufnahme/Datei</td>
-<td>Instructions</td>
+<td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)</td>
-<td><em>Technische Angaben zur Aufnahme</em></td>
 </tr>
 </tbody>
 </table>
 <h3 id="ultraviolettes-spektrum">Ultraviolettes Spektrum</h3>
-<h4 id="technische-vorgaben-4">Technische Vorgaben</h4>
+<h4 id="technische-vorgaben-2">Technische Vorgaben</h4>
 <p>Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht
 ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung
 als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim
@@ -538,14 +587,14 @@ werden.</p>
 <li><strong>Farbraum</strong>: eciRGBv2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Linear, Linear-Scientific</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (LOW A1,
-Target-UV)</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤4 (LOW A1,
-Target-UV)</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (LOW A1, <a
+href="#uv-target">Target-UV</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤4 (LOW A1, <a
+href="#uv-target">Target-UV</a>)</li>
 <li><strong>Homogenität Beleuchtung</strong>: ΔL* ≤3</li>
 </ul>
 <h3 id="röntgen">Röntgen</h3>
-<h4 id="technische-vorgaben-5">Technische Vorgaben</h4>
+<h4 id="technische-vorgaben-3">Technische Vorgaben</h4>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -554,32 +603,27 @@ Target-UV)</li>
 </ul>
 <h4 id="metadaten-3">Metadaten</h4>
 <p>In die Metadaten sind die Aufnahmeparameter wie Stromstärke,
-Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen.</p>
+Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen.
+Mehrfachangaben sind mit Semicolon zu trennen.</p>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
-<col style="width: 43%" />
-<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr>
 <th>Beschreibung</th>
-<th>Element</th>
 <th>XMP-Bezeichnung</th>
 <th>Beispiel</th>
-<th>Picturepark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Technische Angaben zur Erstellung der Aufnahme/Datei</td>
-<td>Instructions</td>
+<td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast
 des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM)</td>
-<td><em>Technische Angaben zur Aufnahme</em></td>
 </tr>
 </tbody>
 </table>
@@ -599,91 +643,99 @@ Diagnostik der Werke, beispielsweise bei der Sichtbarmachung von
 Wasserzeichen oder Griffelspuren, die aufgrund der spezifischen
 Eigenschaften der Werke (Kaschierung, Retuschen, etc.) unentdeckt
 bleiben würden, oder bei der Unterscheidung verschiedener Farb- und
-Zeichenmittel, aufgrund ihrer spektralen Charateristik.<a href="#fn17"
-class="footnote-ref" id="fnref17"
-role="doc-noteref"><sup>17</sup></a></p>
+Zeichenmittel, aufgrund ihrer spektralen Charateristik.<a href="#fn19"
+class="footnote-ref" id="fnref19"
+role="doc-noteref"><sup>19</sup></a></p>
 <p>Zur Standardisierung und besseren Vergleichbarkeit orientiert sich
 das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter
 am <a
 href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA
 Projekt</a> und den dort dokumentierten Verfahren.</p>
-<h4 id="technische-vorgaben-6">Technische Vorgaben</h4>
-<table>
+<h4 id="technische-vorgaben-4">Technische Vorgaben</h4>
+<table style="width:99%;">
+<caption>Lichtquellen und Filter für Multispektralaufnahmen entsprechend
+<a
+href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA</a>.</caption>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 15%" />
+<col style="width: 22%" />
 <col style="width: 18%" />
-<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
 <col style="width: 18%" />
 </colgroup>
 <thead>
 <tr>
-<th>Beschreibung</th>
-<th>Beleuchtungsquelle</th>
-<th>Filter Beleuchtungsquelle</th>
-<th>Aufnahmemedium</th>
-<th>Filter Aufnahmemedium</th>
+<th rowspan="2">Beschreibung</th>
+<th colspan="2">Lichtquelle</th>
+<th colspan="2">Aufnahmemedium</th>
+</tr>
+<tr>
+<th>Spektrum</th>
+<th>Filter</th>
+<th>Spektrum</th>
+<th>Filter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>sichtbares Licht (in Reflexion)</td>
-<td>Halogen / LED / Blitz</td>
-<td>—</td>
-<td>—</td>
-<td>Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)</td>
+<td>380–780nm (Halogen / LED / Blitz)</td>
+<td>n/a</td>
+<td>380–780nm (normaler RGB-Sensor)</td>
+<td>Schott BG38 / Baader UV-IR-Cut</td>
 </tr>
 <tr>
 <td>Infrarotreflektographie</td>
-<td>Halogen / LED / Blitz</td>
-<td>—</td>
-<td>modifizierter Aufnahmesensor</td>
+<td>780–1700nm (Halogen / LED / Blitz)</td>
+<td>n/a</td>
+<td>365–1000nm (modifizierter RGB-Sensor)</td>
 <td>Schott RG830</td>
 </tr>
 <tr>
-<td>Ultravioletreflekophaie</td>
-<td>LED / Blitz (365nm)</td>
+<td>Ultravioletreflektographie</td>
+<td>365nm (LED / Blitz)</td>
 <td>Hönle Blacklight-Filter / Schott UG11 / MUG2</td>
-<td>modifizierter Aufnahmesensor</td>
+<td>365–380nm (modifizierter RGB-Sensor)</td>
 <td>Schott UG11 &amp; Schott BG39</td>
 </tr>
 <tr>
 <td>VIS-induzierte Infrarot-Lumineszenz</td>
-<td>Halogen / LED / Blitz</td>
+<td>380–780nm (Halogen / LED / Blitz)</td>
 <td>Schott BG39</td>
-<td>modifizierter Aufnahmesensor</td>
+<td>780–1000nm (modifizierter RGB-Sensor)</td>
 <td>Schott RG830 &amp; Schott RG1000</td>
 </tr>
 <tr>
 <td>UV-induzierte Infrarot-Lumineszenz</td>
-<td>LED / Blitz (365nm)</td>
+<td>365nm (LED / Blitz)</td>
 <td>Hönle Blacklight-Filter / Schott UG11 / MUG2</td>
-<td>modifizierter Aufnahmesensor</td>
+<td>780–1000nm (modifizierter RGB-Sensor)</td>
 <td>Schott RG830 &amp; Schott RG1000</td>
 </tr>
 <tr>
 <td>UV-induzierte sichtbare Lumineszenz</td>
-<td>LED / Blitz (365nm)</td>
+<td>365nm (LED / Blitz)</td>
 <td>Hönle Blacklight-Filter / Schott UG11 / MUG2</td>
-<td>modifizierter Aufnahmesensor</td>
-<td>Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)</td>
+<td>380–780nm (modifizierter RGB-Sensor)</td>
+<td>Schott BG38 / Baader UV-IR-Cut</td>
 </tr>
 </tbody>
 </table>
 <h2 id="targets">Targets</h2>
-<p><strong>ColorChecker, X-Rite</strong>: Dieses Target sollte für alle
-Aufnahmen mit normaler Beleuchtung im Bereich des sichtbaren Lichts
-verwendet werden. Die 24 Felder umfassen typische Farben sowie
-Graustufen mit relativ konstanter Reflektivät über die sichtbaren
-Spektren des Lichts hinweg. Aufgrund seiner grossen Verbreitung eignet
-sich das Target insbesondere für den Vergleich von Aufnahmen zu
-unterschiedlichen Zeitpunkten oder anderen Orten mit abweichenden
-Aufnahmeparametern.</p>
-<p>Theoretische L*a*b*<a href="#fn18" class="footnote-ref" id="fnref18"
-role="doc-noteref"><sup>18</sup></a> Werte der Referenzfelder. Nach
-Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets
-zur Kalibrierung zu verwenden.</p>
+<p><span id="colorchecker-target"><strong>ColorChecker,
+X-Rite</strong></span>: Dieses Target sollte für alle Aufnahmen mit
+normaler Beleuchtung im Bereich des sichtbaren Lichts verwendet werden.
+Die 24 Felder umfassen typische Farben sowie Graustufen mit relativ
+konstanter Reflektivät über die sichtbaren Spektren des Lichts hinweg.
+Aufgrund seiner grossen Verbreitung eignet sich das Target insbesondere
+für den Vergleich von Aufnahmen zu unterschiedlichen Zeitpunkten oder
+anderen Orten mit abweichenden Aufnahmeparametern.</p>
+<p>Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen
+Targets zur Kalibrierung zu verwenden.</p>
 <table>
+<caption>Theoretische L*a*b*<a href="#fn20" class="footnote-ref"
+id="fnref20" role="doc-noteref"><sup>20</sup></a> Werte, X-Rite
+Colorchecker Classic Mini.</caption>
 <thead>
 <tr>
 <th style="text-align: left;">Feld</th>
@@ -839,16 +891,18 @@ zur Kalibrierung zu verwenden.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>PTFE, artImaging</strong>: Die fünf Felder dieses Targets
-umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein
-breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb
-besonders für den Einsatz bei Multispektral-Aufnahmen, sowie
-grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren
-Spektrums.</p>
-<p>Theoretische L* Werte der Referenzfelder. Nach Möglichkeit sind
-eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung
-zu verwenden.</p>
+<p><span id="ptfe-target"><strong>PTFE, artImaging</strong></span>: Die
+fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten
+Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target
+eignet sich deshalb besonders für den Einsatz bei
+Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht
+ausserhalb des visuell sichtbaren Spektrums.</p>
+<p>Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen
+Targets zur Kalibrierung zu verwenden.</p>
 <table>
+<caption>Theoretische L*<a href="#fn21" class="footnote-ref"
+id="fnref21" role="doc-noteref"><sup>21</sup></a> Werte, artImaging
+PTFE.</caption>
 <thead>
 <tr>
 <th style="text-align: left;">Feld</th>
@@ -878,15 +932,17 @@ zu verwenden.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Target-UV, UV Innovations</strong>: Für Aufnahmen mit Licht
-im ultravioletten Spektrum (&lt;400 nm) kann dieses Target verwendet
-werden. Unter UV-Licht fluoreszieren einzelne Felder in Graustufen sowie
-in den Farben Rot, Grün und Blau, sodass die Intensität und Farbigkeit
-von fluoriszierendem Material dokumentiert werden kann.</p>
-<p>Theoretische L* Werte der Referenzfelder der Reihe <em>LOW</em>. Nach
-Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets
-zur Kalibrierung zu verwenden.</p>
+<p><span id="uv-target"><strong>Target-UV, UV
+Innovations</strong></span>: Für Aufnahmen mit Licht im ultravioletten
+Spektrum (&lt;400 nm) kann dieses Target verwendet werden. Unter
+UV-Licht fluoreszieren einzelne Felder in Graustufen sowie in den Farben
+Rot, Grün und Blau, sodass die Intensität und Farbigkeit von
+fluoriszierendem Material dokumentiert werden kann.</p>
+<p>Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen
+Targets zur Kalibrierung zu verwenden.</p>
 <table>
+<caption>Theoretische L* Werte der Referenzfelder der Reihe
+<em>LOW</em>, UV Innovations Target-UV.</caption>
 <thead>
 <tr>
 <th style="text-align: left;">Feld</th>
@@ -931,8 +987,8 @@ class="math inline">Schwarz = 0 ≤ <em>x</em> ≤ 1 = Weiss</sp
 Aspekte eines dokumentierten Objekts herauszufiltern. So führt eine
 Subtraktion der Auflicht- von einer Streflicht-Aufnahme im Ergebnis zu
 einer weitgehenden Ausblendung der Zeichnung oder des Drucks, wobei die
-Oberflächentopographie eines Objekts sichtbar bleibt.<a href="#fn19"
-class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>
+Oberflächentopographie eines Objekts sichtbar bleibt.<a href="#fn22"
+class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a>
 Konzeptuell gesprochen reduziert eine Bildsubtraktion also jene
 Bildinformation, die in beiden Aufnahmen enthalten ist.</p>
 <p>Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine
@@ -942,34 +998,29 @@ Auflicht-Aufnahmen der Vorder- und Rückseite zu einer Darstellung, die
 nunmehr nur die ‹mittleren› Lagen des Objekts zeigt.</p>
 <h3 id="metadaten-4">Metadaten</h3>
 <p>Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen,
-sodass diese nachvollziehbar und reproduzierbar sind.</p>
+sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben
+sind mit Semicolon zu trennen.</p>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
-<col style="width: 43%" />
-<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr>
 <th>Beschreibung</th>
-<th>Element</th>
 <th>XMP-Bezeichnung</th>
 <th>Beispiel</th>
-<th>Picturepark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Technische Angaben zur Erstellung der Aufnahme/Datei</td>
-<td>Instructions</td>
+<td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>“kw1a_0033228_2023-11-01_s-001-vr.tif” von
 “kw1d_0033228_2023-11-01_s-001-vr.tif” subtrahiert. Photoshop -&gt;
 Bildberechnungen -&gt; Mischmodus “Subtrahieren”: Deckkraft 68%,
 Skalieren 1, Versatz 128 (EHM)</td>
-<td><em>Technische Angaben zur Aufnahme</em></td>
 </tr>
 </tbody>
 </table>
@@ -1030,18 +1081,27 @@ href="https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-news
 mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and
 NewsML-G2 2.25</em></a>.<a href="#fnref14" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>wenn möglich<a href="#fnref15" class="footnote-back"
+<li id="fn15"><p>Bei grösseren Konvoluten oder speziellen
+Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und
+Fertigstellung festzulegen.<a href="#fnref15" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>wenn möglich<a href="#fnref16" class="footnote-back"
+<li id="fn16"><p>Objekte sind in dem Zustand anzuliefern, in dem sie
+aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)<a
+href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>wenn möglich<a href="#fnref17" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p><a href="#digitale-bildanalyse">Siehe Digitale
-Bildanalyse.</a><a href="#fnref17" class="footnote-back"
+<li id="fn18"><p>wenn möglich<a href="#fnref18" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn18"><p>ISO 13655:2009 Messspezifikation M0<a href="#fnref18"
+<li id="fn19"><p><a href="#digitale-bildanalyse">Siehe Digitale
+Bildanalyse.</a><a href="#fnref19" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>ISO 13655:2009 Messspezifikation M0<a href="#fnref20"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn19"><p>Durch einen digitalen Hochpassfilter kann die
+<li id="fn21"><p>ISO 13655:2009 Messspezifikation M0<a href="#fnref21"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Durch einen digitalen Hochpassfilter kann die
 Darstellung noch zusätzlich auf sehr feine Details reduziert werden.<a
-href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>

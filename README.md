@@ -1,6 +1,13 @@
 ---
 title: Wissenschaftliche Fotografie am Kunstmuseum Basel
-date: ENTWURF [\today]
+date: Version 0.1 [Entwurf 19. August, 2025]
+author: |
+ | Max Ehrengruber
+ | Wissenschaftliche Fotografie
+ |
+ | Kunstmuseum Basel
+ | St. Alban-Graben 8 CH-4010 Basel
+ | max.ehrengruber@bs.ch
 
 adress: true
 
@@ -9,10 +16,48 @@ project: WFKMB - Grundlagen und Prozesse
 lang: de
 
 toc: true
-css: "./resources/pandoc.css"
 
 documentclass: report
+
+css: "./resources/pandoc.css"
 ---
+
+<!-- only in html -->
+<div class="manual-toc">
+<ul>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#grundsätzliche-prinzipien">Grundsätzliche
+Prinzipien</a></li>
+<li><a href="#standards">Standards</a>
+<ul>
+<li><a href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a>
+<ul>
+<li><a href="#gemälde">Gemälde</a></li>
+<li><a href="#werke-auf-papier">Werke auf Papier</a></li>
+<li><a href="#skulpturen">Skulpturen</a></li>
+<li><a href="#installationen">Installationen</a></li>
+<li><a href="#technical_repro">Technische Vorgaben</a></li>
+</ul></li>
+<li><a href="#installations--und-gebäudeaufnahmen">Installations- und
+Gebäudeaufnahme</a>
+<ul>
+<li><a href="#ästhetische-vorgaben">Ästhetische Vorgaben</a></li>
+<li><a href="#installation_repro">Technische Vorgaben</a></li>
+</ul></li>
+<li><a href="#forensische-aufnahmen">Forensische Aufnahmen</a>
+<ul>
+<li><a href="#visuelles-spektrum">Visuelles Spektrum</a></li>
+<li><a href="#infrarotes-spektrum">Infrarotes Spektrum</a></li>
+<li><a href="#ultraviolettes-spektrum">Ultraviolettes Spektrum</a></li>
+<li><a href="#röntgen">Röntgen</a></li>
+<li><a href="#multispektralaufnahmen">Multispektralaufnahme</a></li>
+</ul></li>
+<li><a href="#targets">Targets</a></li>
+<li><a href="#digitale-bildanalyse">Digitale Bildanalyse</a></li>
+</ul></li>
+</ul>
+</div>
+
 # Einleitung
 
 Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokumentation der ältesten öffentlichen Kunstsammlung der Welt verpflichted. Ihre Aufgabe ist die Objekte der Sammlung in ihrer materiellen Originalität festzuhalten und im Sinne der Erhaltung und Vermittlung für die Öffentlichkeit zugänglich zu machen.
@@ -37,7 +82,7 @@ Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem 
 
 # Standards
 
-Im Folgendenden werden Standards und bewährte Methoden für verschiedene Aufnahmearten definiert.
+Im Folgenden werden Standards und bewährte Methoden für verschiedene Aufnahmearten definiert.
 
 ## Reproduktionsaufnahmen
 
@@ -120,7 +165,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 Siehe [Installationsaufnahmen](#installations--und-gebäudeaufnahmen).
 
-### Technische Vorgaben
+### Technische Vorgaben {#technical_repro}
 
 Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation Imaging Guidelines_](https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf) (2012) und wurden für den praktischen Einsatz am Kunstmuseum Basel vereinfacht.
 
@@ -129,8 +174,8 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 * **Farbraum**: eciRGBv2 (RGB), Gray Gamma 2.2 (Graustufen)
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
-* **Weissabgleich Toleranz**: ΔC* ≤2
-* **Belichtung Toleranz**: ΔL* ≤2
+* **Weissabgleich Toleranz**: ΔC* ≤2 ([ColorChecker Target](#colorchecker-target))
+* **Belichtung Toleranz**: ΔL* ≤2 ([ColorChecker Target](#colorchecker-target))
 * **Homogenität Beleuchtung**: ΔL* ≤3
 * **Farbgenauigkeit** (CIE76)[^10]: ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
 * **Auflösung** (Minimum): >DIN A2: 150 dpi, ≥DIN A5: 300 dpi, <DIN A5: 600 dpi
@@ -141,17 +186,17 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 
 Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^11] Mit * markierte Felder sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                    | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | ----------------------------------------------------------- | -------------- |
-| Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                            | _Photo Credit_ |
-| Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |                |
-| Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |                |
-| E-Mail Adresse                                       | Email adress(es)    | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                        |                |
-| Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         |                |
-| Titel                                                | Title               | `dc:title`                  | Blumenstillleben                                            | _Titel_        |
-| Inhaltliche Beschreibung                             | Description         | `dc:description`            | Linker Flügel des Altarbildes                               | _Beschreibung_ |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  | _Technische Angaben zur Aufnahme_  |
-| Stichworte                                           | Keywords            | `dc:subject`                | Soft-Illumination; Digital Composite; Multishot/Pixel-Shift |                |
+| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                    |
+| ---- | ----- | ----- |
+| Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                            |
+| Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |
+| Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |
+| E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                        |
+| Website                                              | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         |
+| Titel                                                | `dc:title`                  | Blumenstillleben                                            |
+| Inhaltliche Beschreibung                             | `dc:description`            | Linker Flügel des Altarbildes                               |
+| Technische Angaben                                   | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  |
+| Stichworte                                           | `dc:subject`                | Soft-Illumination; Digital Composite; Multishot/Pixel-Shift |
 
 [^11]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
 
@@ -175,38 +220,51 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Licht**: Die Lichtverhältnisse sind so einzustellen wie Besuchende diese wahrnehmen würden. Ausstellungsräume mit natürlichem Lichteinfall sind üblicherweise bei Tageslicht aufzunehmen. Bei Mischlicht mit unterschiedlichen Farbtemperaturen und Intensitäten ist das intensivste Licht als Grundlage für Weissabgleich und Belichtung zu verwenden. Grosse Farbtemperaturunterschiede sind durch Bildbearbeitung zu korrigieren.
 
-**Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (ColorChecker Target) auf Augenhöhe sollte 70 L* (ΔL* ≤8) entsprechen.
+**Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes ([ColorChecker Target](#colorchecker-target)) auf Augenhöhe sollte 70 L* (ΔL* ≤8) entsprechen.
 
 **Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein. Stürzende Linien sind zu vermeiden.
 
-### Technische Vorgaben
+### Technische Vorgaben {#installation_repro}
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Film Standard, Adobe Neutral
-* **Weissabgleich Toleranz**: ΔC* ≤4 (Feld B4, ColorChecker Target)
-* **Belichtung Toleranz**: ΔL* ≤8 (Feld B4, ColorChecker Target)
+* **Weissabgleich Toleranz**: ΔC* ≤4 (Feld B4, [ColorChecker Target](#colorchecker-target))
+* **Belichtung Toleranz**: ΔL* ≤8 (Feld B4, [ColorChecker Target](#colorchecker-target))
 * **Bildgrösse** (kurze Seite): ≥4000 Pixel
 
 #### Metadaten
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Ersteller\:in*                                       | Creator             | `dc:creator`                | Max Blumenschein                                                                       | _Photo Credit_ |
-| Erstellungsdatum*                                    | Date                | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                              |                |
-| Berufsbezeichnung, Position                          | Creator's Job Title | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                           |                |
-| E-Mail Adresse                                       | Email adress(es)    | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                                                   |                |
-| Website                                              | Web URL(s)          | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                    |                |
-| Titel                                                | Title               | `dc:title`                  | Installationsansicht                                                                   | _Titel_        |
-| Inhaltliche Beschreibung                             | Description         | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024 | _Beschreibung_ |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      | _Technische Angaben zur Aufnahme_  |
-| Stichworte                                           | Keywords            | `dc:subject`                | Digital Composite; Multishot/HDR                                                       |                |
+| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
+| ---- | ----- | ----- |
+| Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                                                       |
+| Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                              |
+| Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                           |
+| E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                                                   |
+| Website                                              | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                    |
+| Titel                                                | `dc:title`                  | Installationsansicht                                                                   |
+| Inhaltliche Beschreibung                             | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024 |
+| Technische Angaben                                   | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      |
+| Stichworte                                           | `dc:subject`                | Digital Composite; Multishot/HDR                                                       |
 
 ## Forensische Aufnahmen
 
 Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
+
+#### Prozesse & Zuständigkeiten
+
+**Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
+
+**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
+
+**Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
+
+**Transport**: Objekte sind inklusive ausgefülltem Fotoauftrag anzuliefern und nach abgeschlossener Aufnahme innerhalb von 2 Werktagen wieder abzuholen.[^9]
+
+[^8]: Bei grösseren Konvoluten oder speziellen Aufnahmewünschen sind im Vorfeld Zeitrahmen zur Anlieferung und Fertigstellung festzulegen.
+[^9]: Objekte sind in dem Zustand anzuliefern, in dem sie aufgenommen werden sollen (z.B. ungerahmt, unmontiert, etc.)
 
 ### Visuelles Spektrum
 
@@ -238,16 +296,16 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Un
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: Gray Gamma 2.2
 * **Bit-Tiefe**: 16 Bit
-* **Belichtung Toleranz**^[wenn möglich]: ΔL* ≤2 (PTFE)
-* **Tonwertgenauigkeit** (CIE76)^[wenn möglich]: ΔE* ≤ 4 (PTFE) (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Belichtung Toleranz**^[wenn möglich]: ΔL* ≤2 ([PTFE](#ptfe-target))
+* **Tonwertgenauigkeit** (CIE76)^[wenn möglich]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
 
 #### Metadaten
 
-In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. einzutragen.
+In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           | _Technische Angaben zur Aufnahme_  |
+| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
+| ---- | ----- | ----- |
+| Technische Angaben                                   | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           |
 
 ### Ultraviolettes Spektrum
 
@@ -260,8 +318,8 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. se
 * **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
-* **Weissabgleich Toleranz**: ΔC* ≤2 (LOW A1, Target-UV)
-* **Belichtung Toleranz**: ΔL* ≤4 (LOW A1, Target-UV)
+* **Weissabgleich Toleranz**: ΔC* ≤2 (LOW A1, [Target-UV](#uv-target))
+* **Belichtung Toleranz**: ΔL* ≤4 (LOW A1, [Target-UV](#uv-target))
 * **Homogenität Beleuchtung**: ΔL* ≤3
 
 ### Röntgen
@@ -275,11 +333,11 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. se
 
 #### Metadaten
 
-In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen.
+In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) | _Technische Angaben zur Aufnahme_  |
+| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
+| ---- | ----- | ----- |
+| Technische Angaben                                   | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) |
 
 ### Multispektralaufnahmen
 
@@ -291,25 +349,36 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 
 #### Technische Vorgaben
 
-| Beschreibung                                         | Beleuchtungsquelle             | Filter Beleuchtungsquelle             | Aufnahmemedium                           | Filter Aufnahmemedium                |
-| ---------------------------------------------------- | ------------------------------ | ------------------------------------- | ---------------------------------------- | ------------------------------------ |
-| sichtbares Licht (in Reflexion)                      | Halogen / LED / Blitz            | ---                                           | ---                                      | Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)    |
-| Infrarotreflektographie                              | Halogen / LED / Blitz            | ---                                           | modifizierter Aufnahmesensor             | Schott RG830                         |
-| Ultravioletreflekophaie                              | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             | Schott UG11 & Schott BG39            |
-| VIS-induzierte Infrarot-Lumineszenz                  | Halogen / LED / Blitz            | Schott BG39                                   | modifizierter Aufnahmesensor             | Schott RG830 & Schott RG1000         |
-| UV-induzierte Infrarot-Lumineszenz                   | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             | Schott RG830 & Schott RG1000         |
-| UV-induzierte sichtbare Lumineszenz                  | LED / Blitz (365nm)              | Hönle Blacklight-Filter / Schott UG11 / MUG2  | modifizierter Aufnahmesensor             |Schott BG38 / Baader UV-IR-Cut (bei modifiziertem Kamerasensor)     |
++--------------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| Beschreibung                                           | Lichtquelle                                                                                 | Aufnahmemedium                                                                              |
+|                                                        +----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+|                                                        | Spektrum                                     | Filter                                       | Spektrum                                     | Filter                                       |
++========================================================+==============================================+==============================================+==============================================+==============================================+
+| sichtbares Licht (in Reflexion)                        | 380–780nm (Halogen / LED / Blitz)            | n/a                                          | 380–780nm (normaler RGB-Sensor)              | Schott BG38 / Baader UV-IR-Cut               |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+| Infrarotreflektographie                                | 780–1700nm (Halogen / LED / Blitz)           | n/a                                          | 365–1000nm (modifizierter RGB-Sensor)        | Schott RG830                                 |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+| Ultravioletreflektographie                             | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 365–380nm (modifizierter RGB-Sensor)         | Schott UG11 & Schott BG39                    |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+| VIS-induzierte Infrarot-Lumineszenz                    | 380–780nm (Halogen / LED / Blitz)            | Schott BG39                                  | 780–1000nm (modifizierter RGB-Sensor)        | Schott RG830 & Schott RG1000                 |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+| UV-induzierte Infrarot-Lumineszenz                     | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 780–1000nm (modifizierter RGB-Sensor)        | Schott RG830 & Schott RG1000                 |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+| UV-induzierte sichtbare Lumineszenz                    | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 380–780nm (modifizierter RGB-Sensor)         | Schott BG38 / Baader UV-IR-Cut               |
++--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
+
+: Lichtquellen und Filter für Multispektralaufnahmen entsprechend [CHARISMA](https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual).
 
 ## Targets
 
-**ColorChecker, X-Rite**: Dieses Target sollte für alle Aufnahmen mit normaler Beleuchtung im Bereich des sichtbaren Lichts verwendet werden. Die 24 Felder umfassen typische Farben sowie Graustufen mit relativ konstanter Reflektivät über die sichtbaren Spektren des Lichts hinweg. Aufgrund seiner grossen Verbreitung eignet sich das Target insbesondere für den Vergleich von Aufnahmen zu unterschiedlichen Zeitpunkten oder anderen Orten mit abweichenden Aufnahmeparametern.
+[**ColorChecker, X-Rite**]{#colorchecker-target}: Dieses Target sollte für alle Aufnahmen mit normaler Beleuchtung im Bereich des sichtbaren Lichts verwendet werden. Die 24 Felder umfassen typische Farben sowie Graustufen mit relativ konstanter Reflektivät über die sichtbaren Spektren des Lichts hinweg. Aufgrund seiner grossen Verbreitung eignet sich das Target insbesondere für den Vergleich von Aufnahmen zu unterschiedlichen Zeitpunkten oder anderen Orten mit abweichenden Aufnahmeparametern.
 
-Theoretische L\*a\*b\*[^16] Werte der Referenzfelder. Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
+Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 [^16]: ISO 13655:2009 Messspezifikation M0
 
 | Feld | L*    | a*     | b*     |
-| :--- | :---- | :----- | :----- |
+| :---- | :---- | :---- | :---- |
 | A1   | 37,54 | 14,37  | 14,92  |
 | A2   | 62,73 | 35,83  | 56,5   |
 | A3   | 28,37 | 15,42  | -49,8  |
@@ -335,9 +404,11 @@ Theoretische L\*a\*b\*[^16] Werte der Referenzfelder. Nach Möglichkeit sind eig
 | F3   | 49,57 | -29,71 | -28,32 |
 | F4   | 20,64 | 0,07   | -0,46  |
 
-**PTFE, artImaging**: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
+: Theoretische L\*a\*b\*[^16] Werte, X-Rite Colorchecker Classic Mini.
 
-Theoretische L\* Werte der Referenzfelder. Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
+[**PTFE, artImaging**]{#ptfe-target}: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
+
+Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld | L*  |
 | :--- | :-- |
@@ -347,15 +418,19 @@ Theoretische L\* Werte der Referenzfelder. Nach Möglichkeit sind eigens gemesse
 | D1   | 88  |
 | E1   | 98  |
 
-**Target-UV, UV Innovations**: Für Aufnahmen mit Licht im ultravioletten Spektrum (<400 nm) kann dieses Target verwendet werden. Unter UV-Licht fluoreszieren einzelne Felder in Graustufen sowie in den Farben Rot, Grün und Blau, sodass die Intensität und Farbigkeit von fluoriszierendem Material dokumentiert werden kann.
+: Theoretische L\*[^16] Werte, artImaging PTFE.
 
-Theoretische L\* Werte der Referenzfelder der Reihe _LOW_. Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
+[**Target-UV, UV Innovations**]{#uv-target}: Für Aufnahmen mit Licht im ultravioletten Spektrum (<400 nm) kann dieses Target verwendet werden. Unter UV-Licht fluoreszieren einzelne Felder in Graustufen sowie in den Farben Rot, Grün und Blau, sodass die Intensität und Farbigkeit von fluoriszierendem Material dokumentiert werden kann.
+
+Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld   | L*  |
-| :----- | :-- |
+| :--- | :-- |
 | LOW A1 | 50  |
 | LOW B1 | 43  |
 | LOW C1 | 37  |
+
+: Theoretische L\* Werte der Referenzfelder der Reihe _LOW_, UV Innovations Target-UV.
 
 **Chrome Kugel**: Anhand einer glänzend reflektierenden Kugel kann die Aufnahmegeometrie (z.B. relative Position von Kamera und Licht zur Kugel) rekonstruiert werden. Diese Kugeln werden unter anderem für der Erstellung von _Reflectance Transformation Imaging_ (RTI) benötigt.
 
@@ -373,8 +448,8 @@ Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberech
 
 ### Metadaten
 
-Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass diese nachvollziehbar und reproduzierbar sind.
+Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                         | Element             | XMP-Bezeichnung             | Beispiel                                                                               | Picturepark    |
-| ---------------------------------------------------- | ------------------- | --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| Technische Angaben zur Erstellung der Aufnahme/Datei | Instructions        | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) | _Technische Angaben zur Aufnahme_  |
+| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
+| ---- | ----- | ----- |
+| Technische Angaben                                   | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
