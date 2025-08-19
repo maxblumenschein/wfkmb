@@ -1,0 +1,420 @@
+/*
+ * I add this to html files generated with pandoc.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    color: #000;
+    font-family:
+        IBM Plex Sans,
+        Helvetica,
+        sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 1em;
+    max-width: 40em;
+    background: #fefefe;
+}
+
+a {
+    position: relative;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a::before,
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: darkgreen;
+    transition: width 0.1s ease;
+}
+
+a::before {
+    top: -1.3px; /* adjust distance above text */
+}
+
+a::after {
+    bottom: -1px; /* adjust distance below text */
+}
+
+a:hover::before,
+a:hover::after {
+    width: 100%;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+*::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #000;
+}
+
+*::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #000;
+}
+
+a::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+}
+
+a::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+}
+
+p {
+    margin: 0em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    line-height: 120%;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-left: 12px solid crimson;
+    margin-left: -24px;
+    padding-left: 12px;
+}
+
+h2 {
+    font-size: 2em;
+    background-color: crimson;
+    padding: 4px 8px 4px 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+h3 {
+    font-size: 1.2em;
+    border-bottom: 3px solid crimson;
+    border-top: 3px solid crimson;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom:;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+blockquote {
+    color: #666666;
+    margin: 2em;
+    padding-left: 3em;
+    border-left: 0.5em #eee solid;
+}
+
+.math {
+    margin: 1em;
+    padding: 1em;
+}
+
+hr {
+    display: block;
+    height: 2em;
+    border: 0;
+    border-bottom: 3px solid crimson;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+    color: #000;
+    font-family:
+        IBM Plex Mono,
+        monospace,
+        monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+dfn {
+    font-style: italic;
+}
+
+ins {
+    background: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+}
+
+li p:last-child {
+    margin-bottom: 0;
+}
+
+ul ul,
+ol ol {
+    margin: 0em 0;
+}
+
+dl {
+    margin-bottom: 1em;
+}
+
+.date {
+    margin-top: 1em;
+}
+
+.manual-toc {
+    margin-top: 2em;
+}
+
+.manual-toc ul {
+    list-style-type: none; /* removes default bullets */
+    padding: 0 0 0 0em;
+}
+
+.manual-toc ul ul {
+    list-style-type: none; /* removes default bullets */
+    padding: 0 0 0 2em;
+}
+
+.manual-toc ul li {
+    margin-bottom: 0em; /* space between list items */
+}
+
+.manual-toc ul li a {
+}
+
+.manual-toc ul li a:hover {
+}
+
+dt {
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+dd {
+    margin: 0 0 0.8em 2em;
+}
+
+dd:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+figure {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}
+
+figure img {
+    border: none;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0 0 0.8em;
+}
+
+table {
+    margin-bottom: 2em;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-top: 0.5em;
+    font-size: 90%;
+    text-align: left;
+    caption-side: bottom;
+    width: 100%;
+}
+
+p + table {
+    margin-top: 1em;
+}
+
+table th {
+    padding: 0.2em 1em;
+    background-color: royalblue;
+    border: 1px solid;
+    font-weight: inherit;
+    text-align: left;
+}
+
+table td {
+    padding: 0.2em 1em;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    vertical-align: top;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        max-width: 100%;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    hr {
+        height: 1px;
+        border: 0;
+        border-bottom: 1px solid black;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        padding-right: 1em;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page :left {
+        margin: 15mm 20mm 15mm 10mm;
+    }
+
+    @page :right {
+        margin: 15mm 10mm 15mm 20mm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

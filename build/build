@@ -9,8 +9,16 @@ cd "$SCRIPT_DIR"
 # LINEAR -> Execute the Pandoc command
 pandoc "../README.md" \
 -o "../wiss-foto-kmb.pdf" \
---template="../../mdtoanything/latex templates/info.latex" \
+--from markdown-markdown_in_html_blocks+raw_html+grid_tables \
+--template="../resources/info-manual.latex" \
 --pdf-engine="lualatex" \
 --citeproc \
 --standalone \
---resource-path="."
+--resource-path="../resources"\
+
+# HTML -> Execute the Pandoc command
+pandoc "../README.md" \
+-o "../wiss-foto-kmb.html" \
+--citeproc \
+--standalone \
+--resource-path="../resources"\
