@@ -6,7 +6,8 @@ author: |
  | Wissenschaftliche Fotografie
  |
  | Kunstmuseum Basel
- | St. Alban-Graben 8 CH-4010 Basel
+ | St. Alban-Graben 8
+ | CH-4010 Basel
  | max.ehrengruber@bs.ch
 
 adress: true
