@@ -53,7 +53,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Abgedunkelter Aufnahmeraum:** Der Aufnahmeort sollte möglichst dunkle Wände/Decken/Böden aufweisen, um Streulicht und Reflexionen zu reduzieren.[^2]
 
-**Target:** Das Target ist soweit möglich in gleicher Ebene wie das Objekt zu platzieren, ohne dieses zu beschatten.
+**Target:** Targets sind soweit möglich in gleicher Ebene wie das Objekt zu platzieren, ohne diese zu beschatten.
 
 [^2]: Bei stark reflektierenden Objekten sollte hinter dem Aufnahmesensor eine schwarze Fläche platziert werden, um Reflexionen und Streulicht zu vermeiden.
 
@@ -231,6 +231,10 @@ Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionauf
 **Aufnahmegeometrie:** Licht von hinten.
 
 **Licht:** Softbox, Leuchtpult, Blitzleuchtkasten. Das Licht sollte nach Möglichkeit genau vom Objekt verdeckt werden, um Überblendungen zu vermeiden. Exponierte Lichtflächen sollten schwarz abgedeckt werden.
+
+#### Co-Axiale Beleuchtung
+
+**Aufnahmegeometrie:** Licht trifft in gleicher Achse wie die Normale der Aufnahmeebene auf das Objekt (90°). Reflexion und Glanz des Objekts werden hervorgehoben.
 
 #### Technische Vorgaben
 
