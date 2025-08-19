@@ -97,7 +97,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
 
-**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
+**Fotoauftrag**: Gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt sind über die MuseumPlus Vorlage _Fotoauftrag_ anzugeben.
 
 **Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
 
@@ -207,9 +207,9 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 #### Prozesse & Zuständigkeiten
 
-**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Einzelne Umhängungen von Werken werden auf Anfrage dokumentiert.
+**Umfang**: Umfangreiche Umhängungen ganzer Räume werden üblicherweise dokumentiert. Umhängungen von einzelnen Werken werden auf Anfrage dokumentiert.
 
-**Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
+**Zeitrahmen**: Umfangreiche Sammlungsumhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden eigenständig in der Regel innerhalb von 3 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert.[^15]
 
 [^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
 
@@ -260,7 +260,7 @@ Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. 
 
 **Auftraggeber**: Fotoaufträge werden von den für das Objekt zuständigen Kurator\:innen oder Restaurator\:innen angenommen.
 
-**Fotoauftrag**: Über die MuseumPlus Vorlage _Fotoauftrag_ werden gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt angegeben.
+**Fotoauftrag**: Gewünschte Ansichten und Aufnahmearten zum jeweiligen Objekt sind über die MuseumPlus Vorlage _Fotoauftrag_ anzugeben.
 
 **Zeitrahmen**: Objekte werden nach Anlieferung in der Regel innerhalb einer Woche aufgenommen.[^8]
 
@@ -299,8 +299,8 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Un
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: Gray Gamma 2.2
 * **Bit-Tiefe**: 16 Bit
-* **Belichtung Toleranz**^[wenn möglich]: ΔL* ≤2 ([PTFE](#ptfe-target))
-* **Tonwertgenauigkeit** (CIE76)^[wenn möglich]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Belichtung Toleranz**: ΔL* ≤2 ([PTFE](#ptfe-target))
+* **Tonwertgenauigkeit** (CIE76)^[Je nach Bildgebungssystem kann nicht in allen Fällen innerhalb dieser Toleranzen aufgenommen werden]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
 
 #### Metadaten
 
@@ -367,7 +367,7 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 +--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
 | UV-induzierte Infrarot-Lumineszenz                     | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 780–1000nm (modifizierter RGB-Sensor)        | Schott RG830 & Schott RG1000                 |
 +--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
-| UV-induzierte sichtbare Lumineszenz                    | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 380–780nm (modifizierter RGB-Sensor)         | Schott BG38 / Baader UV-IR-Cut               |
+| UV-induzierte sichtbare Lumineszenz                    | 365nm (LED / Blitz)                          | Hönle Blacklight-Filter / Schott UG11 / MUG2 | 380–780nm (normaler RGB-Sensor)              | Schott BG38 / Baader UV-IR-Cut               |
 +--------------------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+----------------------------------------------+
 
 : Lichtquellen und Filter für Multispektralaufnahmen entsprechend [CHARISMA](https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual).
