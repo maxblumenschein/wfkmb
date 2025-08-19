@@ -210,6 +210,8 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Zeitrahmen**: Umfangreiche Umhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden in der Regel innerhalb von 3 Wochen nach Fertigstellung an einem Besucher\:innen freien Tag dokumentiert.[^15]
 
+[^15]: Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld längere Zeiträume festzulegen.
+
 **«Pressebilder»**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
 
 **«Making Of»**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Digitale Kommunikation erstellt.
@@ -411,7 +413,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld | L*  |
-| :--- | :-- |
+| :--- | :--- |
 | A1   | 17  |
 | B1   | 49  |
 | C1   | 73  |
