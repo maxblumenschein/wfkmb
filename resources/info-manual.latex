@@ -59,18 +59,18 @@ bottom=297mm/9*2,
 \setstretch{1.0}
 \setmainfont[
 %Path = \fontpath,
-ItalicFont = ABCDiatype-RegularItalic.otf,
-BoldFont = ABCDiatype-Bold.otf,
-BoldItalicFont  = ABCDiatype-BoldItalic.otf]
-{ABCDiatype-Regular.otf}
+ItalicFont = IBMPlexSans-TextItalic.otf,
+BoldFont = IBMPlexSans-Bold.otf,
+BoldItalicFont  = IBMPlexSans-BoldItalic.otf]
+{IBMPlexSans-Text.otf}
 
 \setmonofont[
 %Path = \fontpath,
 Scale       = 0.8,
-ItalicFont = ABCDiatypeMono-RegularItalic.otf,
-BoldFont = ABCDiatypeMono-Medium.otf,
-BoldItalicFont  = ABCDiatypeMono-MediumItalic.otf]
-{ABCDiatypeMono-Regular.otf}
+ItalicFont = IBMPlexMono-TextItalic.otf,
+BoldFont = IBMPlexMono-Bold.otf,
+BoldItalicFont  = IBMPlexMono-BoldItalic.otf]
+{IBMPlexMono-Text.otf}
 
 %lining-numbers command for occasional use
 \newcommand\tabularnumbers{\addfontfeature{Numbers=Tabular}}

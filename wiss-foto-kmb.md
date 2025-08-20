@@ -1,6 +1,6 @@
 ---
 title: Wissenschaftliche Fotografie am Kunstmuseum Basel
-date: Version 0.1 [Entwurf 19. August, 2025]
+date: Version 0.1 [Entwurf 20. August, 2025]
 author: |
  | Max Ehrengruber
  | Wissenschaftliche Fotografie
@@ -88,7 +88,7 @@ Im Folgenden werden Standards und bewährte Methoden für verschiedene Aufnahmea
 
 ## Reproduktionsaufnahmen
 
-Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes _Target_.
+Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes [_Target_](#targets).
 
 Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen werden, sodass die Reproduktionsgenauigkeit der Aufnahme quantitativ gemessen und im Abgleich mit den Museumseigenen Toleranzen sowie Standards Dritter qualitativ bewertet werden kann.[^target]
 
@@ -134,7 +134,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
-**Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc.
+**Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc..
 
 [^4]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).
 
@@ -150,11 +150,11 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
 
-**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht nach links gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten und Objekten Rücksprache mit den zuständigen Kurator\:innen.
+**Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht zur linken Bildseite gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten und Objekten Rücksprache mit den zuständigen Kurator\:innen.
 
 [^5]: Bei sehr grossen Skulpturen kann die Kamera koplanar zur Vorderseite ausgerichtet werden.
 [^6]: Aufgrund der räumlichen Tiefe dreidimensionaler Objekte kann keine Neutralität über den gesamten Bildraum erzielt werden.
-[^7]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums _RIJKSMUSEUM MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS_ entnommen werden.
+[^7]: Grundlagen für Lichtaufbauten zur Aufnahme von speziellen Objekte und Materialen können der Anleitung des Rijksmuseums [_RIJKSMUSEUM MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS_](https://colostateprofessionalpractices.weebly.com/uploads/5/8/8/5/58856297/rijksmuseum_manual-3d.pdf) entnommen werden.
 
 ### Installationen
 
@@ -197,7 +197,7 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüll
 
 ## Installations- und Gebäudeaufnahmen
 
-Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im Ausstellungsraum bzw. am Ort ihrer Präsentation, z.B. Sonderausstellungen oder Sammlungspräsentationen. Gebäudeaufnahmen werden hiervon unterschieden, wenn keine Kunstwerke abgebildet sind oder diese nicht zentrales Motiv sind, z.B. Baudokumentation oder Gebäude Aussenaufnahme.
+Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im Ausstellungsraum bzw. am Ort ihrer Präsentation, z.B. Sonderausstellungen oder Sammlungspräsentationen. Gebäudeaufnahmen werden hiervon unterschieden, wenn keine Kunstwerke abgebildet sind oder diese nicht zentrales Motiv sind, z.B. Baudokumentation oder Gebäude Aussenaufnahmen.
 
 #### Prozesse & Zuständigkeiten
 
@@ -215,9 +215,9 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 **Licht**: Die Lichtverhältnisse sind so einzustellen wie Besuchende diese wahrnehmen würden. Ausstellungsräume mit natürlichem Lichteinfall sind üblicherweise bei Tageslicht aufzunehmen. Bei Mischlicht mit unterschiedlichen Farbtemperaturen und Intensitäten ist das intensivste Licht als Grundlage für Weissabgleich und Belichtung zu verwenden. Grosse Farbtemperaturunterschiede sind durch Bildbearbeitung zu korrigieren.
 
-**Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes ([ColorChecker Target](#colorchecker-target)) auf Augenhöhe sollte 70 L* (ΔL* ≤8) entsprechen.
+**Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes ([ColorChecker Target](#colorchecker-target)) auf Augenhöhe sollte 75 L* (ΔL* ≤8) entsprechen.
 
-**Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein. Stürzende Linien sind zu vermeiden.
+**Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein.
 
 ### Technische Vorgaben {#installation_repro}
 
@@ -226,8 +226,8 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 * **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Film Standard, Adobe Neutral
-* **Weissabgleich Toleranz**: ΔC* ≤4 (Feld B4, [ColorChecker Target](#colorchecker-target))
-* **Belichtung Toleranz**: ΔL* ≤8 (Feld B4, [ColorChecker Target](#colorchecker-target))
+* **Weissabgleich Toleranz**: ΔC* ≤2 (Feld B4, [ColorChecker Target](#colorchecker-target))
+* **Belichtung Toleranz**: ΔL* ≤8 (75 L* = Feld B4, [ColorChecker Target](#colorchecker-target))
 * **Bildgrösse** (kurze Seite): ≥4000 Pixel
 
 #### Metadaten
@@ -260,9 +260,13 @@ Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. 
 
 ### Visuelles Spektrum
 
-Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionsaufnahmen](#reproduktionsaufnahmen). Darüber hinaus sind folgende Standards zu beachten:
+Zusätzlich zu Reproduktionsaufnahmen können durch verschiedene Aufnahmegeometrien und spezielle Bildgebungsverfahren spezifische Aspekte eines Objekts dokumentiert oder überhaupt erst sichtbar gemacht werden.
+
+Grundsätzlich gelten die gleichen [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen.
 
 #### Streiflicht
+
+Zur Visualisierung der Oberflächentopographie eines Objekts, z.B. Papierstruktur, aufstehende Malschichten.
 
 **Aufnahmegeometrie:** Licht von links, möglichst flacher Auftrittswinkel (1°–10°, je nach Objektoberfläche). Nach Möglichkeit sollte zusätzlich eine Aufnahme mit Licht im 90° Winkel zur ersten Aufnahme gemacht werden (von oben/unten)
 
@@ -270,21 +274,27 @@ Grundsätzlich gelten die gleichen Vorgaben wie für allgemeine [Reproduktionsau
 
 #### Durchlicht
 
+Zur Visualisierung der Opazität eines OBjekts, z.B. Wasserzeichen.
+
 **Aufnahmegeometrie:** Licht von hinten.
 
 **Licht:** Softbox, Leuchtpult, Blitzleuchtkasten. Das Licht sollte nach Möglichkeit genau vom Objekt verdeckt werden, um Überblendungen zu vermeiden. Exponierte Lichtflächen sollten schwarz abgedeckt werden.
 
 #### Co-Axiale Beleuchtung
 
-**Aufnahmegeometrie:** Licht trifft in gleicher Achse wie die Normale der Aufnahmeebene auf das Objekt (90°). Reflexion und Glanz des Objekts werden hervorgehoben.
+Zur Visualisierung von Reflexion und Glanz eines Objekts, z.B. Firnisse.
 
-**Licht:** Hartes Licht in optischer Achse.
+**Aufnahmegeometrie:** Licht trifft in gleicher Achse wie die Normale der Aufnahmeebene auf das Objekt (90°).
+
+**Licht:** möglichst paralleles, grossflächiges Licht (Fresnellinse, Softbox).
 
 #### Technische Vorgaben
 
 Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte gewünscht ist (z.B. Durchlicht), sind die Toleranzen für [Reproduktionsaufnahmen](#reproduktionsaufnahmen) als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
 
 ### Infrarotes Spektrum
+
+Zur Visualisierung von Unterzeichungen, oder Differenzierung von unterschiedlichen Materialien.
 
 #### Technische Vorgaben
 
@@ -295,7 +305,7 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Un
 * **Farbraum**: Gray Gamma 2.2
 * **Bit-Tiefe**: 16 Bit
 * **Belichtung Toleranz**: ΔL* ≤2 ([PTFE](#ptfe-target))
-* **Tonwertgenauigkeit** (CIE76)^[Je nach Bildgebungssystem kann nicht in allen Fällen innerhalb dieser Toleranzen aufgenommen werden]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Tonwertgenauigkeit** (CIE76)^[Je nach Bildgebungssystem kann nicht in allen Fällen innerhalb dieser Toleranzen aufgenommen werden.]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
 
 #### Metadaten
 
@@ -306,6 +316,8 @@ In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. ein
 | Technische Angaben*                                  | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           |
 
 ### Ultraviolettes Spektrum
+
+Zur Visualisierung von Fluoreszenzen eines Objekts, z.B. Firnisse, Materialdifferenzierung, Montierungen.
 
 #### Technische Vorgaben
 
@@ -321,6 +333,8 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. se
 * **Homogenität Beleuchtung**: ΔL* ≤3
 
 ### Röntgen
+
+Zur Visualisierung der Dichteverteilung eines Objekts, z.B. Malschichtaufbau, Materialdifferenzierung.
 
 #### Technische Vorgaben
 
@@ -402,7 +416,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 
 : Theoretische L\*a\*b\*[^16] Werte, X-Rite Colorchecker Classic Mini.
 
-[^16]: ISO 13655:2009 Messspezifikation M0
+[^16]: ISO 13655:2009 Messspezifikation M0.
 
 [**PTFE, artImaging**]{#ptfe-target}: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
 
@@ -456,8 +470,4 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 # Nutzungsbestimmungen
 
-Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument
-darf unter folgenden Bedingungen weitergegeben
-werden: Namensnennung «Kunstmuseum Basel,
-Wissenschaftliche Fotografie am Kunstmuseum Basel, Version 0.1», keine kommerzielle
-Verwertung, keine Bearbeitung oder Veränderung.
+Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel, Wissenschaftliche Fotografie am Kunstmuseum Basel, Version 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.

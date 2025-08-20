@@ -4,6 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap");
 
+:root {
+    --color-main: crimson;
+    --color-highlight: royalblue;
+    --color-select: darkgreen;
+    --color-selection: darkgreen;
+    --color-marked: #fffd6e;
+    --color-text-main: black;
+    --color-text-highlight: darkslategray;
+    --color-canvas: #fefefe;
+}
+
 html {
     font-size: 100%;
     overflow-y: scroll;
@@ -21,12 +32,12 @@ body {
     line-height: 1.5;
     padding: 1em;
     max-width: 40em;
-    background: #fefefe;
+    background: var(--color-canvas);
 }
 
 a {
     position: relative;
-    color: darkgreen;
+    color: var(--color-selection);
     text-decoration: none;
 }
 
@@ -37,7 +48,7 @@ a::after {
     left: 0;
     width: 0;
     height: 1px;
-    background: darkgreen;
+    background: var(--color-selection);
     transition: width 0.1s ease;
 }
 
@@ -59,23 +70,25 @@ a:focus {
 }
 
 *::-moz-selection {
-    background: rgba(255, 255, 0, 0.3);
-    color: #000;
+    background: var(--color-marked);
+    color: var(--color-text-main);
+    padding: 1em;
 }
 
 *::selection {
-    background: rgba(255, 255, 0, 0.3);
-    color: #000;
+    background: var(--color-marked);
+    color: var(--color-text-main);
+    padding: 1em;
 }
 
 a::-moz-selection {
-    background: rgba(255, 255, 0, 0.3);
-    color: #0645ad;
+    background: var(--color-marked);
+    color: var(--color-text-main);
 }
 
 a::selection {
-    background: rgba(255, 255, 0, 0.3);
-    color: #0645ad;
+    background: var(--color-marked);
+    color: var(--color-text-main);
 }
 
 p {
@@ -92,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
+    color: var(--color-text-main);
     line-height: 120%;
     margin-top: 2em;
     font-weight: 600;
@@ -107,14 +120,14 @@ h6 {
 
 h1 {
     font-size: 2.5em;
-    border-left: 12px solid crimson;
+    border-left: 12px solid var(--color-main);
     margin-left: -24px;
     padding-left: 12px;
 }
 
 h2 {
     font-size: 2em;
-    background-color: crimson;
+    background-color: var(--color-main);
     padding: 4px 8px 4px 8px;
     margin-left: -8px;
     margin-right: -8px;
@@ -122,8 +135,8 @@ h2 {
 
 h3 {
     font-size: 1.2em;
-    border-bottom: 3px solid crimson;
-    border-top: 3px solid crimson;
+    border-bottom: 3px solid var(--color-main);
+    border-top: 3px solid var(--color-main);
 }
 
 h4 {
@@ -140,10 +153,9 @@ h6 {
 }
 
 blockquote {
-    color: #666666;
+    color: var(--color-text-highlight);
     margin: 2em;
     padding-left: 3em;
-    border-left: 0.5em #eee solid;
 }
 
 .math {
@@ -155,7 +167,7 @@ hr {
     display: block;
     height: 2em;
     border: 0;
-    border-bottom: 3px solid crimson;
+    border-bottom: 3px solid var(--color-main);
     margin: 1em 0;
     padding: 0;
 }
@@ -164,7 +176,7 @@ pre,
 code,
 kbd,
 samp {
-    color: #000;
+    color: var(--color-text-main);
     font-family:
         IBM Plex Mono,
         monospace,
@@ -188,14 +200,14 @@ dfn {
 }
 
 ins {
-    background: #ff9;
-    color: #000;
+    background: var(--color-marked);
+    color: var(--color-text-main);
     text-decoration: none;
 }
 
 mark {
-    background: #ff0;
-    color: #000;
+    background: var(--color-marked);
+    color: var(--color-text-main);
     font-style: italic;
     font-weight: 600;
 }
@@ -321,7 +333,7 @@ p + table {
 
 table th {
     padding: 0.2em 1em;
-    background-color: royalblue;
+    background-color: var(--color-highlight);
     border: 1px solid;
     font-weight: inherit;
     text-align: left;
@@ -333,6 +345,54 @@ table td {
     border-left: 1px solid;
     vertical-align: top;
 }
+
+/*
+animation
+*/
+
+@keyframes highfade {
+    0% {
+        background-color: transparent;
+    }
+    20% {
+        background-color: var(--color-marked);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@-webkit-keyframes highfade {
+    0% {
+        background-color: transparent;
+    }
+    20% {
+        background-color: var(--color-marked);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+a:target,
+li[id^="fn"]:target,
+sup[id^="fnref"]:target {
+    animation-name: highfade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: highfade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+a:target {
+    border: 0;
+    outline: 0;
+}
+
+/*
+responsive
+*/
 
 @media only screen and (min-width: 480px) {
     body {
@@ -384,7 +444,6 @@ table td {
 
     pre,
     blockquote {
-        border: 1px solid #999;
         padding-right: 1em;
         page-break-inside: avoid;
     }
