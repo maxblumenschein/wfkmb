@@ -77,7 +77,7 @@ BoldItalicFont  = IBMPlexMono-BoldItalic.otf]
 
 % body %
 \setlength{\emergencystretch}{3em} %parameter for justification
-\setlength{\parindent}{2em}
+\setlength{\parindent}{0em}
 
 % custom title & heading fonts
 \makeatletter

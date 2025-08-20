@@ -10,6 +10,7 @@ author: |
  | CH-4010 Basel
  | max.ehrengruber@bs.ch
 
+custom_author: true
 adress: true
 
 project: WFKMB - Grundlagen und Prozesse
