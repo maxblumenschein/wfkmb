@@ -1,14 +1,6 @@
 ---
 title: Wissenschaftliche Fotografie am Kunstmuseum Basel
 date: Version 0.1 [Entwurf 20. August, 2025]
-author: |
- | Max Ehrengruber
- | Wissenschaftliche Fotografie
- |
- | Kunstmuseum Basel
- | St. Alban-Graben 8
- | CH-4010 Basel
- | max.ehrengruber@bs.ch
 
 custom_author: true
 adress: true
@@ -58,6 +50,7 @@ Gebäudeaufnahme</a>
 <li><a href="#digitale-bildanalyse">Digitale Bildanalyse</a></li>
 </ul></li>
 <li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
+<li><a href="#impressum">Impressum</a></li>
 </ul>
 </div>
 
@@ -472,3 +465,18 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 # Nutzungsbestimmungen
 
 Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel, Wissenschaftliche Fotografie am Kunstmuseum Basel, Version 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.
+
+# Impressum
+
+2025 / Version 0.1 [Entwurf 20. August, 2025] \
+\
+Kunstmuseum Basel \
+St. Alban Graben 16–20 \
+CH-4010 Basel \
+[kunstmuseumbasel.ch](https://www.kunstmuseumbasel.ch/) \
+\
+Max Ehrengruber \
+Wissenschaftlicher Fotograf, Restaurierung \
+[max.ehrengruber@bs.ch](mailto:max.ehrengruber@bs.ch) \
+\
+Schriften: IBM Plex Sans, IBM Plex Mono
