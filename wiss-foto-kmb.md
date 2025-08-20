@@ -1,11 +1,9 @@
 ---
-title: Wissenschaftliche Fotografie am Kunstmuseum Basel
+title: Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
 date: Version 0.1 [Entwurf 20. August, 2025]
 
 custom_author: true
 adress: true
-
-project: WFKMB - Grundlagen und Prozesse
 
 lang: de
 
@@ -49,8 +47,8 @@ Gebäudeaufnahme</a>
 <li><a href="#targets">Targets</a></li>
 <li><a href="#digitale-bildanalyse">Digitale Bildanalyse</a></li>
 </ul></li>
-<li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
 <li><a href="#impressum">Impressum</a></li>
+<li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
 </ul>
 </div>
 
@@ -462,10 +460,6 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 | ---- | ----- | ----- |
 | Technische Angaben*                                  | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
 
-# Nutzungsbestimmungen
-
-Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel, Wissenschaftliche Fotografie am Kunstmuseum Basel, Version 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.
-
 # Impressum
 
 2025 / Version 0.1 [Entwurf 20. August, 2025] \
@@ -480,3 +474,7 @@ Wissenschaftlicher Fotograf, Restaurierung \
 [max.ehrengruber@bs.ch](mailto:max.ehrengruber@bs.ch) \
 \
 Schriften: IBM Plex Sans, IBM Plex Mono
+
+## Nutzungsbestimmungen
+
+Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel, Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards, Version 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.
