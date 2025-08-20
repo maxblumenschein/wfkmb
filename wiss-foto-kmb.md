@@ -380,12 +380,12 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld | L*    | a*     | b*     |
-| :---- | :---- | :---- | :---- |
+| :---- | ----: | ----: | ----: |
 | A1   | 37,54 | 14,37  | 14,92  |
-| A2   | 62,73 | 35,83  | 56,5   |
+| A2   | 62,73 | 35,83  | 56,50  |
 | A3   | 28,37 | 15,42  | -49,8  |
 | A4   | 95,19 | -1,03  | 2,93   |
-| B1   | 64,66 | 19,27  | 17,5   |
+| B1   | 64,66 | 19,27  | 17,50   |
 | B2   | 39,43 | 10,75  | -45,17 |
 | B3   | 54,38 | -39,72 | 32,27  |
 | B4   | 81,29 | -0,57  | 0,44   |
@@ -394,8 +394,8 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 | C3   | 42,43 | 51,05  | 28,62  |
 | C4   | 66,89 | -0,75  | -0,06  |
 | D1   | 43,46 | -12,74 | 22,72  |
-| D2   | 30,1  | 22,54  | -20,87 |
-| D3   | 81,8  | 2,67   | 80,41  |
+| D2   | 30,10 | 22,54  | -20,87 |
+| D3   | 81,80 | 2,67   | 80,41  |
 | D4   | 50,76 | -0,13  | 0,14   |
 | E1   | 54,94 | 9,61   | -24,79 |
 | E2   | 71,77 | -24,13 | 58,19  |
@@ -415,7 +415,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld | L*  |
-| :--- | :--- |
+| :--- | ---:|
 | A1   | 17  |
 | B1   | 49  |
 | C1   | 73  |
@@ -429,7 +429,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
 | Feld   | L*  |
-| :--- | :-- |
+| :--- | ---: |
 | LOW A1 | 50  |
 | LOW B1 | 43  |
 | LOW C1 | 37  |
