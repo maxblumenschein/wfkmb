@@ -10,8 +10,6 @@ lang: de
 toc: true
 
 documentclass: report
-
-css: "./resources/pandoc.css"
 ---
 
 <!-- only in html -->

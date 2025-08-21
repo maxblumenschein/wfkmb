@@ -6,23 +6,416 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards</title>
   <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <link rel="stylesheet" href="./resources/pandoc.css" />
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap"){}
+:root {
+--color-main: crimson;
+--color-highlight: royalblue;
+--color-select: darkgreen;
+--color-selection: darkgreen;
+--color-marked: #fffd6e;
+--color-text-main: black;
+--color-text-highlight: darkslategray;
+--color-canvas: #fefefe;
+}
+html {
+font-size: 100%;
+overflow-y: scroll;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+body {
+color: #000;
+font-family:
+IBM Plex Sans,
+Helvetica,
+sans-serif;
+font-size: 12px;
+line-height: 1.5;
+padding: 1em;
+max-width: 40em;
+background: var(--color-canvas);
+}
+a {
+position: relative;
+color: var(--color-selection);
+text-decoration: none;
+}
+a::before,
+a::after {
+content: "";
+position: absolute;
+left: 0;
+width: 0;
+height: 1px;
+background: var(--color-selection);
+transition: width 0.1s ease;
+}
+a::before {
+top: -1.3px; 
+}
+a::after {
+bottom: -1px; 
+}
+a:hover::before,
+a:hover::after {
+width: 100%;
+}
+a:focus {
+outline: thin dotted;
+}
+*::-moz-selection {
+background: var(--color-marked);
+color: var(--color-text-main);
+padding: 1em;
+}
+*::selection {
+background: var(--color-marked);
+color: var(--color-text-main);
+padding: 1em;
+}
+a::-moz-selection {
+background: var(--color-marked);
+color: var(--color-text-main);
+}
+a::selection {
+background: var(--color-marked);
+color: var(--color-text-main);
+}
+p {
+margin: 0em 0;
+}
+img {
+max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: var(--color-text-main);
+line-height: 120%;
+margin-top: 2em;
+font-weight: 600;
+}
+h4,
+h5,
+h6 {
+margin-top: 2em;
+margin-bottom: 1em;
+}
+h1 {
+font-size: 2.5em;
+border-left: 12px solid var(--color-main);
+margin-left: -24px;
+padding-left: 12px;
+}
+h2 {
+font-size: 2em;
+background-color: var(--color-main);
+padding: 4px 8px 4px 8px;
+margin-left: -8px;
+margin-right: -8px;
+}
+h3 {
+font-size: 1.2em;
+border-bottom: 3px solid var(--color-main);
+border-top: 3px solid var(--color-main);
+}
+h4 {
+font-size: 1.2em;
+margin-bottom:;
+}
+h5 {
+font-size: 1em;
+}
+h6 {
+font-size: 0.9em;
+}
+blockquote {
+color: var(--color-text-highlight);
+margin: 2em;
+padding-left: 3em;
+}
+.math {
+margin: 1em;
+padding: 1em;
+}
+hr {
+display: block;
+height: 2em;
+border: 0;
+border-bottom: 3px solid var(--color-main);
+margin: 1em 0;
+padding: 0;
+}
+pre,
+code,
+kbd,
+samp {
+color: var(--color-text-main);
+font-family:
+IBM Plex Mono,
+monospace,
+monospace;
+font-size: 0.9em;
+}
+pre {
+white-space: pre;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+b,
+strong {
+font-weight: 600;
+}
+dfn {
+font-style: italic;
+}
+ins {
+background: var(--color-marked);
+color: var(--color-text-main);
+text-decoration: none;
+}
+mark {
+background: var(--color-marked);
+color: var(--color-text-main);
+font-style: italic;
+font-weight: 600;
+}
+sub,
+sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+ul,
+ol {
+margin: 1em 0;
+padding: 0 0 0 2em;
+}
+li p:last-child {
+margin-bottom: 0;
+}
+ul ul,
+ol ol {
+margin: 0em 0;
+}
+dl {
+margin-bottom: 1em;
+}
+.date {
+margin-top: 1em;
+}
+.manual-toc {
+margin-top: 2em;
+}
+.manual-toc ul {
+list-style-type: none; 
+padding: 0 0 0 0em;
+}
+.manual-toc ul ul {
+list-style-type: none; 
+padding: 0 0 0 2em;
+}
+.manual-toc ul li {
+margin-bottom: 0em; 
+}
+.manual-toc ul li a {
+}
+.manual-toc ul li a:hover {
+}
+dt {
+font-weight: bold;
+margin-bottom: 0.8em;
+}
+dd {
+margin: 0 0 0.8em 2em;
+}
+dd:last-child {
+margin-bottom: 0;
+}
+img {
+border: 0;
+-ms-interpolation-mode: bicubic;
+vertical-align: middle;
+}
+figure {
+display: block;
+text-align: center;
+margin: 1em 0;
+}
+figure img {
+border: none;
+margin: 0 auto;
+}
+figcaption {
+font-size: 0.8em;
+font-style: italic;
+margin: 0 0 0.8em;
+}
+table {
+margin-bottom: 2em;
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-spacing: 0;
+border-collapse: collapse;
+}
+caption {
+margin-top: 0.5em;
+font-size: 90%;
+text-align: left;
+caption-side: bottom;
+width: 100%;
+}
+p + table {
+margin-top: 1em;
+}
+table th {
+padding: 0.2em 1em;
+background-color: var(--color-highlight);
+border: 1px solid;
+font-weight: inherit;
+text-align: left;
+}
+table td {
+padding: 0.2em 1em;
+border-top: 1px solid;
+border-left: 1px solid;
+vertical-align: top;
+}
+
+@keyframes highfade {
+0% {
+background-color: transparent;
+}
+20% {
+background-color: var(--color-marked);
+}
+100% {
+background-color: transparent;
+}
+}
+@-webkit-keyframes highfade {
+0% {
+background-color: transparent;
+}
+20% {
+background-color: var(--color-marked);
+}
+100% {
+background-color: transparent;
+}
+}
+a:target,
+li[id^="fn"]:target,
+sup[id^="fnref"]:target {
+animation-name: highfade;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+-webkit-animation-name: highfade;
+-webkit-animation-duration: 2s;
+-webkit-animation-timing-function: ease-in-out;
+}
+a:target {
+border: 0;
+outline: 0;
+}
+
+@media only screen and (min-width: 480px) {
+body {
+font-size: 14px;
+}
+}
+@media only screen and (min-width: 768px) {
+body {
+font-size: 16px;
+}
+}
+@media print {
+* {
+background: transparent !important;
+color: black !important;
+filter: none !important;
+-ms-filter: none !important;
+}
+body {
+font-size: 12pt;
+max-width: 100%;
+}
+a,
+a:visited {
+text-decoration: underline;
+}
+hr {
+height: 1px;
+border: 0;
+border-bottom: 1px solid black;
+}
+a[href]:after {
+content: " (" attr(href) ")";
+}
+abbr[title]:after {
+content: " (" attr(title) ")";
+}
+.ir a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+content: "";
+}
+pre,
+blockquote {
+padding-right: 1em;
+page-break-inside: avoid;
+}
+tr,
+img {
+page-break-inside: avoid;
+}
+img {
+max-width: 100% !important;
+}
+@page :left {
+margin: 15mm 20mm 15mm 10mm;
+}
+@page :right {
+margin: 15mm 10mm 15mm 20mm;
+}
+p,
+h2,
+h3 {
+orphans: 3;
+widows: 3;
+}
+h2,
+h3 {
+page-break-after: avoid;
+}
+}
+</style>
 </head>
 <body>
 <header id="title-block-header">
@@ -152,22 +545,19 @@ Standard abweichen (z.B. besondere Bildbearbeitung).</p>
 Aufnahmesituation sowie den festgelegten Standards lässt sich eine
 Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich
 eine mögliche Veränderung eines Objekts nachvollziehen und
-quantifizierbar machen.<a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></p>
+quantifizierbar machen.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p><strong>Verhältnismässigkeit:</strong> Bei jeder Dokumentation gilt
 es ein effektives Verhältnis zwischen Ziel, Aufwand und Nutzen zu
 treffen. Objekte sollten nicht unendlich hochauflösend aufgenommen
 werden, sondern so, dass die Aufnahme im Verhältnis zur angedachten und
-abschätzbaren zukünftigen Nutzung steht.<a href="#fn2"
-class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+abschätzbaren zukünftigen Nutzung steht.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
 Gleichzeitig bedeutet der Moment der Aufnahme auch ein Potential für den
 Erhalt eines Objekts, da jede weitere Aufnahme das Objekt durch das
 Handhaben fast unweigerlich – wenn auch minimal – verändern würde. Jeder
 Aufnahme sollten deshalb genaue Überlegungen vorausgehen, um das Objekt
 und Ressourcen nicht unnötig zu belasten.</p>
 <p><strong>Dokumentation / Standardisierung:</strong> Grundsätzlich sind
-die technischen und inhaltlichen Vorgaben des Museumsübergreifenden <a
-href="https://medienstandard.kumu.swiss/">Medienstandards</a>
+die technischen und inhaltlichen Vorgaben des Museumsübergreifenden <a href="https://medienstandard.kumu.swiss/">Medienstandards</a>
 einzuhalten. Anhand der Kodierung der Aufnahmemethodik und der Angabe
 von eindeutigen Identifikationsnummern im Dateinamen sowie der
 Verwendung eines standardisierten Vokabulars von Metadaten, lässt sich
@@ -183,13 +573,11 @@ möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die
 Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie
 das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein
 visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit
-seiner Abbildung verglichen werden kann; ein sogenanntes <a
-href="#targets"><em>Target</em></a>.</p>
+seiner Abbildung verglichen werden kann; ein sogenanntes <a href="#targets"><em>Target</em></a>.</p>
 <p>Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme
 mitaufgenommen werden, sodass die Reproduktionsgenauigkeit der Aufnahme
 quantitativ gemessen und im Abgleich mit den Museumseigenen Toleranzen
-sowie Standards Dritter qualitativ bewertet werden kann.<a href="#fn3"
-class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+sowie Standards Dritter qualitativ bewertet werden kann.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <h4 id="prozesse-zuständigkeiten">Prozesse &amp; Zuständigkeiten</h4>
 <p><strong>Auftraggeber</strong>: Fotoaufträge werden von den für das
 Objekt zuständigen Kurator:innen oder Restaurator:innen angenommen.</p>
@@ -237,10 +625,8 @@ und Kamera. 30–45° Auftrittswinkel des Lichts.</p>
 nötig. Üblicherweise 2–4 <em>Striplights</em> für eine gleichmässige
 Ausleuchtung verwenden.</p>
 <p><strong>Hintergrund</strong>: Acrylglas (Grau, matt, transluzent, 3mm
-opal satin)<a href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a> über Graukarton (L* 50, a* -2, b*
--3)<a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></p>
+opal satin)<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> über Graukarton (L* 50, a* -2, b*
+-3)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
 <p><strong>Zuschnitt</strong>: ca. 1–2 cm Beschnittzugabe um das Objekt.
 Für die Repräsentative Ansicht (<em>w11 - Hero Image</em>) wird das Werk
 nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur
@@ -249,14 +635,11 @@ Objektgeschichte gehören, werden nicht beschnitten.</p>
 Beschriftungen, Stempeln etc..</p>
 <h3 id="skulpturen">Skulpturen</h3>
 <p><strong>Aufnahmegeometrie</strong>: Leicht erhöhte
-Kameraperspektive.<a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a> Das Target zur Bestimmung einer
+Kameraperspektive.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Das Target zur Bestimmung einer
 neutralen Einstellung sollte so nah wie möglich in die Hauptebene des
-Objekts gebracht werden.<a href="#fn7" class="footnote-ref" id="fnref7"
-role="doc-noteref"><sup>7</sup></a></p>
+Objekts gebracht werden.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
 <p><strong>Licht</strong>: Weiches Hauptlicht von vorne links. Fülllicht
-von vorne rechts.<a href="#fn8" class="footnote-ref" id="fnref8"
-role="doc-noteref"><sup>8</sup></a></p>
+von vorne rechts.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
 <p><strong>Hintergrund</strong>: Bei hellen Objekten: Schwarz, matt
 (z.B. Molton). Bei dunklen Objekten: Weiss/Grau, matt.</p>
 <p><strong>Zuschnitt</strong>: circa 10% der Objektgrösse
@@ -267,11 +650,9 @@ Vorne, Objekt leicht zur linken Bildseite gedreht. Nach Möglichkeit
 zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten
 und Objekten Rücksprache mit den zuständigen Kurator:innen.</p>
 <h3 id="installationen">Installationen</h3>
-<p>Siehe <a
-href="#installations--und-gebäudeaufnahmen">Installationsaufnahmen</a>.</p>
+<p>Siehe <a href="#installations--und-gebäudeaufnahmen">Installationsaufnahmen</a>.</p>
 <h3 id="technical_repro">Technische Vorgaben</h3>
-<p>Die Vorgaben orientieren sich am Metamorfoze Standard <a
-href="https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf"><em>Metamorfoze
+<p>Die Vorgaben orientieren sich am Metamorfoze Standard <a href="https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf"><em>Metamorfoze
 Preservation Imaging Guidelines</em></a> (2012) und wurden für den
 praktischen Einsatz am Kunstmuseum Basel vereinfacht.</p>
 <ul>
@@ -281,13 +662,10 @@ praktischen Einsatz am Kunstmuseum Basel vereinfacht.</p>
 (Graustufen)</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Linear, Linear-Scientific</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (<a
-href="#colorchecker-target">ColorChecker Target</a>)</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2 (<a
-href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (<a href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2 (<a href="#colorchecker-target">ColorChecker Target</a>)</li>
 <li><strong>Homogenität Beleuchtung</strong>: ΔL* ≤3</li>
-<li><strong>Farbgenauigkeit</strong> (CIE76)<a href="#fn9"
-class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>:
+<li><strong>Farbgenauigkeit</strong> (CIE76)<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>:
 ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)</li>
 <li><strong>Auflösung</strong> (Minimum): &gt;DIN A2: 150 dpi, ≥DIN A5:
 300 dpi, &lt;DIN A5: 600 dpi</li>
@@ -295,11 +673,9 @@ class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>:
 <h4 id="metadaten">Metadaten</h4>
 <p>Im Folgenden werden die Metadaten-Felder aufgeführt, die
 grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der
-Definition des <a
-href="https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf">Smithsonian,
+Definition des <a href="https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf">Smithsonian,
 <em>Basic Guidelines for Minimal Descriptive Embedded Metadata in
-Digital Images</em> (2010)</a>.<a href="#fn10" class="footnote-ref"
-id="fnref10" role="doc-noteref"><sup>10</sup></a> Mit * markierte Felder
+Digital Images</em> (2010)</a>.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Mit * markierte Felder
 sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu
 trennen.</p>
 <table>
@@ -404,8 +780,7 @@ zu verwenden. Grosse Farbtemperaturunterschiede sind durch
 Bildbearbeitung zu korrigieren.</p>
 <p><strong>Belichtung</strong>: Die Helligkeit sollte über alle
 Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor
-Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (<a
-href="#colorchecker-target">ColorChecker Target</a>) auf Augenhöhe
+Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes (<a href="#colorchecker-target">ColorChecker Target</a>) auf Augenhöhe
 sollte 75 L* (ΔL* ≤8) entsprechen.</p>
 <p><strong>Ansichten</strong>: Die Raumabfolge und Dramarturgie sollte
 anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung
@@ -417,10 +792,8 @@ sollte mindestens einmal und wenn möglich mehrfach abgebildet sein.</p>
 <li><strong>Farbraum</strong>: eciRGBv2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Film Standard, Adobe Neutral</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (Feld B4, <a
-href="#colorchecker-target">ColorChecker Target</a>)</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤8 (75 L* = Feld B4, <a
-href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (Feld B4, <a href="#colorchecker-target">ColorChecker Target</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤8 (75 L* = Feld B4, <a href="#colorchecker-target">ColorChecker Target</a>)</li>
 <li><strong>Bildgrösse</strong> (kurze Seite): ≥4000 Pixel</li>
 </ul>
 <h4 id="metadaten-1">Metadaten</h4>
@@ -519,8 +892,7 @@ etc.).</p>
 Aufnahmegeometrien und spezielle Bildgebungsverfahren spezifische
 Aspekte eines Objekts dokumentiert oder überhaupt erst sichtbar gemacht
 werden.</p>
-<p>Grundsätzlich gelten die gleichen <a
-href="#reproduktionsaufnahmen">Vorgaben für allgemeine
+<p>Grundsätzlich gelten die gleichen <a href="#reproduktionsaufnahmen">Vorgaben für allgemeine
 Reproduktionsaufnahmen</a>. Da je nach Objekt und Forschungsfrage ganz
 unterschiedliche Einstellungen und Aufbauten nötig sind, sind die
 Standards als Ausgangspunkt und Grundlage zu verstehen.</p>
@@ -550,8 +922,7 @@ wie die Normale der Aufnahmeebene auf das Objekt (90°).</p>
 (Fresnellinse, Softbox).</p>
 <h4 id="technische-vorgaben">Technische Vorgaben</h4>
 <p>Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte
-gewünscht ist (z.B. Durchlicht), sind die Toleranzen für <a
-href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a> als
+gewünscht ist (z.B. Durchlicht), sind die Toleranzen für <a href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a> als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.</p>
 <h3 id="infrarotes-spektrum">Infrarotes Spektrum</h3>
 <p>Zur Visualisierung von Unterzeichungen, oder Differenzierung von
@@ -567,10 +938,8 @@ Aufnahme gemacht werden.</p>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
 <li><strong>Farbraum</strong>: Gray Gamma 2.2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2 (<a
-href="#ptfe-target">PTFE</a>)</li>
-<li><strong>Tonwertgenauigkeit</strong> (CIE76)<a href="#fn11"
-class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>:
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤2 (<a href="#ptfe-target">PTFE</a>)</li>
+<li><strong>Tonwertgenauigkeit</strong> (CIE76)<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>:
 ΔE* ≤ 4 (<a href="#ptfe-target">PTFE</a>) (Durchschnitt), ΔE* ≤ 10
 (Maximal)</li>
 </ul>
@@ -614,10 +983,8 @@ werden.</p>
 <li><strong>Farbraum</strong>: eciRGBv2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 <li><strong>Tonwertkurve</strong>: Linear, Linear-Scientific</li>
-<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (LOW A1, <a
-href="#uv-target">Target-UV</a>)</li>
-<li><strong>Belichtung Toleranz</strong>: ΔL* ≤4 (LOW A1, <a
-href="#uv-target">Target-UV</a>)</li>
+<li><strong>Weissabgleich Toleranz</strong>: ΔC* ≤2 (LOW A1, <a href="#uv-target">Target-UV</a>)</li>
+<li><strong>Belichtung Toleranz</strong>: ΔL* ≤4 (LOW A1, <a href="#uv-target">Target-UV</a>)</li>
 <li><strong>Homogenität Beleuchtung</strong>: ΔL* ≤3</li>
 </ul>
 <h3 id="röntgen">Röntgen</h3>
@@ -672,19 +1039,15 @@ Diagnostik der Werke, beispielsweise bei der Sichtbarmachung von
 Wasserzeichen oder Griffelspuren, die aufgrund der spezifischen
 Eigenschaften der Werke (Kaschierung, Retuschen, etc.) unentdeckt
 bleiben würden, oder bei der Unterscheidung verschiedener Farb- und
-Zeichenmittel, aufgrund ihrer spektralen Charateristik.<a href="#fn12"
-class="footnote-ref" id="fnref12"
-role="doc-noteref"><sup>12</sup></a></p>
+Zeichenmittel, aufgrund ihrer spektralen Charateristik.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
 <p>Zur Standardisierung und besseren Vergleichbarkeit orientiert sich
 das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter
-am <a
-href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA
+am <a href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA
 Projekt</a> und den dort dokumentierten Verfahren.</p>
 <h4 id="technische-vorgaben-4">Technische Vorgaben</h4>
 <table style="width:99%;">
 <caption>Lichtquellen und Filter für Multispektralaufnahmen entsprechend
-<a
-href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA</a>.</caption>
+<a href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA</a>.</caption>
 <colgroup>
 <col style="width: 22%" />
 <col style="width: 18%" />
@@ -762,8 +1125,7 @@ anderen Orten mit abweichenden Aufnahmeparametern.</p>
 <p>Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen
 Targets zur Kalibrierung zu verwenden.</p>
 <table>
-<caption>Theoretische L*a*b*<a href="#fn13" class="footnote-ref"
-id="fnref13" role="doc-noteref"><sup>13</sup></a> Werte, X-Rite
+<caption>Theoretische L*a*b*<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Werte, X-Rite
 Colorchecker Classic Mini.</caption>
 <thead>
 <tr>
@@ -929,8 +1291,7 @@ ausserhalb des visuell sichtbaren Spektrums.</p>
 <p>Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen
 Targets zur Kalibrierung zu verwenden.</p>
 <table>
-<caption>Theoretische L*<a href="#fn14" class="footnote-ref"
-id="fnref14" role="doc-noteref"><sup>14</sup></a> Werte, artImaging
+<caption>Theoretische L*<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> Werte, artImaging
 PTFE.</caption>
 <thead>
 <tr>
@@ -1010,14 +1371,12 @@ die Oberflächentopographie eines Werks besser sichtbar zu machen. Dazu
 können die Farbwerte zweier Aufnahmen Pixel für Pixel miteinander
 addiert, subtrahiert, multipliziert oder dividiert werden.</p>
 <p>Für die mathematischen Operationen werden die Farbwerte eines Pixels
-normalisiert: <span
-class="math inline">Schwarz = 0 ≤ <em>x</em> ≤ 1 = Weiss</span></p>
+normalisiert: <span class="math inline">Schwarz = 0 ≤ <em>x</em> ≤ 1 = Weiss</span></p>
 <p>Die Verrechnung der einzelnen Aufnahmen kann dabei helfen spezifische
 Aspekte eines dokumentierten Objekts herauszufiltern. So führt eine
 Subtraktion der Auflicht- von einer Streflicht-Aufnahme im Ergebnis zu
 einer weitgehenden Ausblendung der Zeichnung oder des Drucks, wobei die
-Oberflächentopographie eines Objekts sichtbar bleibt.<a href="#fn15"
-class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>
+Oberflächentopographie eines Objekts sichtbar bleibt.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>
 Konzeptuell gesprochen reduziert eine Bildsubtraktion also jene
 Bildinformation, die in beiden Aufnahmen enthalten ist.</p>
 <p>Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine
@@ -1068,15 +1427,13 @@ Wissenschaftlicher Fotograf, Restaurierung<br />
 Schriften: IBM Plex Sans, IBM Plex Mono</p>
 <h2 id="nutzungsbestimmungen">Nutzungsbestimmungen</h2>
 <p>Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel –
-Standards» steht unter einer <a
-href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
+Standards» steht unter einer <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
 Commons Lizenz CC BY-NC-ND 4.0</a>. Das Dokument darf unter folgenden
 Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel,
 Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards, Version
 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder
 Veränderung.</p>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1"><p>Wegen der technischen Konstruktion der verwendeten
@@ -1084,54 +1441,36 @@ Geräte sowie der Vielzahl von manuellen wie automatischen
 Bearbeitsschritte vom Moment einer Aufnahme bis zur fertigen digitalen
 Datei kann keine absolute Genauigkeit und Reproduzierbarkeit garantiert
 werden. Aus diesem Grund wurden für die technischen Anforderungen der
-üblichen Aufnahmemethoden entsprechende Toleranzen definiert.<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+üblichen Aufnahmemethoden entsprechende Toleranzen definiert.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Besonders die laufenden Kosten der Aufbewahrung der
 digitalen Dateien sollten bei der Wahl des Aufnahmemediums und der
-Qualitätsstufe berücksichtigt werden.<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+Qualitätsstufe berücksichtigt werden.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Je nach Aufnahmemethode und Aufnahmespektrum werden
-unterschiedliche oder eine Kombination von mehreren Targets benötigt.<a
-href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).<a
-href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>1931 2° Observer, D50 Illuminant, eciRGB v2.<a
-href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+unterschiedliche oder eine Kombination von mehreren Targets benötigt.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>1931 2° Observer, D50 Illuminant, eciRGB v2.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>Bei sehr grossen Skulpturen kann die Kamera koplanar zur
-Vorderseite ausgerichtet werden.<a href="#fnref6" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
+Vorderseite ausgerichtet werden.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>Aufgrund der räumlichen Tiefe dreidimensionaler Objekte
-kann keine Neutralität über den gesamten Bildraum erzielt werden.<a
-href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+kann keine Neutralität über den gesamten Bildraum erzielt werden.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p>Grundlagen für Lichtaufbauten zur Aufnahme von
 speziellen Objekte und Materialen können der Anleitung des Rijksmuseums
-<a
-href="https://colostateprofessionalpractices.weebly.com/uploads/5/8/8/5/58856297/rijksmuseum_manual-3d.pdf"><em>RIJKSMUSEUM
-MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS</em></a> entnommen werden.<a
-href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<a href="https://colostateprofessionalpractices.weebly.com/uploads/5/8/8/5/58856297/rijksmuseum_manual-3d.pdf"><em>RIJKSMUSEUM
+MANUAL FOR THE PHOTOGRAPHY OF 3D OBJECTS</em></a> entnommen werden.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p>Diese Parameter entsprechen der Definition der
 Farbverbindlichtkeit <em>ca - farbkalibriert</em> bzw. <em>cb -
-farbkalibriert mit abgebildeter Farbreferenz</em> des <a
-href="https://medienstandard.kumu.swiss/">Medienstandard 3.0.1</a>.<a
-href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Zur Zuordnung der Metadaten-Felder vgl. <a
-href="https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html"><em>IPTC:
+farbkalibriert mit abgebildeter Farbreferenz</em> des <a href="https://medienstandard.kumu.swiss/">Medienstandard 3.0.1</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Zur Zuordnung der Metadaten-Felder vgl. <a href="https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html"><em>IPTC:
 mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and
-NewsML-G2 2.25</em></a>.<a href="#fnref10" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
+NewsML-G2 2.25</em></a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11"><p>Je nach Bildgebungssystem kann nicht in allen Fällen
-innerhalb dieser Toleranzen aufgenommen werden.<a href="#fnref11"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+innerhalb dieser Toleranzen aufgenommen werden.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12"><p><a href="#digitale-bildanalyse">Siehe Digitale
-Bildanalyse.</a><a href="#fnref12" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>ISO 13655:2009 Messspezifikation M0.<a href="#fnref13"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>ISO 13655:2009 Messspezifikation M0.<a href="#fnref14"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+Bildanalyse.</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>ISO 13655:2009 Messspezifikation M0.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>ISO 13655:2009 Messspezifikation M0.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p>Durch einen digitalen Hochpassfilter kann die
-Darstellung noch zusätzlich auf sehr feine Details reduziert werden.<a
-href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+Darstellung noch zusätzlich auf sehr feine Details reduziert werden.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
