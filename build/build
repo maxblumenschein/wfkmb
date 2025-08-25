@@ -15,7 +15,7 @@ envsubst '${VERSION} ${DATE}' < "../wiss-foto-kmb.md" > "../wiss-foto-kmb.tmp.md
 
 # PDF output
 pandoc "../wiss-foto-kmb.tmp.md" \
-  -o "../releases/pdf/wiss-foto-kmb.pdf" \
+  -o "../releases/pdf/wiss-foto-kmb_${DATE}.pdf" \
   --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
   --template="../resources/info-manual.latex" \
   --pdf-engine="lualatex" \
@@ -25,7 +25,7 @@ pandoc "../wiss-foto-kmb.tmp.md" \
 
 # HTML output
 pandoc "../wiss-foto-kmb.tmp.md" \
-  -o "../releases/html/wiss-foto-kmb.html" \
+  -o "../releases/html/wiss-foto-kmb_${DATE}.html" \
   --citeproc \
   --embed-resources \
   --standalone \
