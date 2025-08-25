@@ -1,25 +1,35 @@
 #!/bin/bash
+set -euo pipefail
 
-# Get the directory of the script
+# Version and date variables
+VERSION="0.1.1"
+DATE=$(date +%Y-%m-%d)
+
+# Get script directory
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-
-# Change to the script's directory
 cd "$SCRIPT_DIR"
 
-# LINEAR -> Execute the Pandoc command
-pandoc "../wiss-foto-kmb.md" \
--o "../releases/pdf/wiss-foto-kmb.pdf" \
---from markdown-markdown_in_html_blocks+raw_html+grid_tables \
---template="../resources/info-manual.latex" \
---pdf-engine="lualatex" \
---citeproc \
---standalone \
---resource-path="../resources"\
+# Preprocess Markdown: replace ${VERSION} and ${DATE} with envsubst
+export VERSION DATE
+envsubst '${VERSION} ${DATE}' < "../wiss-foto-kmb.md" > "../wiss-foto-kmb.tmp.md"
 
-# HTML -> Execute the Pandoc command
-pandoc "../wiss-foto-kmb.md" \
--o "../releases/html/wiss-foto-kmb.html" \
---citeproc \
---embed-resources \
---standalone \
---css="../resources/pandoc.css"\
+# PDF output
+pandoc "../wiss-foto-kmb.tmp.md" \
+  -o "../releases/pdf/wiss-foto-kmb.pdf" \
+  --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
+  --template="../resources/info-manual.latex" \
+  --pdf-engine="lualatex" \
+  --citeproc \
+  --standalone \
+  --resource-path="../resources"
+
+# HTML output
+pandoc "../wiss-foto-kmb.tmp.md" \
+  -o "../releases/html/wiss-foto-kmb.html" \
+  --citeproc \
+  --embed-resources \
+  --standalone \
+  --css="../resources/pandoc.css"
+
+# Clean up
+rm "../wiss-foto-kmb.tmp.md"

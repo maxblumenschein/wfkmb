@@ -1,6 +1,6 @@
 ---
 title: Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
-date: Version 0.1 [Entwurf 20. August, 2025]
+date: Version ${VERSION} [${DATE}]
 
 custom_author: true
 adress: true
@@ -460,7 +460,7 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 # Impressum
 
-2025 / Version 0.1 [Entwurf 20. August, 2025] \
+${DATE} / Version ${VERSION} \
 \
 Kunstmuseum Basel \
 St. Alban Graben 16–20 \
@@ -475,4 +475,4 @@ Schriften: IBM Plex Sans, IBM Plex Mono
 
 ## Nutzungsbestimmungen
 
-Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Kunstmuseum Basel, Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards, Version 0.1», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.
+Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards» steht unter einer [Creative Commons Lizenz CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Das Dokument darf unter folgenden Bedingungen weitergegeben werden: Namensnennung «Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards, Version ${VERSION}», keine kommerzielle Verwertung, keine Bearbeitung oder Veränderung.
