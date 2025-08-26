@@ -13,7 +13,8 @@ documentclass: report
 ---
 
 <!-- only in html -->
-<a href="./${FILENAME}_${VERSION_TAG}.pdf">Download PDF</a>
+<p><a href="./${FILENAME}_${VERSION_TAG}.pdf">Download PDF</a></p>
+
 <div class="manual-toc">
 <ul>
 <li><a href="#einleitung">Einleitung</a></li>
