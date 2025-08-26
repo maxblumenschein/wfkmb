@@ -428,12 +428,13 @@ page-break-after: avoid;
 <header id="title-block-header">
 <h1 class="title">Wissenschaftliche Fotografie am Kunstmuseum Basel –
 Standards</h1>
-<p class="date">Version 0.1.1 [2025-08-25]</p>
+<p class="date">Version 1.0.0 [2025-08-26]</p>
 </header>
 <nav id="TOC" role="doc-toc">
 
 </nav>
 <!-- only in html -->
+<a href="./wiss-foto-kmb_v1-0-0.pdf">Download PDF</a>
 <div class="manual-toc">
 <ul>
 <li>
@@ -899,10 +900,6 @@ etc.).</p>
 Aufnahmegeometrien und spezielle Bildgebungsverfahren spezifische
 Aspekte eines Objekts dokumentiert oder überhaupt erst sichtbar gemacht
 werden.</p>
-<p>Grundsätzlich gelten die gleichen <a href="#reproduktionsaufnahmen">Vorgaben für allgemeine
-Reproduktionsaufnahmen</a>. Da je nach Objekt und Forschungsfrage ganz
-unterschiedliche Einstellungen und Aufbauten nötig sind, sind die
-Standards als Ausgangspunkt und Grundlage zu verstehen.</p>
 <h4 id="streiflicht">Streiflicht</h4>
 <p>Zur Visualisierung der Oberflächentopographie eines Objekts, z.B.
 Papierstruktur, aufstehende Malschichten.</p>
@@ -928,18 +925,23 @@ wie die Normale der Aufnahmeebene auf das Objekt (90°).</p>
 <p><strong>Licht:</strong> möglichst paralleles, grossflächiges Licht
 (Fresnellinse, Softbox).</p>
 <h4 id="technische-vorgaben">Technische Vorgaben</h4>
-<p>Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte
-gewünscht ist (z.B. Durchlicht), sind die Toleranzen für <a href="#reproduktionsaufnahmen">Reproduktionsaufnahmen</a> als
-Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.</p>
+<p>Grundsätzlich gelten die <a href="#reproduktionsaufnahmen">Vorgaben
+für allgemeine Reproduktionsaufnahmen</a> sowie die spezifischen
+Vorgaben zu Filtern und Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da je nach Objekt
+und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten
+nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu
+verstehen. Abweichungen davon sind in den Metadaten zu vermerken.</p>
 <h3 id="infrarotes-spektrum">Infrarotes Spektrum</h3>
 <p>Zur Visualisierung von Unterzeichungen, oder Differenzierung von
 unterschiedlichen Materialien.</p>
 <h4 id="technische-vorgaben-1">Technische Vorgaben</h4>
-<p>Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht
-ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen für
-Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu
-verstehen. Beim Abweichen sollte zusätzlich eine standardisierte
-Aufnahme gemacht werden.</p>
+<p>Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und
+Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
+je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht
+ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als
+Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
+davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
+standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -951,9 +953,10 @@ Aufnahme gemacht werden.</p>
 (Maximal)</li>
 </ul>
 <h4 id="metadaten-2">Metadaten</h4>
-<p>In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit,
-Filter etc. einzutragen. Mehrfachangaben sind mit Semicolon zu
-trennen.</p>
+<p>In die Metadaten sind zwingend die Aufnahmeparameter Aufnahmedistanz,
+Blende, Fokuseinstellung, Belichtungszeit, Beleuchtungsstärke, Filter
+sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit
+Semicolon zu trennen.</p>
 <table>
 <colgroup>
 <col style="width: 28%" />
@@ -979,11 +982,13 @@ trennen.</p>
 <p>Zur Visualisierung von Fluoreszenzen eines Objekts, z.B. Firnisse,
 Materialdifferenzierung, Montierungen.</p>
 <h4 id="technische-vorgaben-2">Technische Vorgaben</h4>
-<p>Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht
-ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung
-als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim
-Abweichen sollte zusätzlich eine standardisierte Aufnahme gemacht
-werden.</p>
+<p>Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und
+Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
+je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist
+(z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als
+Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
+davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
+standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -1005,9 +1010,10 @@ Malschichtaufbau, Materialdifferenzierung.</p>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 </ul>
 <h4 id="metadaten-3">Metadaten</h4>
-<p>In die Metadaten sind die Aufnahmeparameter wie Stromstärke,
-Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen.
-Mehrfachangaben sind mit Semicolon zu trennen.</p>
+<p>In die Metadaten sind zwingend die Aufnahmeparameter Stromstärke,
+Spannung, Belichtungszeit, Aufnahmedistanz, Filter sowie etwaige
+Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu
+trennen.</p>
 <table>
 <colgroup>
 <col style="width: 28%" />
@@ -1051,7 +1057,7 @@ Zeichenmittel, aufgrund ihrer spektralen Charateristik.<a href="#fn12" class="fo
 das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter
 am <a href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA
 Projekt</a> und den dort dokumentierten Verfahren.</p>
-<h4 id="technische-vorgaben-4">Technische Vorgaben</h4>
+<h4 id="msi-requirements">Technische Vorgaben</h4>
 <table style="width:99%;">
 <caption>Lichtquellen und Filter für Multispektralaufnahmen entsprechend
 <a href="https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual">CHARISMA</a>.</caption>
@@ -1420,7 +1426,7 @@ Skalieren 1, Versatz 128 (EHM)</td>
 </tbody>
 </table>
 <h1 id="impressum">Impressum</h1>
-<p>2025-08-25 / Version 0.1.1<br />
+<p>2025-08-26 / Version 1.0.0<br />
 <br />
 Kunstmuseum Basel<br />
 St. Alban Graben 16–20<br />
@@ -1437,7 +1443,7 @@ Schriften: IBM Plex Sans, IBM Plex Mono</p>
 Standards» steht unter einer <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
 Commons Lizenz CC BY-NC-ND 4.0</a>. Das Dokument darf unter folgenden
 Bedingungen weitergegeben werden: Namensnennung «Wissenschaftliche
-Fotografie am Kunstmuseum Basel – Standards, Version 0.1.1», keine
+Fotografie am Kunstmuseum Basel – Standards, Version 1.0.0», keine
 kommerzielle Verwertung, keine Bearbeitung oder Veränderung.</p>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />

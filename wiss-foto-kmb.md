@@ -13,6 +13,7 @@ documentclass: report
 ---
 
 <!-- only in html -->
+<a href="./${FILENAME}_${VERSION_TAG}.pdf">Download PDF</a>
 <div class="manual-toc">
 <ul>
 <li><a href="#einleitung">Einleitung</a></li>
@@ -252,8 +253,6 @@ Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. 
 
 Zusätzlich zu Reproduktionsaufnahmen können durch verschiedene Aufnahmegeometrien und spezielle Bildgebungsverfahren spezifische Aspekte eines Objekts dokumentiert oder überhaupt erst sichtbar gemacht werden.
 
-Grundsätzlich gelten die gleichen [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen.
-
 #### Streiflicht
 
 Zur Visualisierung der Oberflächentopographie eines Objekts, z.B. Papierstruktur, aufstehende Malschichten.
@@ -280,7 +279,7 @@ Zur Visualisierung von Reflexion und Glanz eines Objekts, z.B. Firnisse.
 
 #### Technische Vorgaben
 
-Da je nach Fragestellung keine Reproduktion der Farb- und Tonwerte gewünscht ist (z.B. Durchlicht), sind die Toleranzen für [Reproduktionsaufnahmen](#reproduktionsaufnahmen) als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen.
+Grundsätzlich gelten die [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen) sowie die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken.
 
 ### Infrarotes Spektrum
 
@@ -288,7 +287,7 @@ Zur Visualisierung von Unterzeichungen, oder Differenzierung von unterschiedlich
 
 #### Technische Vorgaben
 
-Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim Abweichen sollte zusätzlich eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -299,7 +298,7 @@ Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. Un
 
 #### Metadaten
 
-In die Metadaten sind die Aufnahmeparameter wie Belichtungszeit, Filter etc. einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
+In die Metadaten sind zwingend die Aufnahmeparameter Aufnahmedistanz, Blende, Fokuseinstellung, Belichtungszeit, Beleuchtungsstärke, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | ---- | ----- | ----- |
@@ -311,7 +310,7 @@ Zur Visualisierung von Fluoreszenzen eines Objekts, z.B. Firnisse, Materialdiffe
 
 #### Technische Vorgaben
 
-Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Beim Abweichen sollte zusätzlich eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -335,7 +334,7 @@ Zur Visualisierung der Dichteverteilung eines Objekts, z.B. Malschichtaufbau, Ma
 
 #### Metadaten
 
-In die Metadaten sind die Aufnahmeparameter wie Stromstärke, Spannung, etc. sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
+In die Metadaten sind zwingend die Aufnahmeparameter Stromstärke, Spannung, Belichtungszeit, Aufnahmedistanz, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | ---- | ----- | ----- |
@@ -349,7 +348,7 @@ Indem Kamera und Objekt während der Aufnahmen nicht relativ zueinander verschob
 
 Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter am [CHARISMA Projekt](https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual) und den dort dokumentierten Verfahren.
 
-#### Technische Vorgaben
+#### Technische Vorgaben {#msi-requirements}
 
 +--------------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 | Beschreibung                                           | Lichtquelle                                                                                 | Aufnahmemedium                                                                              |

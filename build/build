@@ -2,20 +2,25 @@
 set -euo pipefail
 
 # Version and date variables
-VERSION="0.1.1"
+VERSION="1.0.0"
 DATE=$(date +%Y-%m-%d)
+
+# Filename (without extension)
+FILENAME="wiss-foto-kmb"
+
+# Sanitized version for filenames (replace '.' with '-')
+VERSION_TAG="v${VERSION//./-}"
 
 # Get script directory
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# Preprocess Markdown: replace ${VERSION} and ${DATE} with envsubst
-export VERSION DATE
-envsubst '${VERSION} ${DATE}' < "../wiss-foto-kmb.md" > "../wiss-foto-kmb.tmp.md"
+export VERSION DATE FILENAME VERSION_TAG
+envsubst '${VERSION} ${DATE} ${FILENAME} ${VERSION_TAG}' < "../${FILENAME}.md" > "../${FILENAME}.tmp.md"
 
 # PDF output
-pandoc "../wiss-foto-kmb.tmp.md" \
-  -o "../releases/pdf/wiss-foto-kmb_${DATE}.pdf" \
+pandoc "../${FILENAME}.tmp.md" \
+  -o "../releases/${FILENAME}_${VERSION_TAG}.pdf" \
   --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
   --template="../resources/info-manual.latex" \
   --pdf-engine="lualatex" \
@@ -24,12 +29,12 @@ pandoc "../wiss-foto-kmb.tmp.md" \
   --resource-path="../resources"
 
 # HTML output
-pandoc "../wiss-foto-kmb.tmp.md" \
-  -o "../releases/html/wiss-foto-kmb_${DATE}.html" \
+pandoc "../${FILENAME}.tmp.md" \
+  -o "../releases/${FILENAME}_${VERSION_TAG}.html" \
   --citeproc \
   --embed-resources \
   --standalone \
   --css="../resources/pandoc.css"
 
 # Clean up
-rm "../wiss-foto-kmb.tmp.md"
+rm "../${FILENAME}.tmp.md"
