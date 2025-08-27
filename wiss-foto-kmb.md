@@ -48,6 +48,7 @@ Gebäudeaufnahme</a>
 <li><a href="#digitale-bildanalyse">Digitale Bildanalyse</a></li>
 </ul></li>
 <li><a href="#impressum">Impressum</a></li>
+<li><a href="#änderungsgeschichte">Änderungsgeschichte</a></li>
 <li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
 </ul>
 </div>
@@ -472,6 +473,12 @@ Wissenschaftlicher Fotograf, Restaurierung \
 [max.ehrengruber@bs.ch](mailto:max.ehrengruber@bs.ch) \
 \
 Schriften: IBM Plex Sans, IBM Plex Mono
+
+## Änderungsgeschichte
+
+Neue Elemente in Version ${VERSION}:
+
+ - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
 
 ## Nutzungsbestimmungen
 
