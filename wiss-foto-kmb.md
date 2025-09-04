@@ -46,6 +46,7 @@ Gebäudeaufnahme</a>
 </ul></li>
 <li><a href="#targets">Targets</a></li>
 <li><a href="#digitale-bildanalyse">Digitale Bildanalyse</a></li>
+<li><a href="#kontrolliertes-vokabular">Kontrolliertes Vokabular</a></li>
 </ul></li>
 <li><a href="#impressum">Impressum</a></li>
 <li><a href="#änderungsgeschichte">Änderungsgeschichte</a></li>
@@ -170,21 +171,26 @@ Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation
 
 [^10]: Diese Parameter entsprechen der Definition der Farbverbindlichtkeit _ca - farbkalibriert_ bzw. _cb - farbkalibriert mit abgebildeter Farbreferenz_ des [Medienstandard 3.0.1](https://medienstandard.kumu.swiss/).
 
-#### Metadaten
+#### Metadaten {#basic-metadata}
 
-Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^11] Mit * markierte Felder sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu trennen.
+Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich gemäss dem [kontrollierten Vokabular](#kontrolliertes-vokabular) befüllt werden sollten. Diese Liste orientiert sich an der Definition des [Smithsonian, _Basic Guidelines for Minimal Descriptive Embedded Metadata in Digital Images_ (2010)](https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf).[^11] Mit * markierte Felder sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                    |
-| ---- | ----- | ----- |
+| --- | ----- | ------ |
 | Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                            |
+| Quelle*                                              | `photoshop:Source`          | Kunstmuseum Basel                                           |
 | Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |
 | Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |
+| Adresse                                              | `Iptc4xmpCore:CiAdrExtadr`  | St. Alban-Graben 8                                          |
+| Stadt                                                | `Iptc4xmpCore:CiAdrCity`    | Basel                                                       |
+| Postleitzahl                                         | `Iptc4xmpCore:CiAdrPcode`   | 4010                                                        |
+| Land                                                 | `Iptc4xmpCore:CiAdrCtry`    | Schweiz                                                     |
 | E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                        |
+| Telefon                                              | `Iptc4xmpCore:CiTelWork`    | +41 61 206 62 62                                            |
 | Website                                              | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         |
 | Titel                                                | `dc:title`                  | Blumenstillleben                                            |
 | Inhaltliche Beschreibung                             | `dc:description`            | Linker Flügel des Altarbildes                               |
-| Technische Angaben                                   | `photoshop:Instructions`    | Digitale Bildmontage aus 6 Einzelaufnahmen                  |
-| Stichworte                                           | `dc:subject`                | Soft-Illumination; Digital Composite; Multishot/Pixel-Shift |
+| Technische Angaben                                   | `photoshop:Instructions`    | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
 
 [^11]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
 
@@ -225,17 +231,7 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 #### Metadaten
 
-| Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
-| ---- | ----- | ----- |
-| Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                                                       |
-| Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                                              |
-| Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                                           |
-| E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                                                   |
-| Website                                              | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                                                    |
-| Titel                                                | `dc:title`                  | Installationsansicht                                                                   |
-| Inhaltliche Beschreibung                             | `dc:description`            | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5, 11.03.2024 |
-| Technische Angaben                                   | `photoshop:Instructions`    | Lichtschalter wurden digital entfernt/retuschiert                                      |
-| Stichworte                                           | `dc:subject`                | Digital Composite; Multishot/HDR                                                       |
+Grundsätzlich gelten die [allgemeinen Vorgaben und Empfehlungen zu Metadaten](#basic-metadata).
 
 ## Analytische Aufnahmen
 
@@ -281,7 +277,7 @@ Zur Visualisierung von Reflexion und Glanz eines Objekts, z.B. Firnisse.
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen) sowie die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken.
+Grundsätzlich gelten die [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen) sowie die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken.
 
 ### Infrarotes Spektrum
 
@@ -289,7 +285,7 @@ Zur Visualisierung von Unterzeichungen, oder Differenzierung von unterschiedlich
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -300,11 +296,11 @@ Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Mu
 
 #### Metadaten
 
-In die Metadaten sind zwingend die Aufnahmeparameter Aufnahmedistanz, Blende, Fokuseinstellung, Belichtungszeit, Beleuchtungsstärke, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
+Grundsätzlich gelten die [allgemeinen Vorgaben und Empfehlungen zu Metadaten](#basic-metadata). Darüber hinaus sind zwingend die Aufnahmeparameter Aufnahmedistanz, Blende, Fokuseinstellung, Belichtungszeit, Beleuchtungsstärke, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
-| ---- | ----- | ----- |
-| Technische Angaben*                                  | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)                           |
+| --- | ----- | ------ |
+| Technische Angaben*                                  | `photoshop:Instructions`    | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter                                 |
 
 ### Ultraviolettes Spektrum
 
@@ -312,7 +308,7 @@ Zur Visualisierung von Fluoreszenzen eines Objekts, z.B. Firnisse, Materialdiffe
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -336,11 +332,11 @@ Zur Visualisierung der Dichteverteilung eines Objekts, z.B. Malschichtaufbau, Ma
 
 #### Metadaten
 
-In die Metadaten sind zwingend die Aufnahmeparameter Stromstärke, Spannung, Belichtungszeit, Aufnahmedistanz, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
+Grundsätzlich gelten die [allgemeinen Vorgaben und Empfehlungen zu Metadaten](#basic-metadata). Darüber hinaus sind zwingend die Aufnahmeparameter Stromstärke, Spannung, Belichtungszeit, Aufnahmedistanz, Filter sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
-| ---- | ----- | ----- |
-| Technische Angaben*                                  | `photoshop:Instructions`    | 50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM) |
+| --- | ----- | ------ |
+| Technische Angaben*                                  | `photoshop:Instructions`    | 50kV, 19mA, 30ms, 1500mm, 1mm, Aluminiumfilter; Kontrast des Keilrahmens dem Kontrast der Leinwand angeglichen (EHM) |
 
 ### Multispektralaufnahmen
 
@@ -453,11 +449,38 @@ Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberech
 
 ### Metadaten
 
-Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit Semicolon zu trennen.
+Die einzelnen Bearbeitungsschritte sind in die [Metadaten](#basic-metadata) einzutragen, sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
-| ---- | ----- | ----- |
-| Technische Angaben*                                  | `photoshop:Instructions`    | "kw1a_0033228_2023-11-01_s-001-vr.tif" von "kw1d_0033228_2023-11-01_s-001-vr.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
+| --- | ----- | ------ |
+| Technische Angaben*                                  | `photoshop:Instructions`    | "kw1a_2023-11-01.tif" von "kw1d_2023-11-01.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
+
+## Kontrolliertes Vokabular
+
+Zur konsistenten und nachvollziehbaren Angabe von technischen und beschreibenden [Metadaten](#basic-metadata) ist ein kontrolliertes Vokabular zu nutzen. Mehrfachangaben sind mit Semicolon zu trennen.
+
+| Beschreibung                                  | Metadatenfeld                       | Schema             | Beispiel                           |
+| ---- | ---- | ----- | ----- |
+| Ersteller\:in der Datei                       | Ersteller\:in                       | [Vorname] [Nachname] / [Institution] | Max Blumenschein |
+| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] | Kunstmuseum Basel |
+| Erstellungsdatum der Datei                    | Erstellungsdatum                    | [YYYY-MM-DD]T[HH:MM:SS][UTC-Offset]^[Gemäss [ISO 8601:2019](https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en).] | 2024-08-15T16:29:14+02:00                                   |
+| Stellenbezeichnung                            | Position                            | [Stellenbezeichnung] | Wissenschaftliche Fotografin |
+| Kontaktadresse                                | Adresse                             | [Strasse] [Hausnummer] | St. Alban-Graben 8 |
+| Stadt                                         | Stadt                               | [Stadt] | Basel |
+| Postleitzahl                                  | Postleitzahl                        | [PLZ] | 4010 |
+| Land                                          | Land                                | [Land] | Schweiz |
+| E-Mail Adresse                                | E-Mail                              | [E-Mail Adresse] | stanley.brouwn@bs.ch |
+| Telefonnummer                                 | Telefon                             | [Telefonnummer] | +41 61 206 62 62 |
+| Website                                       | Website                             | [URL] | kunstmuseumbasel.ch |
+| Titel                                         | Titel                               | [Inhaltlich beschreibender Titel] | Blumenstillleben |
+| Inhaltliche Beschreibung                      | Inhaltliche Beschreibung            | [Inhaltliche Beschreibung] | Linker Flügel des Altarbildes |
+| Ausstellungsdokumentation                     | Inhaltliche Beschreibung            | [Ort], [Gebäude], [Haupttitel]. [Untertitel], [Stockwerk], [Raum], [Wand] | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5 |
+| Standardkonformität                           | Technische Angaben                  | [Name] ([Version]) | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
+| Bildmontage                                   | Technische Angaben                  | Digitale Bildmontage aus [n] Einzelaufnahmen ([Dateinamen der Einzelaufnahmen]) | Digitale Bildmontage aus 2 Einzelaufnahmen ("gd11_2025-08-27_s-001.tif", "gd11_2025-08-27_s-002.tif") |
+| Mehrfachaufnahme                              | Technische Angaben                  | Mehrfachaufnahme/[Methode] | 1. Mehrfachaufnahme/Pixel-Shift (16-Shot) <br> 2. Mehrfachaufnahme/Focusstacking (43-Shot, Helicon Focus 8.3.5, Method C, Smoothing 4) |
+| Besondere Bearbeitung                         | Technische Angaben                  | Bildbearbeitung: [Chronologische Bearbeitungsschritte] ([Kürzel Bearbeiter\:in]) | "kw1a_2023-11-01.tif" von "kw1d_2023-11-01.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
+| Infrarotaufnahmen                             | Technische Angaben                  | [Aufnahmedistanz in mm], [Blende in f], [Fokuseinstellung in mm], [Belichtungszeit in ms], [Beleuchtungsstärke in W], [Filter] | 1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter
+| Röntgenaufnahmen                              | Technische Angaben                  | [Stromstärke in kV], [Spannung in mA], [Belichtungszeit in ms], [Aufnahmedistanz in mm], [Filter] | 50kV, 19mA, 30ms, 1500mm, 1mm, Aluminiumfilter |
 
 # Impressum
 
@@ -476,8 +499,12 @@ Schriften: IBM Plex Sans, IBM Plex Mono
 
 ## Änderungsgeschichte
 
+Die Änderungsgeschichte sowie Vorgängerversionen sind über [```https://github.com/maxblumenschein/wfkmb/releases```](https://github.com/maxblumenschein/wfkmb/releases) einsehbar.
+
 Neue Elemente in Version ${VERSION}:
 
+ - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular)
+ - Vorgaben zur Struktur und Taxonomie von technischen Metadaten
  - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
 
 ## Nutzungsbestimmungen
