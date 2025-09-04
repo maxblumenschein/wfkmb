@@ -49,6 +49,7 @@ Gebäudeaufnahme</a>
 <li><a href="#kontrolliertes-vokabular">Kontrolliertes Vokabular</a></li>
 </ul></li>
 <li><a href="#impressum">Impressum</a></li>
+<li><a href="#änderungsgeschichte">Änderungen zur Vorgängerversion</a></li>
 <li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
 </ul>
 </div>
@@ -234,7 +235,7 @@ Grundsätzlich gelten die [allgemeinen Vorgaben und Empfehlungen zu Metadaten](#
 
 ## Forensische Aufnahmen
 
-Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
+Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche [Metadaten](#basic-metadata), die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
 
 #### Prozesse & Zuständigkeiten
 
@@ -276,7 +277,7 @@ Zur Visualisierung von Reflexion und Glanz eines Objekts, z.B. Firnisse.
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen) sowie die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken.
+Grundsätzlich gelten die [Vorgaben für allgemeine Reproduktionsaufnahmen](#reproduktionsaufnahmen) sowie die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Objekt und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken.
 
 ### Infrarotes Spektrum
 
@@ -284,7 +285,7 @@ Zur Visualisierung von Unterzeichungen, oder Differenzierung von unterschiedlich
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -307,7 +308,7 @@ Zur Visualisierung von Fluoreszenzen eines Objekts, z.B. Firnisse, Materialdiffe
 
 #### Technische Vorgaben
 
-Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
+Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Multispektralaufnahmen](#msi-requirements). Da je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen davon sind in den [Metadaten](#basic-metadata) zu vermerken. Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
@@ -448,7 +449,7 @@ Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberech
 
 ### Metadaten
 
-Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit Semicolon zu trennen.
+Die einzelnen Bearbeitungsschritte sind in die [Metadaten](#basic-metadata) einzutragen, sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit Semicolon zu trennen.
 
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                                               |
 | --- | ----- | ------ |
@@ -456,22 +457,22 @@ Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen, sodass die
 
 ## Kontrolliertes Vokabular
 
-Zur konsistenten und nachvollziehbaren Angabe von technischen und beschreibenden Metadaten ist ein kontrolliertes Vokabular zu nutzen. Mehrfachangaben sind mit Semicolon zu trennen.
+Zur konsistenten und nachvollziehbaren Angabe von technischen und beschreibenden [Metadaten](#basic-metadata) ist ein kontrolliertes Vokabular zu nutzen. Mehrfachangaben sind mit Semicolon zu trennen.
 
-| Beschreibung                                  | Metadatenfeld                       | Schema             | Beispiel                                                                               |
+| Beschreibung                                  | Metadatenfeld                       | Schema             | Beispiel                           |
 | ---- | ---- | ----- | ----- |
 | Ersteller\:in der Datei                       | Ersteller\:in                       | [Vorname] [Nachname] / [Institution] | Max Blumenschein |
-| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] | Kunstmuseum Basel                                           |
+| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] | Kunstmuseum Basel |
 | Erstellungsdatum der Datei                    | Erstellungsdatum                    | [YYYY-MM-DD]T[HH:MM:SS][UTC-Offset]^[Gemäss [ISO 8601:2019](https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en).] | 2024-08-15T16:29:14+02:00                                   |
-| Stellenbezeichnung                            | Position                            | [Stellenbezeichnung] | Wissenschaftliche Fotografin                                |
-| Kontaktadresse                                | Adresse                             | [Strasse] [Hausnummer] | St. Alban-Graben 8                                          |
-| Stadt                                         | Stadt                               | [Stadt] | Basel                                                       |
-| Postleitzahl                                  | Postleitzahl                        | [PLZ] | 4010                                                        |
-| Land                                          | Land                                | [Land] | Schweiz                                                     |
-| E-Mail Adresse                                | E-Mail                              | [E-Mail Adresse] | stanley.brouwn@bs.ch                                        |
-| Telefonnummer                                 | Telefon                             | [Telefonnummer] | +41 61 206 62 62                                            |
-| Website                                       | Website                             | [URL] | kunstmuseumbasel.ch                                         |
-| Titel                                         | Titel                               | [Inhaltlich beschreibender Titel] | Blumenstillleben                                            |
+| Stellenbezeichnung                            | Position                            | [Stellenbezeichnung] | Wissenschaftliche Fotografin |
+| Kontaktadresse                                | Adresse                             | [Strasse] [Hausnummer] | St. Alban-Graben 8 |
+| Stadt                                         | Stadt                               | [Stadt] | Basel |
+| Postleitzahl                                  | Postleitzahl                        | [PLZ] | 4010 |
+| Land                                          | Land                                | [Land] | Schweiz |
+| E-Mail Adresse                                | E-Mail                              | [E-Mail Adresse] | stanley.brouwn@bs.ch |
+| Telefonnummer                                 | Telefon                             | [Telefonnummer] | +41 61 206 62 62 |
+| Website                                       | Website                             | [URL] | kunstmuseumbasel.ch |
+| Titel                                         | Titel                               | [Inhaltlich beschreibender Titel] | Blumenstillleben |
 | Inhaltliche Beschreibung                      | Inhaltliche Beschreibung            | [Inhaltliche Beschreibung] | Linker Flügel des Altarbildes |
 | Ausstellungsdokumentation                     | Inhaltliche Beschreibung            | [Ort], [Gebäude], [Haupttitel]. [Untertitel], [Stockwerk], [Raum], [Wand] | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5 |
 | Standardkonformität                           | Technische Angaben                  | [Name] ([Version]) | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
@@ -495,6 +496,15 @@ Wissenschaftlicher Fotograf, Restaurierung \
 [max.ehrengruber@bs.ch](mailto:max.ehrengruber@bs.ch) \
 \
 Schriften: IBM Plex Sans, IBM Plex Mono
+
+## Änderungsgeschichte
+
+Die Änderungsgeschichte sowie Vorgängerversionen sind über [```https://github.com/maxblumenschein/wfkmb/releases```](https://github.com/maxblumenschein/wfkmb/releases) einsehbar.
+
+Neue Elemente in Version ${VERSION}:
+
+ - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular)
+ - Vorgaben zur Struktur und Taxonomie von technischen Metadaten
 
 ## Nutzungsbestimmungen
 

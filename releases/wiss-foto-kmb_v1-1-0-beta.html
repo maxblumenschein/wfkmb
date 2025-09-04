@@ -428,14 +428,14 @@ page-break-after: avoid;
 <header id="title-block-header">
 <h1 class="title">Wissenschaftliche Fotografie am Kunstmuseum Basel –
 Standards</h1>
-<p class="date">Version 1.1.0 [2025-08-27]</p>
+<p class="date">Version 1.1.0-beta [2025-08-27]</p>
 </header>
 <nav id="TOC" role="doc-toc">
 
 </nav>
 <!-- only in html -->
 <p>
-<a href="./wiss-foto-kmb_v1-1-0.pdf">Download PDF</a>
+<a href="./wiss-foto-kmb_v1-1-0-beta.pdf">Download PDF</a>
 </p>
 <div class="manual-toc">
 <ul>
@@ -513,6 +513,9 @@ Gebäudeaufnahme</a>
 </li>
 <li>
 <a href="#impressum">Impressum</a>
+</li>
+<li>
+<a href="#änderungsgeschichte">Änderungen zur Vorgängerversion</a>
 </li>
 <li>
 <a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a>
@@ -774,7 +777,7 @@ trennen.</p>
 <td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
 <td>Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
-(Version 1.1.0)</td>
+(Version 1.1.0-beta)</td>
 </tr>
 </tbody>
 </table>
@@ -849,8 +852,8 @@ von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur
 Untersuchung übereinanderliegender Malschichten). Da die technischen
 Einstellungen je nach Fragestellung und Objekt stark variieren, sind
 diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung
-von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen
-nachvollziehbar und möglichst reproduzierbar machen.</p>
+von geeigneten Targets sowie umfangreiche <a href="#basic-metadata">Metadaten</a>, die die Aufnahmen nachvollziehbar
+und möglichst reproduzierbar machen.</p>
 <h4 id="prozesse-zuständigkeiten-2">Prozesse &amp; Zuständigkeiten</h4>
 <p><strong>Auftraggeber</strong>: Fotoaufträge werden von den für das
 Objekt zuständigen Kurator:innen oder Restaurator:innen angenommen.</p>
@@ -901,7 +904,7 @@ für allgemeine Reproduktionsaufnahmen</a> sowie die spezifischen
 Vorgaben zu Filtern und Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da je nach Objekt
 und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten
 nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu
-verstehen. Abweichungen davon sind in den Metadaten zu vermerken.</p>
+verstehen. Abweichungen davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.</p>
 <h3 id="infrarotes-spektrum">Infrarotes Spektrum</h3>
 <p>Zur Visualisierung von Unterzeichungen, oder Differenzierung von
 unterschiedlichen Materialien.</p>
@@ -911,8 +914,8 @@ Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
 je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht
 ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
-davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
-standardisierte Aufnahme gemacht werden.</p>
+davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.
+Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -960,8 +963,8 @@ Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
 je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist
 (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
-davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
-standardisierte Aufnahme gemacht werden.</p>
+davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.
+Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -1372,9 +1375,9 @@ Bildberechnung optimieren: Da im Durchlicht alle Schichten eines Objekts
 Auflicht-Aufnahmen der Vorder- und Rückseite zu einer Darstellung, die
 nunmehr nur die ‹mittleren› Lagen des Objekts zeigt.</p>
 <h3 id="metadaten-3">Metadaten</h3>
-<p>Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen,
-sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben
-sind mit Semicolon zu trennen.</p>
+<p>Die einzelnen Bearbeitungsschritte sind in die <a href="#basic-metadata">Metadaten</a> einzutragen, sodass diese
+nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit
+Semicolon zu trennen.</p>
 <table>
 <colgroup>
 <col style="width: 21%" />
@@ -1400,8 +1403,9 @@ Deckkraft 68%, Skalieren 1, Versatz 128 (EHM)</td>
 </table>
 <h2 id="kontrolliertes-vokabular">Kontrolliertes Vokabular</h2>
 <p>Zur konsistenten und nachvollziehbaren Angabe von technischen und
-beschreibenden Metadaten ist ein kontrolliertes Vokabular zu nutzen.
-Mehrfachangaben sind mit Semicolon zu trennen.</p>
+beschreibenden <a href="#basic-metadata">Metadaten</a> ist ein
+kontrolliertes Vokabular zu nutzen. Mehrfachangaben sind mit Semicolon
+zu trennen.</p>
 <table>
 <colgroup>
 <col style="width: 22%" />
@@ -1509,7 +1513,7 @@ Raum 5</td>
 <td>Technische Angaben</td>
 <td>[Name] ([Version])</td>
 <td>Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
-(Version 1.1.0)</td>
+(Version 1.1.0-beta)</td>
 </tr>
 <tr>
 <td>Bildmontage</td>
@@ -1553,7 +1557,7 @@ Deckkraft 68%, Skalieren 1, Versatz 128 (EHM)</td>
 </tbody>
 </table>
 <h1 id="impressum">Impressum</h1>
-<p>2025-08-27 / Version 1.1.0<br />
+<p>2025-08-27 / Version 1.1.0-beta<br />
 <br />
 Kunstmuseum Basel<br />
 St. Alban Graben 16–20<br />
@@ -1565,12 +1569,21 @@ Wissenschaftlicher Fotograf, Restaurierung<br />
 <a href="mailto:max.ehrengruber@bs.ch">max.ehrengruber@bs.ch</a><br />
 <br />
 Schriften: IBM Plex Sans, IBM Plex Mono</p>
+<h2 id="änderungsgeschichte">Änderungsgeschichte</h2>
+<p>Die Änderungsgeschichte sowie Vorgängerversionen sind über <a href="https://github.com/maxblumenschein/wfkmb/releases"><code>https://github.com/maxblumenschein/wfkmb/releases</code></a>
+einsehbar.</p>
+<p>Neue Elemente in Version 1.1.0-beta:</p>
+<ul>
+<li>Einführung eines <a href="#kontrolliertes-vokabular">kontrollierten
+Vokabulars</a></li>
+<li>Vorgaben zur Struktur und Taxonomie von technischen Metadaten</li>
+</ul>
 <h2 id="nutzungsbestimmungen">Nutzungsbestimmungen</h2>
 <p>Der Standard «Wissenschaftliche Fotografie am Kunstmuseum Basel –
 Standards» steht unter einer <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
 Commons Lizenz CC BY-NC-ND 4.0</a>. Das Dokument darf unter folgenden
 Bedingungen weitergegeben werden: Namensnennung «Wissenschaftliche
-Fotografie am Kunstmuseum Basel – Standards, Version 1.1.0», keine
+Fotografie am Kunstmuseum Basel – Standards, Version 1.1.0-beta», keine
 kommerzielle Verwertung, keine Bearbeitung oder Veränderung.</p>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
