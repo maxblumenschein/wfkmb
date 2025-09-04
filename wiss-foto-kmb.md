@@ -36,7 +36,7 @@ Gebäudeaufnahme</a>
 <li><a href="#ästhetische-vorgaben">Ästhetische Vorgaben</a></li>
 <li><a href="#installation_repro">Technische Vorgaben</a></li>
 </ul></li>
-<li><a href="#forensische-aufnahmen">Forensische Aufnahmen</a>
+<li><a href="#analytische-aufnahmen">Analytische Aufnahmen</a>
 <ul>
 <li><a href="#visuelles-spektrum">Visuelles Spektrum</a></li>
 <li><a href="#infrarotes-spektrum">Infrarotes Spektrum</a></li>
@@ -49,7 +49,7 @@ Gebäudeaufnahme</a>
 <li><a href="#kontrolliertes-vokabular">Kontrolliertes Vokabular</a></li>
 </ul></li>
 <li><a href="#impressum">Impressum</a></li>
-<li><a href="#änderungsgeschichte">Änderungen zur Vorgängerversion</a></li>
+<li><a href="#änderungsgeschichte">Änderungsgeschichte</a></li>
 <li><a href="#nutzungsbestimmungen">Nutzungsbestimmungen</a></li>
 </ul>
 </div>
@@ -58,7 +58,7 @@ Gebäudeaufnahme</a>
 
 Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokumentation der Sammlung des Museums verpflichtet. Ihre Aufgabe ist die Objekte der Sammlung in ihrer materiellen Originalität festzuhalten und im Sinne der Erhaltung und Vermittlung für die Öffentlichkeit zugänglich zu machen.
 
-In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren bildforensische Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
+In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
 
 Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
 
@@ -233,9 +233,9 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 
 Grundsätzlich gelten die [allgemeinen Vorgaben und Empfehlungen zu Metadaten](#basic-metadata).
 
-## Forensische Aufnahmen
+## Analytische Aufnahmen
 
-Forensische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche [Metadaten](#basic-metadata), die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
+Analytische Aufnahmen werden zu Dokumentations- und Forschungszwecken erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem spezifische materialtechnologische Eigenschaften eines Objekts festgehalten oder überhaupt erst sichtbar gemacht werden. Darunter fallen neben ‹einfachen› Detailaufnahmen (z.B. Signaturen) auch Spezialaufnahmen wie Infrarotteflektographie (z.B. zur Sichtbarmachung von kohlenstoffhaltigen Vorzeichnungen) oder Röntgenaufnahmen (z.B. zur Untersuchung übereinanderliegender Malschichten). Da die technischen Einstellungen je nach Fragestellung und Objekt stark variieren, sind diese nur bedingt zu standardisieren. Umso wichtiger ist die Verwendung von geeigneten Targets sowie umfangreiche Metadaten, die die Aufnahmen nachvollziehbar und möglichst reproduzierbar machen.
 
 #### Prozesse & Zuständigkeiten
 
@@ -505,6 +505,7 @@ Neue Elemente in Version ${VERSION}:
 
  - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular)
  - Vorgaben zur Struktur und Taxonomie von technischen Metadaten
+ - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
 
 ## Nutzungsbestimmungen
 

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Version and date variables
-VERSION="1.1.0-beta"
+VERSION="1.1.0"
 DATE=$(date +%Y-%m-%d)
 
 # Filename (without extension)
