@@ -428,7 +428,7 @@ page-break-after: avoid;
 <header id="title-block-header">
 <h1 class="title">Wissenschaftliche Fotografie am Kunstmuseum Basel –
 Standards</h1>
-<p class="date">Version 1.1.0 [2025-08-27]</p>
+<p class="date">Version 1.1.0 [2025-09-04]</p>
 </header>
 <nav id="TOC" role="doc-toc">
 
@@ -505,6 +505,9 @@ Gebäudeaufnahme</a>
 </li>
 <li>
 <a href="#digitale-bildanalyse">Digitale Bildanalyse</a>
+</li>
+<li>
+<a href="#kontrolliertes-vokabular">Kontrolliertes Vokabular</a>
 </li>
 </ul>
 </li>
@@ -683,19 +686,19 @@ praktischen Einsatz am Kunstmuseum Basel vereinfacht.</p>
 <li><strong>Auflösung</strong> (Minimum): &gt;DIN A2: 150 dpi, ≥DIN A5:
 300 dpi, &lt;DIN A5: 600 dpi</li>
 </ul>
-<h4 id="metadaten">Metadaten</h4>
+<h4 id="basic-metadata">Metadaten</h4>
 <p>Im Folgenden werden die Metadaten-Felder aufgeführt, die
-grundsätzlich befüllt werden sollten. Diese Liste orientiert sich an der
-Definition des <a href="https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf">Smithsonian,
+grundsätzlich gemäss dem <a href="#kontrolliertes-vokabular">kontrollierten Vokabular</a> befüllt
+werden sollten. Diese Liste orientiert sich an der Definition des <a href="https://www.digitizationguidelines.gov/guidelines/GuidelinesEmbeddedMetadata.pdf">Smithsonian,
 <em>Basic Guidelines for Minimal Descriptive Embedded Metadata in
 Digital Images</em> (2010)</a>.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Mit * markierte Felder
 sind verpflichtend zu füllen. Mehrfachangaben sind mit Semicolon zu
 trennen.</p>
 <table>
 <colgroup>
-<col style="width: 28%" />
+<col style="width: 21%" />
 <col style="width: 35%" />
-<col style="width: 35%" />
+<col style="width: 42%" />
 </colgroup>
 <thead>
 <tr>
@@ -711,6 +714,11 @@ trennen.</p>
 <td>Max Blumenschein</td>
 </tr>
 <tr>
+<td>Quelle*</td>
+<td><code>photoshop:Source</code></td>
+<td>Kunstmuseum Basel</td>
+</tr>
+<tr>
 <td>Erstellungsdatum*</td>
 <td><code>photoshop:DateCreated</code></td>
 <td>2024-08-15T16:29:14+02:00</td>
@@ -721,9 +729,34 @@ trennen.</p>
 <td>Wissenschaftliche Fotografin</td>
 </tr>
 <tr>
+<td>Adresse</td>
+<td><code>Iptc4xmpCore:CiAdrExtadr</code></td>
+<td>St. Alban-Graben 8</td>
+</tr>
+<tr>
+<td>Stadt</td>
+<td><code>Iptc4xmpCore:CiAdrCity</code></td>
+<td>Basel</td>
+</tr>
+<tr>
+<td>Postleitzahl</td>
+<td><code>Iptc4xmpCore:CiAdrPcode</code></td>
+<td>4010</td>
+</tr>
+<tr>
+<td>Land</td>
+<td><code>Iptc4xmpCore:CiAdrCtry</code></td>
+<td>Schweiz</td>
+</tr>
+<tr>
 <td>E-Mail</td>
 <td><code>Iptc4xmpCore:CiEmailWork</code></td>
 <td>stanley.brouwn@bs.ch</td>
+</tr>
+<tr>
+<td>Telefon</td>
+<td><code>Iptc4xmpCore:CiTelWork</code></td>
+<td>+41 61 206 62 62</td>
 </tr>
 <tr>
 <td>Website</td>
@@ -743,12 +776,8 @@ trennen.</p>
 <tr>
 <td>Technische Angaben</td>
 <td><code>photoshop:Instructions</code></td>
-<td>Digitale Bildmontage aus 6 Einzelaufnahmen</td>
-</tr>
-<tr>
-<td>Stichworte</td>
-<td><code>dc:subject</code></td>
-<td>Soft-Illumination; Digital Composite; Multishot/Pixel-Shift</td>
+<td>Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
+(Version 1.1.0)</td>
 </tr>
 </tbody>
 </table>
@@ -809,69 +838,9 @@ sollte mindestens einmal und wenn möglich mehrfach abgebildet sein.</p>
 <li><strong>Belichtung Toleranz</strong>: ΔL* ≤8 (75 L* = Feld B4, <a href="#colorchecker-target">ColorChecker Target</a>)</li>
 <li><strong>Bildgrösse</strong> (kurze Seite): ≥4000 Pixel</li>
 </ul>
-<h4 id="metadaten-1">Metadaten</h4>
-<table>
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 35%" />
-<col style="width: 35%" />
-</colgroup>
-<thead>
-<tr>
-<th>Beschreibung</th>
-<th>XMP-Bezeichnung</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ersteller:in*</td>
-<td><code>dc:creator</code></td>
-<td>Max Blumenschein</td>
-</tr>
-<tr>
-<td>Erstellungsdatum*</td>
-<td><code>photoshop:DateCreated</code></td>
-<td>2024-08-15T16:29:14+02:00</td>
-</tr>
-<tr>
-<td>Position</td>
-<td><code>photoshop:AuthorsPosition</code></td>
-<td>Wissenschaftliche Fotografin</td>
-</tr>
-<tr>
-<td>E-Mail</td>
-<td><code>Iptc4xmpCore:CiEmailWork</code></td>
-<td>stanley.brouwn@bs.ch</td>
-</tr>
-<tr>
-<td>Website</td>
-<td><code>Iptc4xmpCore:CiUrlWork</code></td>
-<td>kunstmuseumbasel.ch</td>
-</tr>
-<tr>
-<td>Titel</td>
-<td><code>dc:title</code></td>
-<td>Installationsansicht</td>
-</tr>
-<tr>
-<td>Inhaltliche Beschreibung</td>
-<td><code>dc:description</code></td>
-<td>Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG,
-Raum 5, 11.03.2024</td>
-</tr>
-<tr>
-<td>Technische Angaben</td>
-<td><code>photoshop:Instructions</code></td>
-<td>Lichtschalter wurden digital entfernt/retuschiert</td>
-</tr>
-<tr>
-<td>Stichworte</td>
-<td><code>dc:subject</code></td>
-<td>Digital Composite; Multishot/HDR</td>
-</tr>
-</tbody>
-</table>
+<h4 id="metadaten">Metadaten</h4>
+<p>Grundsätzlich gelten die <a href="#basic-metadata">allgemeinen
+Vorgaben und Empfehlungen zu Metadaten</a>.</p>
 <h2 id="analytische-aufnahmen">Analytische Aufnahmen</h2>
 <p>Analytische Aufnahmen werden zu Dokumentations- und Forschungszwecken
 erstellt. Sie gehen über Reproduktionsaufnahmen hinaus, indem
@@ -935,7 +904,7 @@ für allgemeine Reproduktionsaufnahmen</a> sowie die spezifischen
 Vorgaben zu Filtern und Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da je nach Objekt
 und Forschungsfrage ganz unterschiedliche Einstellungen und Aufbauten
 nötig sind, sind die Standards als Ausgangspunkt und Grundlage zu
-verstehen. Abweichungen davon sind in den Metadaten zu vermerken.</p>
+verstehen. Abweichungen davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.</p>
 <h3 id="infrarotes-spektrum">Infrarotes Spektrum</h3>
 <p>Zur Visualisierung von Unterzeichungen, oder Differenzierung von
 unterschiedlichen Materialien.</p>
@@ -945,8 +914,8 @@ Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
 je nach Fragestellung keine genaue Reproduktion der Tonwerte gewünscht
 ist (z.B. Unterzeichung sichtbar machen), sind die Toleranzen als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
-davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
-standardisierte Aufnahme gemacht werden.</p>
+davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.
+Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -957,16 +926,18 @@ standardisierte Aufnahme gemacht werden.</p>
 ΔE* ≤ 4 (<a href="#ptfe-target">PTFE</a>) (Durchschnitt), ΔE* ≤ 10
 (Maximal)</li>
 </ul>
-<h4 id="metadaten-2">Metadaten</h4>
-<p>In die Metadaten sind zwingend die Aufnahmeparameter Aufnahmedistanz,
-Blende, Fokuseinstellung, Belichtungszeit, Beleuchtungsstärke, Filter
-sowie etwaige Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit
-Semicolon zu trennen.</p>
+<h4 id="metadaten-1">Metadaten</h4>
+<p>Grundsätzlich gelten die <a href="#basic-metadata">allgemeinen
+Vorgaben und Empfehlungen zu Metadaten</a>. Darüber hinaus sind zwingend
+die Aufnahmeparameter Aufnahmedistanz, Blende, Fokuseinstellung,
+Belichtungszeit, Beleuchtungsstärke, Filter sowie etwaige
+Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu
+trennen.</p>
 <table>
 <colgroup>
-<col style="width: 28%" />
+<col style="width: 21%" />
 <col style="width: 35%" />
-<col style="width: 35%" />
+<col style="width: 42%" />
 </colgroup>
 <thead>
 <tr>
@@ -979,7 +950,7 @@ Semicolon zu trennen.</p>
 <tr>
 <td>Technische Angaben*</td>
 <td><code>photoshop:Instructions</code></td>
-<td>1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter (EHM)</td>
+<td>1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter</td>
 </tr>
 </tbody>
 </table>
@@ -992,8 +963,8 @@ Spektren für <a href="#msi-requirements">Multispektralaufnahmen</a>. Da
 je nach Fragestellung keine Reproduktion der Tonwerte gewünscht ist
 (z.B. sehr geringe Fluoreszenz), sind die Toleranzen für Belichtung als
 Ausgangspunkt und Vorschlag nach Möglichkeit zu verstehen. Abweichungen
-davon sind in den Metadaten zu vermerken. Zusätzlich sollte eine
-standardisierte Aufnahme gemacht werden.</p>
+davon sind in den <a href="#basic-metadata">Metadaten</a> zu vermerken.
+Zusätzlich sollte eine standardisierte Aufnahme gemacht werden.</p>
 <ul>
 <li><strong>Dateiformat</strong>: TIFF, <code>.tif</code></li>
 <li><strong>Dateiname</strong>: nach Medienstandard</li>
@@ -1014,16 +985,17 @@ Malschichtaufbau, Materialdifferenzierung.</p>
 <li><strong>Farbraum</strong>: Gray Gamma 2.2</li>
 <li><strong>Bit-Tiefe</strong>: 16 Bit</li>
 </ul>
-<h4 id="metadaten-3">Metadaten</h4>
-<p>In die Metadaten sind zwingend die Aufnahmeparameter Stromstärke,
-Spannung, Belichtungszeit, Aufnahmedistanz, Filter sowie etwaige
-Bearbeitungsschritte einzutragen. Mehrfachangaben sind mit Semicolon zu
-trennen.</p>
+<h4 id="metadaten-2">Metadaten</h4>
+<p>Grundsätzlich gelten die <a href="#basic-metadata">allgemeinen
+Vorgaben und Empfehlungen zu Metadaten</a>. Darüber hinaus sind zwingend
+die Aufnahmeparameter Stromstärke, Spannung, Belichtungszeit,
+Aufnahmedistanz, Filter sowie etwaige Bearbeitungsschritte einzutragen.
+Mehrfachangaben sind mit Semicolon zu trennen.</p>
 <table>
 <colgroup>
-<col style="width: 28%" />
+<col style="width: 21%" />
 <col style="width: 35%" />
-<col style="width: 35%" />
+<col style="width: 42%" />
 </colgroup>
 <thead>
 <tr>
@@ -1036,8 +1008,8 @@ trennen.</p>
 <tr>
 <td>Technische Angaben*</td>
 <td><code>photoshop:Instructions</code></td>
-<td>50kV 19mA 30ms 1500mm (ES); Digital Composite (Panorama); Kontrast
-des Keilrahmens dem Kontrast der Leinwand digital angeglichen (EHM)</td>
+<td>50kV, 19mA, 30ms, 1500mm, 1mm, Aluminiumfilter; Kontrast des
+Keilrahmens dem Kontrast der Leinwand angeglichen (EHM)</td>
 </tr>
 </tbody>
 </table>
@@ -1402,15 +1374,15 @@ Bildberechnung optimieren: Da im Durchlicht alle Schichten eines Objekts
 übereinandergelagert zu sehen sind, führt die Subtraktion der
 Auflicht-Aufnahmen der Vorder- und Rückseite zu einer Darstellung, die
 nunmehr nur die ‹mittleren› Lagen des Objekts zeigt.</p>
-<h3 id="metadaten-4">Metadaten</h3>
-<p>Die einzelnen Bearbeitungsschritte sind in die Metadaten einzutragen,
-sodass diese nachvollziehbar und reproduzierbar sind. Mehrfachangaben
-sind mit Semicolon zu trennen.</p>
+<h3 id="metadaten-3">Metadaten</h3>
+<p>Die einzelnen Bearbeitungsschritte sind in die <a href="#basic-metadata">Metadaten</a> einzutragen, sodass diese
+nachvollziehbar und reproduzierbar sind. Mehrfachangaben sind mit
+Semicolon zu trennen.</p>
 <table>
 <colgroup>
-<col style="width: 28%" />
+<col style="width: 21%" />
 <col style="width: 35%" />
-<col style="width: 35%" />
+<col style="width: 42%" />
 </colgroup>
 <thead>
 <tr>
@@ -1423,15 +1395,169 @@ sind mit Semicolon zu trennen.</p>
 <tr>
 <td>Technische Angaben*</td>
 <td><code>photoshop:Instructions</code></td>
-<td>“kw1a_0033228_2023-11-01_s-001-vr.tif” von
-“kw1d_0033228_2023-11-01_s-001-vr.tif” subtrahiert. Photoshop -&gt;
-Bildberechnungen -&gt; Mischmodus “Subtrahieren”: Deckkraft 68%,
-Skalieren 1, Versatz 128 (EHM)</td>
+<td>“kw1a_2023-11-01.tif” von “kw1d_2023-11-01.tif” subtrahiert.
+Photoshop -&gt; Bildberechnungen -&gt; Mischmodus “Subtrahieren”:
+Deckkraft 68%, Skalieren 1, Versatz 128 (EHM)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kontrolliertes-vokabular">Kontrolliertes Vokabular</h2>
+<p>Zur konsistenten und nachvollziehbaren Angabe von technischen und
+beschreibenden <a href="#basic-metadata">Metadaten</a> ist ein
+kontrolliertes Vokabular zu nutzen. Mehrfachangaben sind mit Semicolon
+zu trennen.</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Beschreibung</th>
+<th>Metadatenfeld</th>
+<th>Schema</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ersteller:in der Datei</td>
+<td>Ersteller:in</td>
+<td>[Vorname] [Nachname] / [Institution]</td>
+<td>Max Blumenschein</td>
+</tr>
+<tr>
+<td>Quelle der Datei</td>
+<td>Quelle</td>
+<td>[Vorname] [Nachname] / [Institution]</td>
+<td>Kunstmuseum Basel</td>
+</tr>
+<tr>
+<td>Erstellungsdatum der Datei</td>
+<td>Erstellungsdatum</td>
+<td>[YYYY-MM-DD]T[HH:MM:SS][UTC-Offset]<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></td>
+<td>2024-08-15T16:29:14+02:00</td>
+</tr>
+<tr>
+<td>Stellenbezeichnung</td>
+<td>Position</td>
+<td>[Stellenbezeichnung]</td>
+<td>Wissenschaftliche Fotografin</td>
+</tr>
+<tr>
+<td>Kontaktadresse</td>
+<td>Adresse</td>
+<td>[Strasse] [Hausnummer]</td>
+<td>St. Alban-Graben 8</td>
+</tr>
+<tr>
+<td>Stadt</td>
+<td>Stadt</td>
+<td>[Stadt]</td>
+<td>Basel</td>
+</tr>
+<tr>
+<td>Postleitzahl</td>
+<td>Postleitzahl</td>
+<td>[PLZ]</td>
+<td>4010</td>
+</tr>
+<tr>
+<td>Land</td>
+<td>Land</td>
+<td>[Land]</td>
+<td>Schweiz</td>
+</tr>
+<tr>
+<td>E-Mail Adresse</td>
+<td>E-Mail</td>
+<td>[E-Mail Adresse]</td>
+<td>stanley.brouwn@bs.ch</td>
+</tr>
+<tr>
+<td>Telefonnummer</td>
+<td>Telefon</td>
+<td>[Telefonnummer]</td>
+<td>+41 61 206 62 62</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>Website</td>
+<td>[URL]</td>
+<td>kunstmuseumbasel.ch</td>
+</tr>
+<tr>
+<td>Titel</td>
+<td>Titel</td>
+<td>[Inhaltlich beschreibender Titel]</td>
+<td>Blumenstillleben</td>
+</tr>
+<tr>
+<td>Inhaltliche Beschreibung</td>
+<td>Inhaltliche Beschreibung</td>
+<td>[Inhaltliche Beschreibung]</td>
+<td>Linker Flügel des Altarbildes</td>
+</tr>
+<tr>
+<td>Ausstellungsdokumentation</td>
+<td>Inhaltliche Beschreibung</td>
+<td>[Ort], [Gebäude], [Haupttitel]. [Untertitel], [Stockwerk], [Raum],
+[Wand]</td>
+<td>Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG,
+Raum 5</td>
+</tr>
+<tr>
+<td>Standardkonformität</td>
+<td>Technische Angaben</td>
+<td>[Name] ([Version])</td>
+<td>Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards
+(Version 1.1.0)</td>
+</tr>
+<tr>
+<td>Bildmontage</td>
+<td>Technische Angaben</td>
+<td>Digitale Bildmontage aus [n] Einzelaufnahmen ([Dateinamen der
+Einzelaufnahmen])</td>
+<td>Digitale Bildmontage aus 2 Einzelaufnahmen
+(“gd11_2025-08-27_s-001.tif”, “gd11_2025-08-27_s-002.tif”)</td>
+</tr>
+<tr>
+<td>Mehrfachaufnahme</td>
+<td>Technische Angaben</td>
+<td>Mehrfachaufnahme/[Methode]</td>
+<td>1. Mehrfachaufnahme/Pixel-Shift (16-Shot) <br> 2.
+Mehrfachaufnahme/Focusstacking (43-Shot, Helicon Focus 8.3.5, Method C,
+Smoothing 4)</td>
+</tr>
+<tr>
+<td>Besondere Bearbeitung</td>
+<td>Technische Angaben</td>
+<td>Bildbearbeitung: [Chronologische Bearbeitungsschritte] ([Kürzel
+Bearbeiter:in])</td>
+<td>“kw1a_2023-11-01.tif” von “kw1d_2023-11-01.tif” subtrahiert.
+Photoshop -&gt; Bildberechnungen -&gt; Mischmodus “Subtrahieren”:
+Deckkraft 68%, Skalieren 1, Versatz 128 (EHM)</td>
+</tr>
+<tr>
+<td>Infrarotaufnahmen</td>
+<td>Technische Angaben</td>
+<td>[Aufnahmedistanz in mm], [Blende in f], [Fokuseinstellung in mm],
+[Belichtungszeit in ms], [Beleuchtungsstärke in W], [Filter]</td>
+<td>1300mm, f11, bw25mm, 20ms, 1300W, 900-1700nm no filter</td>
+</tr>
+<tr>
+<td>Röntgenaufnahmen</td>
+<td>Technische Angaben</td>
+<td>[Stromstärke in kV], [Spannung in mA], [Belichtungszeit in ms],
+[Aufnahmedistanz in mm], [Filter]</td>
+<td>50kV, 19mA, 30ms, 1500mm, 1mm, Aluminiumfilter</td>
 </tr>
 </tbody>
 </table>
 <h1 id="impressum">Impressum</h1>
-<p>2025-08-27 / Version 1.1.0<br />
+<p>2025-09-04 / Version 1.1.0<br />
 <br />
 Kunstmuseum Basel<br />
 St. Alban Graben 16–20<br />
@@ -1444,8 +1570,13 @@ Wissenschaftlicher Fotograf, Restaurierung<br />
 <br />
 Schriften: IBM Plex Sans, IBM Plex Mono</p>
 <h2 id="änderungsgeschichte">Änderungsgeschichte</h2>
+<p>Die Änderungsgeschichte sowie Vorgängerversionen sind über <a href="https://github.com/maxblumenschein/wfkmb/releases"><code>https://github.com/maxblumenschein/wfkmb/releases</code></a>
+einsehbar.</p>
 <p>Neue Elemente in Version 1.1.0:</p>
 <ul>
+<li>Einführung eines <a href="#kontrolliertes-vokabular">kontrollierten
+Vokabulars</a></li>
+<li>Vorgaben zur Struktur und Taxonomie von technischen Metadaten</li>
 <li>Der Begriff <em>Forensische Aufnahmen</em> wird durch den
 neutraleren Begriff <a href="#analytische-aufnahmen"><em>Analytische
 Aufnahmen</em></a> ersetzt.</li>
@@ -1495,6 +1626,8 @@ Bildanalyse.</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩
 <li id="fn14"><p>ISO 13655:2009 Messspezifikation M0.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p>Durch einen digitalen Hochpassfilter kann die
 Darstellung noch zusätzlich auf sehr feine Details reduziert werden.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Gemäss <a href="https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en">ISO
+8601:2019</a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
