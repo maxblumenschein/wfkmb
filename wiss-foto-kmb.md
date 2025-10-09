@@ -124,11 +124,11 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.
 
-**Hintergrund**: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
+**Hintergrund**: L* 80, a* 1, b* 1, Aufbau: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
+**Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
-**Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc..
+**Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc., die zur Objektgeschichte gehören.
 
 [^4]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).
 
@@ -205,8 +205,6 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 **Zeitrahmen**: Umfangreiche Sammlungsumhängungen werden nach Meldung in der Regel innerhalb von 4 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Sonderausstellungen werden eigenständig in der Regel innerhalb von 3 Wochen nach Abschluss des Aufbaus an einem Besucher\:innen freien Tag dokumentiert. Bei umfangreichen Ausstellungen oder parallenen Eröffnungen/Fertigstellungen sind im Vorfeld spezifische Zeiträume festzulegen.
 
 **«Pressebilder»**: Bilder (Umfang ca. 10) für Werbe- und Journalistische Zwecke können nach vorgängiger Anfrage vor Ausstellungseröffnung erstellt werden. Die entsprechenden Wände/Räume müssen fertig aufgebaut sein. Es sind 1–2 Tage Verarbeitungszeit einzuplanen. Die entsprechenden Ansichten sind vorab mit der Abteilung Presse/Kommunikation festzulegen.
-
-**«Making Of»**: Impressionen während des Ausstellungsaufbaus werden bei Bedarf von der Abteilung Digitale Kommunikation erstellt.
 
 ### Ästhetische Vorgaben
 
@@ -346,6 +344,8 @@ Indem Kamera und Objekt während der Aufnahmen nicht relativ zueinander verschob
 
 Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuseum Basel hinsichtlich der verwendeten Spektren und Filter am [CHARISMA Projekt](https://www.researchgate.net/publication/267266175_Multispectral_Imaging_in_Reflectance_and_Photo-induced_Luminescence_modes_A_User_Manual) und den dort dokumentierten Verfahren.
 
+Beispiele für Multispektralaufnahmen können [hier](https://kumu.picturepark.com/s/wp170A7T) abgerufen werden.
+
 #### Technische Vorgaben {#msi-requirements}
 
 +--------------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
@@ -370,7 +370,7 @@ Zur Standardisierung und besseren Vergleichbarkeit orientiert sich das Kunstmuse
 
 ## Targets
 
-[**ColorChecker, X-Rite**]{#colorchecker-target}: Dieses Target sollte für alle Aufnahmen mit normaler Beleuchtung im Bereich des sichtbaren Lichts verwendet werden. Die 24 Felder umfassen typische Farben sowie Graustufen mit relativ konstanter Reflektivät über die sichtbaren Spektren des Lichts hinweg. Aufgrund seiner grossen Verbreitung eignet sich das Target insbesondere für den Vergleich von Aufnahmen zu unterschiedlichen Zeitpunkten oder anderen Orten mit abweichenden Aufnahmeparametern.
+[**ColorChecker Classic Mini, X-Rite**]{#colorchecker-target}: Dieses Target sollte für alle Aufnahmen mit normaler Beleuchtung im Bereich des sichtbaren Lichts verwendet werden. Die 24 Felder umfassen typische Farben sowie Graustufen mit relativ konstanter Reflektivät über die sichtbaren Spektren des Lichts hinweg. Aufgrund seiner grossen Verbreitung eignet sich das Target insbesondere für den Vergleich von Aufnahmen zu unterschiedlichen Zeitpunkten oder anderen Orten mit abweichenden Aufnahmeparametern.
 
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
 
@@ -401,7 +401,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 | F3   | 49,57 | -29,71 | -28,32 |
 | F4   | 20,64 | 0,07   | -0,46  |
 
-: Theoretische L\*a\*b\*[^16] Werte, X-Rite Colorchecker Classic Mini.
+: Theoretische L\*a\*b\*[^16] Werte, X-Rite Colorchecker Classic gemäss [X-Rite](https://www.xrite.com/service-support/new_color_specifications_for_colorchecker_sg_and_classic_charts).
 
 [^16]: ISO 13655:2009 Messspezifikation M0.
 
@@ -446,6 +446,8 @@ Die Verrechnung der einzelnen Aufnahmen kann dabei helfen spezifische Aspekte ei
 [^highpass]: Durch einen digitalen Hochpassfilter kann die Darstellung noch zusätzlich auf sehr feine Details reduziert werden.
 
 Nach dem gleichen Prinzip lassen sich Durchlicht-Aufnahmen durch eine Bildberechnung optimieren: Da im Durchlicht alle Schichten eines Objekts übereinandergelagert zu sehen sind, führt die Subtraktion der Auflicht-Aufnahmen der Vorder- und Rückseite zu einer Darstellung, die nunmehr nur die ‹mittleren› Lagen des Objekts zeigt.
+
+Beispiele für die Anwendung von Bildberechnungen können [hier](https://kumu.picturepark.com/s/u2WYO1Jg) abgerufen werden.
 
 ### Metadaten
 
@@ -503,9 +505,11 @@ Die Änderungsgeschichte sowie Vorgängerversionen sind über [```https://github
 
 Neue Elemente in Version ${VERSION}:
 
- - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular)
- - Vorgaben zur Struktur und Taxonomie von technischen Metadaten
+ - verschiedene redaktionelle Überarbeitungen.
+ - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular).
+ - Vorgaben zur Struktur und Taxonomie von technischen Metadaten.
  - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
+ - Werkbeispiele für [Multispektralaufnahmen](#multispektralaufnahmen) und [Bildberechnungen](#digitale-bildanalyse).
 
 ## Nutzungsbestimmungen
 
