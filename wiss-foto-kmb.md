@@ -118,6 +118,8 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
 
+[Bildbeispiel Gemälde](https://kumu.picturepark.com/s/aachjPFa).
+
 ### Werke auf Papier
 
 **Aufnahmegeometrie**: Coplanare Ausrichtung von Objekt und Kamera. 30–45° Auftrittswinkel des Lichts.
@@ -129,6 +131,8 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 **Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
 **Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc., die zur Objektgeschichte gehören.
+
+[Bildbeispiel Werk auf Papier](https://kumu.picturepark.com/s/hh2Tn0c6).
 
 [^4]: Lieferant: Schweighauser Kunststoffe AG, Oberwil (CH).
 
@@ -145,6 +149,8 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 **Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
 
 **Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht zur linken Bildseite gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten und Objekten Rücksprache mit den zuständigen Kurator\:innen.
+
+[Bildbeispiel Skulptur](https://kumu.picturepark.com/s/a4vVulC7).
 
 [^5]: Bei sehr grossen Skulpturen kann die Kamera koplanar zur Vorderseite ausgerichtet werden.
 [^6]: Aufgrund der räumlichen Tiefe dreidimensionaler Objekte kann keine Neutralität über den gesamten Bildraum erzielt werden.
@@ -215,6 +221,8 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 **Belichtung**: Die Helligkeit sollte über alle Ansichten einer Ausstellung/Serie konstant und wie sie Besuchende vor Ort wahrnehmen würden wirken. Die Helligkeit des B4 Feldes ([ColorChecker Target](#colorchecker-target)) auf Augenhöhe sollte 75 L* (ΔL* ≤8) entsprechen.
 
 **Ansichten**: Die Raumabfolge und Dramarturgie sollte anhand der Ansichten nachvollziehbar sein. Jedes Werk einer Ausstellung sollte mindestens einmal und wenn möglich mehrfach abgebildet sein.
+
+[Bildbeispiel Installationsaufnahmen](https://kumu.picturepark.com/s/JbyZyXU5).
 
 ### Technische Vorgaben {#installation_repro}
 
@@ -505,11 +513,10 @@ Die Änderungsgeschichte sowie Vorgängerversionen sind über [```https://github
 
 Neue Elemente in Version ${VERSION}:
 
- - verschiedene redaktionelle Überarbeitungen.
  - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular).
  - Vorgaben zur Struktur und Taxonomie von technischen Metadaten.
  - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
- - Werkbeispiele für [Multispektralaufnahmen](#multispektralaufnahmen) und [Bildberechnungen](#digitale-bildanalyse).
+ - Bildbeispiele für verschiedene Aufnahmearten.
 
 ## Nutzungsbestimmungen
 
