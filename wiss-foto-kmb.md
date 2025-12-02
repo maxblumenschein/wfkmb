@@ -64,7 +64,7 @@ Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem 
 
 # Grundsätzliche Prinzipien
 
-**Transparenz:** Dokumentationsaufnahmen sollten so produziert werden, dass die abgebildete Sache in ihrer visuellen Beschaffenheit nachvollziehbar wird. Dazu gehört, dass auch die Aufnahmesituation (u.a. Kameraposition, Lichtaufbau, etc.) ersichtlich ist. Entweder ist diese aus der Aufnahme selbst (z.B. sichtbare Lichtquelle), oder durch einen dokumentierten Standard ersichtlich (z.B. Streiflicht von links). Technische Metadaten erweitern den Informationsgehalt einer Bilddatei um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen (z.B. Aufnahmedatum, Ersteller\:in) sowie beschreibende Informationen, wenn Aufnahmen vom Standard abweichen (z.B. besondere Bildbearbeitung).
+**Transparenz:** Dokumentationsaufnahmen sollten so produziert werden, dass die abgebildete Sache in ihrer visuellen Beschaffenheit nachvollziehbar wird. Dazu gehört, dass auch die Aufnahmesituation (Kameraposition, Lichtaufbau, etc.) ersichtlich ist. Entweder ist diese aus der Aufnahme selbst (z.B. sichtbare Lichtquelle), oder durch einen dokumentierten Standard ersichtlich (z.B. Streiflicht von links). Technische Metadaten erweitern den Informationsgehalt einer Bilddatei um Nicht-Offenkundiges. Dazu gehören grundsätzliche technische Informationen (z.B. Aufnahmedatum, Ersteller\:in) sowie beschreibende Informationen, wenn Aufnahmen vom Standard abweichen (z.B. besondere Bildbearbeitung).
 
 **Reproduzierbarkeit:** Anhand der transparenten Aufnahmesituation sowie den festgelegten Standards lässt sich eine Aufnahme zu einem späteren Zeitpunkt reproduzieren. Dadurch lässt sich eine mögliche Veränderung eines Objekts nachvollziehen und quantifizierbar machen.[^disclaimer]
 
@@ -126,7 +126,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Licht**: Licht so hart wie möglich und so weich wie nötig. Üblicherweise 2–4 _Striplights_ für eine gleichmässige Ausleuchtung verwenden.
 
-**Hintergrund**: L* 80, a* 1, b* 1, Aufbau: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
+**Hintergrund**: L\* 80, a\* 1, b\* 1, Aufbau: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
 **Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
@@ -162,17 +162,18 @@ Siehe [Installationsaufnahmen](#installations--und-gebäudeaufnahmen).
 
 ### Technische Vorgaben {#technical_repro}
 
-Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation Imaging Guidelines_](https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf) (2012) und wurden für den praktischen Einsatz am Kunstmuseum Basel vereinfacht.
+Die Vorgaben orientieren sich am Metamorfoze Standard [_Metamorfoze Preservation Imaging Guidelines_](https://www.metamorfoze.nl/sites/default/files/documents/Metamorfoze_Preservation_Imaging_Guidelines_1.0.pdf) (2012) sowie am FADGI Standard [_Technical Guidelines for Digitizing
+Cultural Heritage Materials_](https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf) (2023) und wurden für den praktischen Einsatz am Kunstmuseum Basel vereinfacht.
 
 * **Dateiformat**: TIFF, `.tif`
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: eciRGBv2 (RGB), Gray Gamma 2.2 (Graustufen)
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
-* **Weissabgleich Toleranz**: ΔC* ≤2 ([ColorChecker Target](#colorchecker-target))
-* **Belichtung Toleranz**: ΔL* ≤2 ([ColorChecker Target](#colorchecker-target))
-* **Homogenität Beleuchtung**: ΔL* ≤3
-* **Farbgenauigkeit** (CIE76)[^10]: ΔE* ≤ 4 (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Weissabgleich Toleranz**: ΔE(a\*b\*) ≤2 (Graufelder, [ColorChecker Target](#colorchecker-target))
+* **Belichtung Toleranz**: ΔL\*<sub>2000</sub> ≤2 (Graufelder, [ColorChecker Target](#colorchecker-target))
+* **Homogenität Beleuchtung**: ΔL\*<sub>2000</sub> ≤3
+* **Farbgenauigkeit**[^10]: ΔE<sub>2000</sub> ≤ 4 (Durchschnitt), ΔE<sub>2000</sub>\ ≤ 10 (maximal)
 * **Auflösung** (Minimum): >DIN A2: 150 dpi, ≥DIN A5: 300 dpi, <DIN A5: 600 dpi
 
 [^10]: Diese Parameter entsprechen der Definition der Farbverbindlichtkeit _ca - farbkalibriert_ bzw. _cb - farbkalibriert mit abgebildeter Farbreferenz_ des [Medienstandard 3.0.1](https://medienstandard.kumu.swiss/).
@@ -184,7 +185,7 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich gemäss
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                    |
 | --- | ----- | ------ |
 | Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                            |
-| Quelle*                                              | `photoshop:Source`          | Kunstmuseum Basel                                           |
+| Bildrechte*                                              | `dc:rights`          | Kunstmuseum Basel                                           |
 | Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |
 | Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |
 | Adresse                                              | `Iptc4xmpCore:CiAdrExtadr`  | St. Alban-Graben 8                                          |
@@ -231,8 +232,8 @@ Installationsaufnahmen dokumentieren die Wirkung und Installation von Werken im 
 * **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Film Standard, Adobe Neutral
-* **Weissabgleich Toleranz**: ΔC* ≤2 (Feld B4, [ColorChecker Target](#colorchecker-target))
-* **Belichtung Toleranz**: ΔL* ≤8 (75 L* = Feld B4, [ColorChecker Target](#colorchecker-target))
+* **Weissabgleich Toleranz**: ΔE(a\*b\*) ≤2 (Feld B4, [ColorChecker Target](#colorchecker-target))
+* **Belichtung Toleranz**: ΔL\*<sub>2000</sub> ≤8 (L\* 75 = Feld B4, [ColorChecker Target](#colorchecker-target))
 * **Bildgrösse** (kurze Seite): ≥4000 Pixel
 
 #### Metadaten
@@ -297,8 +298,8 @@ Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Mu
 * **Dateiname**: nach Medienstandard
 * **Farbraum**: Gray Gamma 2.2
 * **Bit-Tiefe**: 16 Bit
-* **Belichtung Toleranz**: ΔL* ≤2 ([PTFE](#ptfe-target))
-* **Tonwertgenauigkeit** (CIE76)^[Je nach Bildgebungssystem kann nicht in allen Fällen innerhalb dieser Toleranzen aufgenommen werden.]: ΔE* ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE* ≤ 10 (Maximal)
+* **Belichtung Toleranz**: ΔL\*<sub>2000</sub> ≤2 ([PTFE](#ptfe-target))
+* **Tonwertgenauigkeit**^[Je nach Bildgebungssystem kann nicht in allen Fällen innerhalb dieser Toleranzen aufgenommen werden.]: ΔE<sub>2000</sub> ≤ 4 ([PTFE](#ptfe-target)) (Durchschnitt), ΔE<sub>2000</sub> ≤ 10 (Maximal)
 
 #### Metadaten
 
@@ -321,9 +322,9 @@ Grundsätzlich gelten die spezifischen Vorgaben zu Filtern und Spektren für [Mu
 * **Farbraum**: eciRGBv2
 * **Bit-Tiefe**: 16 Bit
 * **Tonwertkurve**: Linear, Linear-Scientific
-* **Weissabgleich Toleranz**: ΔC* ≤2 (LOW A1, [Target-UV](#uv-target))
-* **Belichtung Toleranz**: ΔL* ≤4 (LOW A1, [Target-UV](#uv-target))
-* **Homogenität Beleuchtung**: ΔL* ≤3
+* **Weissabgleich Toleranz**: ΔE(a\*b\*) ≤2 (LOW A1, [Target-UV](#uv-target))
+* **Belichtung Toleranz**: ΔL\*<sub>2000</sub> ≤4 (LOW A1, [Target-UV](#uv-target))
+* **Homogenität Beleuchtung**: ΔL\*<sub>2000</sub> ≤3
 
 ### Röntgen
 
@@ -413,6 +414,31 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 
 [^16]: ISO 13655:2009 Messspezifikation M0.
 
+[**Universal Test Target (UTT), TE262, Image Engineering**]{#utt-target}: Mehrzweck-Testchart zur Bewertung der Bildqualität von Scannern und anderen digitalen Bildgebungssystemen. Das Target enthält Felder zur Evaluation der Tonwerte, Farbreproduktion, Auflösung, Homogenität und geometrischen Verzeichnung. Das Target eignet sich gut zur periodischen Überprüfung der Reproduktionsqualität.
+
+| Feld | L*  |
+| :--- | ---:|
+| 1    | 95 |
+| 2    | 90 |
+| 3    | 85 |
+| 4    | 80 |
+| 5    | 75 |
+| 6    | 70 |
+| 7    | 65 |
+| 8    | 60 |
+| 9    | 55 |
+| 10   | 50 |
+| 11   | 45 |
+| 12   | 40 |
+| 13   | 35 |
+| 14   | 30 |
+| 15   | 25 |
+| 16   | 20 |
+| 17   | 15 |
+| 18   | 10 |
+| 19   |  5 |
+| 20   |  3 |
+
 [**PTFE, artImaging**]{#ptfe-target}: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
 
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
@@ -472,7 +498,7 @@ Zur konsistenten und nachvollziehbaren Angabe von technischen und beschreibenden
 | Beschreibung                                  | Metadatenfeld                       | Schema             | Beispiel                           |
 | ---- | ---- | ----- | ----- |
 | Ersteller\:in der Datei                       | Ersteller\:in                       | [Vorname] [Nachname] / [Institution] | Max Blumenschein |
-| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] | Kunstmuseum Basel |
+| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] ([Standardkonformität] | Kunstmuseum Basel (Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION})) |
 | Erstellungsdatum der Datei                    | Erstellungsdatum                    | [YYYY-MM-DD]T[HH:MM:SS][UTC-Offset]^[Gemäss [ISO 8601:2019](https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en).] | 2024-08-15T16:29:14+02:00                                   |
 | Stellenbezeichnung                            | Position                            | [Stellenbezeichnung] | Wissenschaftliche Fotografin |
 | Kontaktadresse                                | Adresse                             | [Strasse] [Hausnummer] | St. Alban-Graben 8 |
@@ -517,6 +543,7 @@ Neue Elemente in Version ${VERSION}:
  - Vorgaben zur Struktur und Taxonomie von technischen Metadaten.
  - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
  - Bildbeispiele für verschiedene Aufnahmearten.
+ - Spezifizierung der Farbabstandsformel CIEDE2000 für [technische Vorgaben](#technical_repro).
 
 ## Nutzungsbestimmungen
 
