@@ -60,7 +60,7 @@ Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokum
 
 In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
 
-Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektroskop – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
+Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektrometer – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
@@ -82,7 +82,7 @@ Im Folgenden werden Standards und bewährte Methoden für verschiedene Aufnahmea
 
 ## Reproduktionsaufnahmen
 
-Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes [_Target_](#targets).
+Reproduktionsaufnahmen sollen eine abgebildete Sache optisch möglichst 1:1 wiedergeben. Das heisst, im besten Fall erzeugt die Reproduktionsaufnahme eines Kunstwerks den gleichen optischen Reiz wie das Kunstwerk selbst. Um dieses Ziel überprüfbar zu erreichen, ist ein visuell bekanntes Objekt nötig, das als neutrale Referenz jederzeit mit seiner Abbildung verglichen werden kann; ein sogenanntes [_Target_](#targets).
 
 Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen werden, sodass die Reproduktionsgenauigkeit der Aufnahme quantitativ gemessen und im Abgleich mit den Museumseigenen Toleranzen sowie Standards Dritter qualitativ bewertet werden kann.[^target]
 
@@ -114,7 +114,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: Schwarz, matt (z.B. Molton)
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
 
 **Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
 
@@ -128,7 +128,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: L\* 80, a\* 1, b\* 1, Aufbau: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
-**Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
+**Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
 
 **Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc., die zur Objektgeschichte gehören.
 
@@ -146,7 +146,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: Bei hellen Objekten: Schwarz, matt (z.B. Molton). Bei dunklen Objekten: Weiss/Grau, matt.
 
-**Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die Repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
+**Zuschnitt**: circa 10% der Objektgrösse Beschnittzugabe. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sondern nur das Target.
 
 **Ansichten**: Standardbild in der Regel zentral von Vorne, Objekt leicht zur linken Bildseite gedreht. Nach Möglichkeit zusätzlich alle Seiten des Objekts aufnehmen. Bei besonderen Ansichten und Objekten Rücksprache mit den zuständigen Kurator\:innen.
 
@@ -185,19 +185,20 @@ Im Folgenden werden die Metadaten-Felder aufgeführt, die grundsätzlich gemäss
 | Beschreibung                                         | XMP-Bezeichnung             | Beispiel                                                    |
 | --- | ----- | ------ |
 | Ersteller\:in*                                       | `dc:creator`                | Max Blumenschein                                            |
-| Bildrechte*                                              | `dc:rights`          | Kunstmuseum Basel                                           |
-| Erstellungsdatum*                                    | `photoshop:DateCreated`     | 2024-08-15T16:29:14+02:00                                   |
+| Rechte*                                              | `dc:rights`          | Kunstmuseum Basel                                           |
+| Relation*                                   | `dc:relation`    | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
+| Erstellungsdatum*                                    | `xmp:CreateDate`     | 2024-08-15T16:29:14+02:00                                   |
 | Position                                             | `photoshop:AuthorsPosition` | Wissenschaftliche Fotografin                                |
 | Adresse                                              | `Iptc4xmpCore:CiAdrExtadr`  | St. Alban-Graben 8                                          |
 | Stadt                                                | `Iptc4xmpCore:CiAdrCity`    | Basel                                                       |
 | Postleitzahl                                         | `Iptc4xmpCore:CiAdrPcode`   | 4010                                                        |
 | Land                                                 | `Iptc4xmpCore:CiAdrCtry`    | Schweiz                                                     |
-| E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | stanley.brouwn@bs.ch                                        |
+| E-Mail                                               | `Iptc4xmpCore:CiEmailWork`  | max.blumenschein@bs.ch                                        |
 | Telefon                                              | `Iptc4xmpCore:CiTelWork`    | +41 61 206 62 62                                            |
 | Website                                              | `Iptc4xmpCore:CiUrlWork`    | kunstmuseumbasel.ch                                         |
 | Titel                                                | `dc:title`                  | Blumenstillleben                                            |
 | Inhaltliche Beschreibung                             | `dc:description`            | Linker Flügel des Altarbildes                               |
-| Technische Angaben                                   | `photoshop:Instructions`    | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
+| Technische Angaben                                   | `photoshop:Instructions`    | Kreuzpolarisierte Beleuchtung |
 
 [^11]: Zur Zuordnung der Metadaten-Felder vgl. [_IPTC: mapping of metadata between the IPTC Photo Metadata Standard 2017.1 and NewsML-G2 2.25_](https://www.iptc.org/std/photometadata/specification/mapping/iptc-pmd-newsmlg2.html).
 
@@ -439,6 +440,8 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 | 19   |  5 |
 | 20   |  3 |
 
+: Theoretische L\* Werte, Image Engineering.
+
 [**PTFE, artImaging**]{#ptfe-target}: Die fünf Felder dieses Targets umfassen Tonwerte mit einer sehr konstanten Reflektivität über ein breites Spektrum von ca. 250–2500 nm. Das Target eignet sich deshalb besonders für den Einsatz bei Multispektral-Aufnahmen, sowie grundsätzlich bei Aufnahmen mit Licht ausserhalb des visuell sichtbaren Spektrums.
 
 Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets zur Kalibrierung zu verwenden.
@@ -451,7 +454,7 @@ Nach Möglichkeit sind eigens gemessene Spektraldaten des spezifischen Targets z
 | D1   | 88  |
 | E1   | 98  |
 
-: Theoretische L\*[^16] Werte, artImaging PTFE.
+: Theoretische L\* Werte, artImaging PTFE.
 
 [**Target-UV, UV Innovations**]{#uv-target}: Für Aufnahmen mit Licht im ultravioletten Spektrum (<400 nm) kann dieses Target verwendet werden. Unter UV-Licht fluoreszieren einzelne Felder in Graustufen sowie in den Farben Rot, Grün und Blau, sodass die Intensität und Farbigkeit von fluoriszierendem Material dokumentiert werden kann.
 
@@ -498,20 +501,20 @@ Zur konsistenten und nachvollziehbaren Angabe von technischen und beschreibenden
 | Beschreibung                                  | Metadatenfeld                       | Schema             | Beispiel                           |
 | ---- | ---- | ----- | ----- |
 | Ersteller\:in der Datei                       | Ersteller\:in                       | [Vorname] [Nachname] / [Institution] | Max Blumenschein |
-| Quelle der Datei                              | Quelle                              | [Vorname] [Nachname] / [Institution] ([Standardkonformität] | Kunstmuseum Basel (Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION})) |
+| Bildrechte an der Abbildung                  | Rechte                              | [Vorname] [Nachname] / [Institution] | Kunstmuseum Basel |
+| Standardkonformität                           | Relation                              | [Standard] ([Version x.x.x]) | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
 | Erstellungsdatum der Datei                    | Erstellungsdatum                    | [YYYY-MM-DD]T[HH:MM:SS][UTC-Offset]^[Gemäss [ISO 8601:2019](https://www.iso.org/obp/ui/#iso:std:iso:8601:-1:ed-1:v1:en).] | 2024-08-15T16:29:14+02:00                                   |
 | Stellenbezeichnung                            | Position                            | [Stellenbezeichnung] | Wissenschaftliche Fotografin |
 | Kontaktadresse                                | Adresse                             | [Strasse] [Hausnummer] | St. Alban-Graben 8 |
 | Stadt                                         | Stadt                               | [Stadt] | Basel |
 | Postleitzahl                                  | Postleitzahl                        | [PLZ] | 4010 |
 | Land                                          | Land                                | [Land] | Schweiz |
-| E-Mail Adresse                                | E-Mail                              | [E-Mail Adresse] | stanley.brouwn@bs.ch |
+| E-Mail Adresse                                | E-Mail                              | [E-Mail Adresse] | max.blumenschein@bs.ch |
 | Telefonnummer                                 | Telefon                             | [Telefonnummer] | +41 61 206 62 62 |
 | Website                                       | Website                             | [URL] | kunstmuseumbasel.ch |
 | Titel                                         | Titel                               | [Inhaltlich beschreibender Titel] | Blumenstillleben |
 | Inhaltliche Beschreibung                      | Inhaltliche Beschreibung            | [Inhaltliche Beschreibung] | Linker Flügel des Altarbildes |
 | Ausstellungsdokumentation                     | Inhaltliche Beschreibung            | [Ort], [Gebäude], [Haupttitel]. [Untertitel], [Stockwerk], [Raum], [Wand] | Basel, Kunstmuseum, Neubau, Dan Flavin. Widmungen aus Licht, 2. OG, Raum 5 |
-| Standardkonformität                           | Technische Angaben                  | [Name] ([Version]) | Wissenschaftliche Fotografie am Kunstmuseum Basel – Standards (Version ${VERSION}) |
 | Bildmontage                                   | Technische Angaben                  | Digitale Bildmontage aus [n] Einzelaufnahmen ([Dateinamen der Einzelaufnahmen]) | Digitale Bildmontage aus 2 Einzelaufnahmen ("gd11_2025-08-27_s-001.tif", "gd11_2025-08-27_s-002.tif") |
 | Mehrfachaufnahme                              | Technische Angaben                  | Mehrfachaufnahme/[Methode] | 1. Mehrfachaufnahme/Pixel-Shift (16-Shot) <br> 2. Mehrfachaufnahme/Focusstacking (43-Shot, Helicon Focus 8.3.5, Method C, Smoothing 4) |
 | Besondere Bearbeitung                         | Technische Angaben                  | Bildbearbeitung: [Chronologische Bearbeitungsschritte] ([Kürzel Bearbeiter\:in]) | "kw1a_2023-11-01.tif" von "kw1d_2023-11-01.tif" subtrahiert. Photoshop -> Bildberechnungen -> Mischmodus "Subtrahieren": Deckkraft 68%, Skalieren 1, Versatz 128 (EHM) |
