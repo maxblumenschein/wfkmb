@@ -12,8 +12,11 @@ toc: true
 documentclass: report
 ---
 
-<!-- only in html -->
-<p><a href="./${FILENAME}_${VERSION_TAG}.pdf">Download PDF</a></p>
+::: {.html-only}
+[DE]{.lang-current} | [EN](../en/wiss-foto-kmb-en_${VERSION_TAG}.html)
+
+[Download PDF](./${FILENAME}_${VERSION_TAG}.pdf)
+:::
 
 <div class="manual-toc">
 <ul>
@@ -60,7 +63,7 @@ Die Wissenschaftliche Fotografie am Kunstmuseum Basel ist der bildgebenden Dokum
 
 In dieser Funktion erstellt die Abteilung Dokumentationsaufnahmen von Kunstwerken und Installationsansichten von Ausstellungen. Als Teil der Restaurierungsabteilung ist die Wissenschaftliche Fotografie ausserdem an der Forschungsarbeit am Museum beteiligt und bietet durch verschiedene Bildgebungsverfahren Analysen, die materialtechnologische Einsichten in den Erhaltungs- und Entstehungszusammenhang der Kunstwerke geben.
 
-Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektrometer – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
+Die Dokumentation – sei es mit einer Fotokamera, einem 3D-Scanner, oder einem Spektrometer – bedeutet eine Übersetzung von einer physischen Sache in eine Informationsform. So objektiv und umfassend das gewählte Medium auch scheinen mag, ist jede Form der Dokumentation technisch bedingt ausschnitthaft und gegenüber der physischen Sache verlustbehaftet. Um die Dokumentation konsistent und für Dritte überhaupt verständlich sowie langfristig nutzbar zu machen, ist das genaue Arbeiten nach transparent festgelegten Standards zentral. In diesem Dokument werden dazu grundlegende Standards zur Nutzung am Kunstmuseum Basel definiert.
 
 # Grundsätzliche Prinzipien
 
@@ -114,7 +117,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: Schwarz, matt (z.B. Molton)
 
-**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
+**Zuschnitt**: ca. 1–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk knapp auf das Sichtmass beschnitten, sodass kein Hintergrund sichtbar ist.
 
 **Ansichten**: Vorder- und Rückseite. Bei Zierrahmen zusätzlich mit Rahmen. Stempel und Beschriftungen sollten sichtbar/lesbar sein.
 
@@ -128,7 +131,7 @@ Nach Möglichkeit sollte mindestens ein Target für jede Aufnahme mitaufgenommen
 
 **Hintergrund**: L\* 80, a\* 1, b\* 1, Aufbau: Acrylglas (Grau, matt, transluzent, 3mm opal satin)[^4] über Graukarton (L* 50, a* -2, b* -3)[^colorspace]
 
-**Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger, die zur Objektgeschichte gehören, werden nicht beschnitten.
+**Zuschnitt**: ca. 0.5–2 cm Beschnittzugabe um das Objekt. Für die repräsentative Ansicht (_w11 - Hero Image_) wird das Werk nicht beschnitten, sodass die Blattränder sichtbar sind. Träger werden nach Möglichkeit beschnitten. Gezeichnete Umrandungen auf dem Träger werden nicht beschnitten. Werke, die auf mehreren Trägern montiert sind, werden so beschnitten, dass ein Teil des grössten Trägers noch zu sehen ist.
 
 **Ansichten**: Vorderseite. Rückseite bei rückseitigen Beschriftungen, Stempeln etc., die zur Objektgeschichte gehören.
 
@@ -542,11 +545,8 @@ Die Änderungsgeschichte sowie Vorgängerversionen sind über [```https://github
 
 Neue Elemente in Version ${VERSION}:
 
- - Einführung eines [kontrollierten Vokabulars](#kontrolliertes-vokabular).
- - Vorgaben zur Struktur und Taxonomie von technischen Metadaten.
- - Der Begriff _Forensische Aufnahmen_ wird durch den neutraleren Begriff [_Analytische Aufnahmen_](#analytische-aufnahmen) ersetzt.
- - Bildbeispiele für verschiedene Aufnahmearten.
- - Spezifizierung der Farbabstandsformel CIEDE2000 für [technische Vorgaben](#technical_repro).
+ - Einführung einer englischen Version.
+ - Spezifikation der Zuschnittvorgaben für [Werke auf Papier](#werke-auf-papier), insbesondere für Werke auf Trägern.
 
 ## Nutzungsbestimmungen
 

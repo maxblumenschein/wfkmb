@@ -338,6 +338,29 @@ hr {
 /*
 custom classes
 */
+.lang-current {
+    position: relative;
+    color: var(--color-selection);
+    cursor: default;
+}
+
+.lang-current::before,
+.lang-current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--color-selection);
+}
+
+.lang-current::before {
+    top: -1.3px;
+}
+
+.lang-current::after {
+    bottom: -1px;
+}
 .math {
     margin: 1em;
     padding: 1em;

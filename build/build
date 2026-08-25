@@ -2,11 +2,8 @@
 set -euo pipefail
 
 # Version and date variables
-VERSION="1.1.0"
+VERSION="1.1.1"
 DATE=$(date +%Y-%m-%d)
-
-# Filename (without extension)
-FILENAME="wiss-foto-kmb"
 
 # Sanitized version for filenames (replace '.' with '-')
 VERSION_TAG="v${VERSION//./-}"
@@ -15,26 +12,34 @@ VERSION_TAG="v${VERSION//./-}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
-export VERSION DATE FILENAME VERSION_TAG
-envsubst '${VERSION} ${DATE} ${FILENAME} ${VERSION_TAG}' < "../${FILENAME}.md" > "../${FILENAME}.tmp.md"
+for LANG in de en; do
+  FILENAME="wiss-foto-kmb-${LANG}"
+  OUTDIR="../releases/${LANG}"
+  mkdir -p "$OUTDIR"
 
-# PDF output
-pandoc "../${FILENAME}.tmp.md" \
-  -o "../releases/${FILENAME}_${VERSION_TAG}.pdf" \
-  --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
-  --template="../resources/info-manual.latex" \
-  --pdf-engine="lualatex" \
-  --citeproc \
-  --standalone \
-  --resource-path="../resources"
+  export VERSION DATE FILENAME VERSION_TAG
+  envsubst '${VERSION} ${DATE} ${FILENAME} ${VERSION_TAG}' < "../${FILENAME}.md" > "../${FILENAME}.tmp.md"
 
-# HTML output
-pandoc "../${FILENAME}.tmp.md" \
-  -o "../releases/${FILENAME}_${VERSION_TAG}.html" \
-  --citeproc \
-  --embed-resources \
-  --standalone \
-  --css="../resources/pandoc.css"
+  # PDF output
+  pandoc "../${FILENAME}.tmp.md" \
+    -o "${OUTDIR}/${FILENAME}_${VERSION_TAG}.pdf" \
+    --from markdown-markdown_in_html_blocks+raw_html+grid_tables \
+    --template="../resources/info-manual.latex" \
+    --pdf-engine="lualatex" \
+    --lua-filter="../resources/html-only.lua" \
+    --citeproc \
+    --standalone \
+    --resource-path="../resources"
 
-# Clean up
-rm "../${FILENAME}.tmp.md"
+  # HTML output
+  pandoc "../${FILENAME}.tmp.md" \
+    -o "${OUTDIR}/${FILENAME}_${VERSION_TAG}.html" \
+    --lua-filter="../resources/html-only.lua" \
+    --citeproc \
+    --embed-resources \
+    --standalone \
+    --css="../resources/pandoc.css"
+
+  # Clean up
+  rm "../${FILENAME}.tmp.md"
+done

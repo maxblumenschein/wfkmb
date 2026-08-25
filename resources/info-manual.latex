@@ -34,6 +34,7 @@
 \usepackage{amsmath} % math
 \PassOptionsToPackage{hyphens}{url}\usepackage[hidelinks]{hyperref} % cross-referencing commands
 \usepackage[nameinlink]{cleveref} % advanced referencing
+\newcounter{none} % pandoc 3.x workaround: LTcaptype=none for uncaptioned longtables
 
 % input user variables information %
   % either inside input directory:

@@ -8,4 +8,4 @@ In order to make the documentation consistent, comprehensible to third parties a
 
 # Setup
 
-The main content of the guideline is handled inside [wiss-foto-kmb.md](wiss-foto-kmb.md) in Markdown. Using [Pandoc](https://pandoc.org/) a ```.html``` and ```.pdf``` Version can be generated with the bash script inside [build](build/build). PDF creation relies on [Latex](www.latex-project.org) and lualatex. The design is an adapted version of the [ìnfo.latex](https://github.com/maxblumenschein/mdtoanything/blob/main/latex%20templates/info.latex) template.
+The content of the guideline is maintained in two Markdown source files — [wiss-foto-kmb-de.md](wiss-foto-kmb-de.md) (German) and [wiss-foto-kmb-en.md](wiss-foto-kmb-en.md) (English). Using [Pandoc](https://pandoc.org/) a ```.html``` and ```.pdf``` version is generated for each language with the bash script inside [build](build/build). PDF creation relies on [Latex](www.latex-project.org) and lualatex. The design is an adapted version of the [ìnfo.latex](https://github.com/maxblumenschein/mdtoanything/blob/main/latex%20templates/info.latex) template.
