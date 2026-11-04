@@ -1,2 +1,9 @@
 
 .DS_Store
+
+# LaTeX / pandoc build artefacts (may contain local paths)
+tex2pdf.*/
+*.tmp.md
+*.log
+*.aux
+*.bcf
